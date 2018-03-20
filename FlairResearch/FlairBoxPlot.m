@@ -31,7 +31,7 @@ ylabel('AnalysisTime (Seconds)','FontSize',26);
 title('Flair Analysis','FontSize',32);
 
 %Set Y limits
-ylim([-100 250]);
+ylim([-100 2500]);
 yt = get(gca,'YTick');
 
 %Gets the plots

@@ -30,7 +30,7 @@ ylabel('AnalysisTime (Seconds)','FontSize',26);
 title('Didfail Analysis','FontSize',32);
 
 %Set Y limits
-ylim([-100 4500]);
+ylim([-100 2500]);
 yt = get(gca,'YTick');
 
 %Gets the plots
