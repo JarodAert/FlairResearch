@@ -13,7 +13,7 @@
 
 
 \begin{center}
-\section*{Empirical Evaluation}
+\section[1]{Empirical Evaluation}
 \end{center}
 
 
@@ -23,18 +23,78 @@
 	\textbf{Question 2:} How does Flair compare to other tools with respect to the number of applications it fails to analyze?\\
 	\textbf{Question 3:} How accurately does Flair analyze vulnerabilities within applications when ran against a bundle of benchmark applications?\\
 	\textbf{Question 4:} How does Flair's accuracy in analyzing applicaions compare to other inter-application analysis tools?\\
+
+\subsection{Methods of Testing}
+\paragraph{•}
+	To test these questions we ran Flair four other inter-application analysis tools: Covert, Didfail, SEALANT, and DIALDroid. We used seven bundles of popular presented in table 1 android applications, each with fifty applications, to answer Question 1 and Questions 2. We then used three bundles of benchmark bundles also presented in table 1 to answer Question 3 and Question 4. 
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ |c c| }
+	\hline
+	Bundle & Apks\\
+	\hline
+	Android Bundle 1 & 50\\
+	Android Bundle 2 & 50\\
+	Android Bundle 3 & 50\\
+	Android Bundle 4 & 50\\
+	Android Bundle 5 & 50\\
+	Android Bundle 6 & 50\\
+	Android Bundle 7 & 50\\
+	Benchmark Bundle & XX\\
+	Benchmark Bundle & XX\\
+	Benchmark Bundle & XX\\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Bundles used in analysis.}
+\label{table:1}
+\end{table}
+
+
+\paragraph{•}
+	Each of the bundles used to examine Question 1 and Question 2 were run incrimentally. Each test started with only one application from the bundle and the tool was run against it. Then another application was added and the tool was run against the new bundle of two applications. This process was repeated until all the applications from the specified bundle were added. Therefore, each test consisted of 50 consecutive runs of a tool, each consisting of one more application than the last. This was done to reflect how in a real life situation applications are added to a collection that is being checked for vulnerabilities. It is benficial for us to see how each tool performs when new applications are added to a bundle. To more accurate results we ran each tool against each bundle three times and used the averages from those runs for our data.
+\paragraph{•}
+	We gathered data for Question 1 by recording the time it tool each tool to analyze bundles of applications. We recorded the time each tool took for each successive run of a test. Hence, there was fifty recorded times for each test of a tool. The averages for each bundle were then entered into box plot graphs and evaluated.
+\paragraph{•}
+	To answer Question 2 we used error logs provided by eac tool. The tools provided a single error log file for each application that they failed to analyze. We then calculated the failure rate of each tool by:\\
+	\begin{center}
+		\(\frac{failed}{num}=FR\)
+	\end{center}
+	Where \textit{failed} is the number of error logs given by the tool, \textit{num} is the total number of applications run in the test, here it is 1250, and \textit{FR} is the failure rate for that tool in that test. The failure rates were recorded for each test and then averaged for each tool across all bundles.
+\paragraph{•}
+	\textbf{Here will go text explaining Question 3 proceedure.}
+\paragraph{•}
+	\textbf{Here will go text explaining Question 4 proceedure.}
+
+\subsection{Variables}
+\paragraph{•}
+	\textbf{Independent:} Our independent variables present in our test are as follows: (1) Tool used to analyze. (2) Specific bundle which the tool analyzed.\\
+	\textbf{Dependent:} The dependent variables in our study are as follows: (1) Time it takes for tool to analyze a bundle. (2) Number of applications that a tool fails to analyze. (3) The accuracy of the analysis.
 	
+\subsection{Testing Enviroment}
+	All testing for Question 1 and Question 2 was done on virtual machines running within Oracle VirtualBox. Each of these machines was running Ubuntu 16.04 and had 8 processing threads clocked at 2.28 Ghz. The memory varied due to the fact that each tool had differing memory requirments. For Covert, Didfail, and Flair the machine was given 3 Gb of memory. SEALANT required more memory to run and was given 6 Gb. DIALDroid, the most memory intensive, was given 14 Gb. Since SEALANT and DIALDroid had much higher memory requirements than the other tools, we gave them lower limit of the amount of memory that they needed to run. We did this so that each tool would have enough memory to run efficiently, but the higher memory requirement tools did not have a clear advantage. In addtion, there was no swap space avaliable for any of the tools.
+	
+\subsection{Threats to Validity}
+\paragraph{•}
+	\textbf{Innconsitant Runs:} Thought we ran all tests in isolated virtual machines, there still could have been issues realted to a run that is not consistant with the tools true performance. To minimize these affects we ran each tool against each bundle three times and took the averages.
+\paragraph{•}
+	\textbf{Interal issues:} Issues related to the structure and design of the tools themselves. We are not aware of any issues of this kind.
+\paragraph{•}
+	\textbf{Measurement Issues:} Issues related to the methods we used to record and analyze our data. We did not notice any issued related to this.
+	
+
+\subsection{Results}
+Presumable would enter in results analysis here.
+
+\section[2]{Related Work}
 	
 	\subparagraph{Covert}
 		Jianghao probably explained this already
 	\subparagraph{DidFail}
 		Jianghao probably explained this already
 
-
-		\begin{figure}[h]
-			\includegraphics[width=\linewidth]{DidfailBoxPlot}
-			\caption{Figure 1. This is a graph which shows Didfail's analysis times.}
-		\end{figure}
 	
 	\subparagraph{DIALDroid}
 		DIALDroid is an inter-application ICC security analysis tool with four key operations: ICC Entry / Exit Point Extraction, DataFlow Analysis, Data Aggregation, and ICC Leak Calculation.[1] DIALDroid extracts models from a given application and performs static analysis to find any ICC exit or entry leaks present. Then the information on any leaks is stored in a MySQL relational database to be retrieved when requested by SQL queries. During the initial analysis stage DIALDroid configures the precision based on the length of the analysis. During the first five minutes of analysis DIALDroid uses a high precision algorithm to find ICC entry and exit leaks. After five minutes DIALDroid switches to a low precision algorithm that has a higher change of false negative. If the analysis runs for more than a given timeout, such as 15 minutes, DIALDroid abandons the analysis of that application altogether.
@@ -45,6 +105,8 @@
 	We ran each tool against seven bundles of applications. Each bundle contained 50 popular android application.
 
 
+\section[3]{Conclusion}
+Here we will have a conclusion.
 
 \end{document}
 
