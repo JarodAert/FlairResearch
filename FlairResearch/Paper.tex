@@ -18,7 +18,12 @@
 
 
 \paragraph{•}
-	Our evaluation looks compare our tool, Flair, against some of the top of the line Android security analysis tools. We have narrowed our focus on four other inter-application analysis tools: COVERT, DidFail, DIALDroid, and SEALANT. 
+	We tested Flair's performance in relation to the following questions:\\
+	\textbf{Question 1:} How does Flair compare to other inter-application communication analysis tools in respect to the amount of time it takes to analyze a bundle of applications?\\
+	\textbf{Question 2:} How does Flair compare to other tools with respect to the number of applications it fails to analyze?\\
+	\textbf{Question 3:} How accurately does Flair analyze vulnerabilities within applications when ran against a bundle of benchmark applications?\\
+	\textbf{Question 4:} How does Flair's accuracy in analyzing applicaions compare to other inter-application analysis tools?\\
+	
 	
 	\subparagraph{Covert}
 		Jianghao probably explained this already
@@ -30,7 +35,6 @@
 			\includegraphics[width=\linewidth]{DidfailBoxPlot}
 			\caption{Figure 1. This is a graph which shows Didfail's analysis times.}
 		\end{figure}
-
 	
 	\subparagraph{DIALDroid}
 		DIALDroid is an inter-application ICC security analysis tool with four key operations: ICC Entry / Exit Point Extraction, DataFlow Analysis, Data Aggregation, and ICC Leak Calculation.[1] DIALDroid extracts models from a given application and performs static analysis to find any ICC exit or entry leaks present. Then the information on any leaks is stored in a MySQL relational database to be retrieved when requested by SQL queries. During the initial analysis stage DIALDroid configures the precision based on the length of the analysis. During the first five minutes of analysis DIALDroid uses a high precision algorithm to find ICC entry and exit leaks. After five minutes DIALDroid switches to a low precision algorithm that has a higher change of false negative. If the analysis runs for more than a given timeout, such as 15 minutes, DIALDroid abandons the analysis of that application altogether.
