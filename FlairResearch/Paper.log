@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.20)  20 MAR 2018 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.20)  22 MAR 2018 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -248,31 +248,136 @@ Missing character: There is no ¢ in font cmbx10!
 Missing character: There is no â in font cmbx10!
 Missing character: There is no € in font cmbx10!
 Missing character: There is no ¢ in font cmbx10!
+ [2
 
-Underfull \hbox (badness 1418) in paragraph at lines 102--103
+]
+Package epstopdf Info: Source file: <graphs/CovertBoxPlot.eps>
+(epstopdf)                    date: 2018-03-20 14:48:23
+(epstopdf)                    size: 111691 bytes
+(epstopdf)             Output file: <graphs/CovertBoxPlot-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2018-03-20 17:20:46
+(epstopdf)                    size: 256427 bytes
+(epstopdf)             Command: <repstopdf --outfile=graphs/CovertBoxPlot-eps-c
+onverted-to.pdf graphs/CovertBoxPlot.eps>
+(epstopdf)             \includegraphics on input line 91.
+Package epstopdf Info: Output file is already uptodate.
+
+<graphs/CovertBoxPlot-eps-converted-to.pdf, id=15, 1445.4pt x 724.7075pt>
+File: graphs/CovertBoxPlot-eps-converted-to.pdf Graphic file (type pdf)
+
+<use graphs/CovertBoxPlot-eps-converted-to.pdf>
+Package pdftex.def Info: graphs/CovertBoxPlot-eps-converted-to.pdf used on inpu
+t line 91.
+(pdftex.def)             Requested size: 505.89pt x 253.64037pt.
+Package epstopdf Info: Source file: <graphs/DidfailBoxPlot.eps>
+(epstopdf)                    date: 2018-03-20 14:48:23
+(epstopdf)                    size: 101375 bytes
+(epstopdf)             Output file: <graphs/DidfailBoxPlot-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2018-03-20 14:48:23
+(epstopdf)                    size: 102648 bytes
+(epstopdf)             Command: <repstopdf --outfile=graphs/DidfailBoxPlot-eps-
+converted-to.pdf graphs/DidfailBoxPlot.eps>
+(epstopdf)             \includegraphics on input line 96.
+Package epstopdf Info: Output file is already uptodate.
+
+<graphs/DidfailBoxPlot-eps-converted-to.pdf, id=16, 1445.4pt x 724.7075pt>
+File: graphs/DidfailBoxPlot-eps-converted-to.pdf Graphic file (type pdf)
+
+<use graphs/DidfailBoxPlot-eps-converted-to.pdf>
+Package pdftex.def Info: graphs/DidfailBoxPlot-eps-converted-to.pdf used on inp
+ut line 96.
+(pdftex.def)             Requested size: 505.89pt x 253.64037pt.
+Package epstopdf Info: Source file: <graphs/DIALDroidBoxPlot.eps>
+(epstopdf)                    date: 2018-03-20 14:48:23
+(epstopdf)                    size: 129416 bytes
+(epstopdf)             Output file: <graphs/DIALDroidBoxPlot-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-03-20 17:20:00
+(epstopdf)                    size: 228562 bytes
+(epstopdf)             Command: <repstopdf --outfile=graphs/DIALDroidBoxPlot-ep
+s-converted-to.pdf graphs/DIALDroidBoxPlot.eps>
+(epstopdf)             \includegraphics on input line 101.
+Package epstopdf Info: Output file is already uptodate.
+
+<graphs/DIALDroidBoxPlot-eps-converted-to.pdf, id=17, 1445.4pt x 724.7075pt>
+File: graphs/DIALDroidBoxPlot-eps-converted-to.pdf Graphic file (type pdf)
+
+<use graphs/DIALDroidBoxPlot-eps-converted-to.pdf>
+Package pdftex.def Info: graphs/DIALDroidBoxPlot-eps-converted-to.pdf used on i
+nput line 101.
+(pdftex.def)             Requested size: 505.89pt x 253.64037pt.
+Package epstopdf Info: Source file: <graphs/SEALANTBoxPlot.eps>
+(epstopdf)                    date: 2018-03-20 14:48:23
+(epstopdf)                    size: 104583 bytes
+(epstopdf)             Output file: <graphs/SEALANTBoxPlot-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2018-03-20 17:20:01
+(epstopdf)                    size: 107650 bytes
+(epstopdf)             Command: <repstopdf --outfile=graphs/SEALANTBoxPlot-eps-
+converted-to.pdf graphs/SEALANTBoxPlot.eps>
+(epstopdf)             \includegraphics on input line 106.
+Package epstopdf Info: Output file is already uptodate.
+
+<graphs/SEALANTBoxPlot-eps-converted-to.pdf, id=18, 1445.4pt x 724.7075pt>
+File: graphs/SEALANTBoxPlot-eps-converted-to.pdf Graphic file (type pdf)
+
+<use graphs/SEALANTBoxPlot-eps-converted-to.pdf>
+Package pdftex.def Info: graphs/SEALANTBoxPlot-eps-converted-to.pdf used on inp
+ut line 106.
+(pdftex.def)             Requested size: 505.89pt x 253.64037pt.
+Package epstopdf Info: Source file: <graphs/FlairBoxPlot.eps>
+(epstopdf)                    date: 2018-03-20 14:48:23
+(epstopdf)                    size: 105420 bytes
+(epstopdf)             Output file: <graphs/FlairBoxPlot-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-03-20 17:20:02
+(epstopdf)                    size: 183810 bytes
+(epstopdf)             Command: <repstopdf --outfile=graphs/FlairBoxPlot-eps-co
+nverted-to.pdf graphs/FlairBoxPlot.eps>
+(epstopdf)             \includegraphics on input line 111.
+Package epstopdf Info: Output file is already uptodate.
+
+<graphs/FlairBoxPlot-eps-converted-to.pdf, id=19, 1445.4pt x 724.7075pt>
+File: graphs/FlairBoxPlot-eps-converted-to.pdf Graphic file (type pdf)
+
+<use graphs/FlairBoxPlot-eps-converted-to.pdf>
+Package pdftex.def Info: graphs/FlairBoxPlot-eps-converted-to.pdf used on input
+ line 111.
+(pdftex.def)             Requested size: 505.89pt x 253.64037pt.
+ [3
+
+ <./graphs/CovertBoxPlot-eps-converted-to.pdf> <./graphs/DidfailBoxPlot-eps-con
+verted-to.pdf>] [4 <./graphs/DIALDroidBoxPlot-eps-converted-to.pdf> <./graphs/S
+EALANTBoxPlot-eps-converted-to.pdf>] [5 <./graphs/FlairBoxPlot-eps-converted-to
+.pdf>]
+Underfull \hbox (badness 1418) in paragraph at lines 129--130
  \OT1/cmr/bx/n/10 SEALANT[] \OT1/cmr/m/n/10 Here is some text ex-plain the tool
 
  []
 
-[2] (./Paper.aux) ) 
+[6
+
+
+] (./Paper.aux) ) 
 Here is how much of TeX's memory you used:
- 1948 strings out of 494910
- 27988 string characters out of 6179836
- 97570 words of memory out of 5000000
- 5248 multiletter control sequences out of 15000+600000
+ 1993 strings out of 494910
+ 29129 string characters out of 6179836
+ 97620 words of memory out of 5000000
+ 5274 multiletter control sequences out of 15000+600000
  5504 words of font info for 20 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  38i,7n,32p,936b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Paper.pdf (2 pages, 88490 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Paper.pdf (6 pages, 957376 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
