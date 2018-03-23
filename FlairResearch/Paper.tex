@@ -3,6 +3,9 @@
 \title{Evaluation}
 \usepackage{graphicx}
 \usepackage[margin=0.75in]{geometry}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{blindtext}
 
 \graphicspath{ {graphs/} }
 
@@ -11,9 +14,21 @@
 
 \begin{document}
 
+\section[1]{Related Work}
+	There are many existing tools that closely relate to Flair in their goals. We provide an overview of the most prevalent of those tools below:
+	\subparagraph{Covert}
+		Covert is a tool which allows for that analysing of inter-application vulnerabilities in android applications. It has been formulated to enable to analysis of bundles of applications. It has two main processes. The first is model extraction where the tool extracts models from the APK files, and the second is that formal analyzer which processes those models and presents any vulnerabilities in an xml file\cite{Covert}.
+	\subparagraph{DidFail}
+		Jianghao probably explained this already
+
+	\subparagraph{DIALDroid}
+		DIALDroid is an inter-application ICC security analysis tool with four key operations: ICC Entry / Exit Point Extraction, DataFlow Analysis, Data Aggregation, and ICC Leak Calculation\cite{DIALDroid}. DIALDroid extracts models from a given application and performs static analysis to find any ICC exit or entry leaks present. Then the information on any leaks is stored in a MySQL relational database to be retrieved via SQL queries. During the initial analysis stage DIALDroid changes the precision based on the length of the analysis. During the first five minutes of analysis DIALDroid uses a high precision algorithm to find ICC entry and exit leaks. After five minutes DIALDroid switches to a low precision algorithm that has a higher change of false negative. If the analysis runs for more than a given timeout, such as 15 minutes, DIALDroid abandons the analysis of that application altogether\cite{DIALDroid}.
+	\subparagraph{SEALANT}
+		SEALANT is an android security systems with the goal of both finding and preventing malicious android activity. It is composed of two tools: an analyzer and an interceptor. In this paper we focus only on the analyzer tool as it is closely related to our research. The analyzer works similarly to other ICC analysis tools. First, it extracts ICC paths from APK files. It then identifies vulnerable paths using formal analysis. Lastly, it entered in vulnerabilities into a list that will be used by the SEALANT interceptor tool.
+
 
 \begin{center}
-\section[1]{Empirical Evaluation}
+\section[2]{Empirical Evaluation}
 \end{center}
 
 
@@ -24,7 +39,7 @@
 	\textbf{Question 3:} How accurately does Flair analyze vulnerabilities within applications when ran against a bundle of benchmark applications?\\
 	\textbf{Question 4:} How does Flair's accuracy in analyzing applicaions compare to other inter-application analysis tools?\\
 
-\subsection{Methods of Testing}
+\subsection{Methods of Testing} \label{methods}
 \paragraph{•}
 	To test these questions we ran Flair four other inter-application analysis tools: Covert, Didfail, SEALANT, and DIALDroid. We used seven bundles of popular presented in table 1 android applications, each with fifty applications, to answer Question 1 and Questions 2. We then used three bundles of benchmark bundles also presented in table 1 to answer Question 3 and Question 4. 
 
@@ -78,60 +93,89 @@
 	
 \subsection{Threats to Validity}
 \paragraph{•}
-	\textbf{Innconsitant Runs:} Thought we ran all tests in isolated virtual machines, there still could have been issues realted to a run that is not consistant with the tools true performance. To minimize these affects we ran each tool against each bundle three times and took the averages.
+	\textbf{Innconsitant Runs:} Though we ran all tests in isolated virtual machines, there still could have been issues realted to a run that is not consistant with the tools true performance. To minimize these affects we ran each tool against each bundle three times and took the averages.
 \paragraph{•}
 	\textbf{Interal issues:} Issues related to the structure and design of the tools themselves. We are not aware of any issues of this kind.
 \paragraph{•}
 	\textbf{Measurement Issues:} Issues related to the methods we used to record and analyze our data. We did not notice any issued related to this.
 	
 
+	
+\clearpage
+\newpage
+
 \subsection{Results}
+
+%Figure that represents the box plot graphs of all the Tools
+\begin{figure}[ht]
 \onecolumn
-\begin{figure}[hb!]
-	\includegraphics[width=\textwidth]{CovertBoxPlot}
+\centering
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{CovertBoxPlot}
+		\caption{}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{DIALDroidBoxPlot}
+		\caption{}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{SEALANTBoxPlot}
+		\caption{}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{FlairBoxPlot}
+		\caption{}
+	\end{subfigure}
+	
 	\label{figure:1}
-	\caption{Box plot graph showing Covert analysis times.}
+	\caption{Box plot graphs showing tool analysis times for various tools.}
 \end{figure}
-\begin{figure}[hb!]
-	\includegraphics[width=\textwidth]{DidfailBoxPlot}
-	\label{figure:2}
-	\caption{Box plot graph showing Didfail analysis times.}
-\end{figure}
-\begin{figure}[hb!]
-	\includegraphics[width=\textwidth]{DIALDroidBoxPlot}
-	\label{figure:3}
-	\caption{Box plot showing DIALDroid analysis times.}
-\end{figure}
-\begin{figure}[hb!]
-	\includegraphics[width=\textwidth]{SEALANTBoxPlot}
-	\label{figure:4}
-	\caption{Box plot showing SEALANT analysis times.}
-\end{figure}
-\begin{figure}[hb!]
-	\includegraphics[width=\textwidth]{FlairBoxPlot}
-	\label{figure:5}
-	\caption{Box plot showing Flair analysis times.}
-\end{figure}
+
 \twocolumn
-Presumable would enter in results analysis here.
-
-\section[2]{Related Work}
+	%Average Analysis Time Graph
+	\begin{figure}
+		\includegraphics[width=\linewidth]{AverageGraph}
+		\label{figure:2}
+		\caption{Average analysis times for tools.}
+	\end{figure}
 	
-	\subparagraph{Covert}
-		Jianghao probably explained this already
-	\subparagraph{DidFail}
-		Jianghao probably explained this already
-
+	\subsection{Question 1:}
+		We first look to evaluate the analysis time of Flair in relation to Covert, DIALDroid, and SEALANT. The box plot graphs presented in Figure 1 show the spread of analysis times for each tool. This data is presented in accordance with Figure 2 which represents that average analysis time of all test run for all tools. These results show that Flair has a much smaller spread of analysis time across bundles, and much faster analysis times when analyzing bundles in an iterative fashion. Flair is able to analyze each application added to a bundle in a far faster since it only has to analyze that one application that was added, whereas the other tools analyze the entire bundle plus that additional application.\\
+		It is noticed in Figure 2 that SEALANT and Covert follow similar trends, except SEALANT shows much longer to analysis. This is most likely because SEALANT is built on top of Covert and runs Covert within its Analysis tool. In addition to Covert SEALANT also runs IC3 in its analyzer tool. The trend of covert is maintained in the data, but extra time is added with the addtion of the IC3. DIALDroid follows a trend which seems cause a great increase in time in the first few applications of a bundle. After those first few applications, DIALDroid increases at a much slower rate. Flair maintains a near horizontal trend far below the other average times.
+		
+	\subsection{Question 2:}
 	
-	\subparagraph{DIALDroid}
-		DIALDroid is an inter-application ICC security analysis tool with four key operations: ICC Entry / Exit Point Extraction, DataFlow Analysis, Data Aggregation, and ICC Leak Calculation.[1] DIALDroid extracts models from a given application and performs static analysis to find any ICC exit or entry leaks present. Then the information on any leaks is stored in a MySQL relational database to be retrieved when requested by SQL queries. During the initial analysis stage DIALDroid configures the precision based on the length of the analysis. During the first five minutes of analysis DIALDroid uses a high precision algorithm to find ICC entry and exit leaks. After five minutes DIALDroid switches to a low precision algorithm that has a higher change of false negative. If the analysis runs for more than a given timeout, such as 15 minutes, DIALDroid abandons the analysis of that application altogether.
-	\subparagraph{SEALANT}
-		Here is some text explain the tool Sealant.
-
+		%Table for the Failure Rate of Tools
+		\begin{table}[h]
+		\begin{center}
+			\begin{tabular}{ |c c| }
+				\hline
+				Tool & Percentage Failed\\
+				\hline
+				Covert & 0\\
+				DIALDroid & 32.19\\
+				SEALANT & 0\\
+				Flair & 0\\
+				\hline
+			\end{tabular}		
+			\end{center}
+		\end{table}
+		
+		To assess the rate of failure in the various tools we used the methods decribed in \ref{figure:1} 
+		
+	\subsection{Question 3:}
+		text
+	\subsection{Question 4:}
+		text
 
 
 \section[3]{Conclusion}
 Here we will have a conclusion.
+
 
 \end{document}
 
