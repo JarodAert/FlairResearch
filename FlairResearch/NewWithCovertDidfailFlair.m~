@@ -8,19 +8,15 @@ itemNo = 250;
 datap = zeros(5,itemNo);
 for  n=1:5
     for i=1:50
-        %        Covert 1,6,11...
-        datap(n,(i-1)*5+1) = Covert(n,i);
-        %        Flair 3,8,13...
-        datap(n,(i-1)*5+3) = Flair(n,i);
-        %       SEALANT 4,9,14
-        datap(n,(i-1)*5+4) = SEALANT(i,n);
-        %       DIALDroid 5,10,15
-        datap(n,(i-1)*5+5) = DIALDroid(i,n);
+        %        Covert 1,4,7...
+        datap(n,(i-1)*3+1) = Covert(n,i);
+        %        Flair 3,6,9...
+        datap(n,(i-1)*3+3) = Flair(n,i);
         if i<31
-           %        Didfail 2,7,12...
-            datap(n,(i-1)*5+2) = Didfail(n,i);
+           %        Didfail 2,5,8...
+            datap(n,(i-1)*3+2) = Didfail(n,i);
         else
-            datap(n,(i-1)*5+2) = -105;
+            datap(n,(i-1)*3+2) = -105;
         end
         
         
@@ -30,27 +26,21 @@ g = zeros(1,itemNo);
 pos = zeros(1,itemNo);
 for  n1=1:itemNo
     g(n1) = n1;
-    if mod(n1,5) == 1
+    if mod(n1,3) == 1
 %        Covert 1,4,7...
-         pos(n1) = (n1-1)/5 + 1;
-    elseif mod(n1,5) == 2
+         pos(n1) = (n1-1)/3 + 1;
+    elseif mod(n1,3) == 2
 %        Didfail 2,5,8...
-        pos(n1) = (n1-2)/5+1 +0.2;
-    elseif mod(n1,5)==3
-        %        Flair 3,6,9...
-        pos(n1) =(n1-3)/5 + 0.4;
-    elseif mod(n1,5)==4
-        %       SEALANT 4,9,14
-        pos(n1) =(n1-4)/5 + 0.6;
+        pos(n1) = (n1-2)/3+1 +0.25;
     else
-        %       DIAlDroid 5,10,15
-        pos(n1) =n1/5 + 0.8;
+        %        Flair 3,6,9...
+        pos(n1) =n1/3 + 0.5;
     end
 end
 
 %boxplot(datap,g,'positions',pos);
 
- boxplot(datap,g,'positions',pos,'whisker',5,'Widths',0.2);
+ boxplot(datap,g,'positions',pos,'whisker',5,'Widths',0.26);
  % 
  
  ax = gca;
@@ -64,22 +54,17 @@ end
 ylabel('AnalysisTime (Seconds)','FontSize',32);
 
 
-%   xAxisPos = zeros(1,itemNo/50);
-%   for n2 = 1:(itemNo/50) 
-%       y = n2*5-2;
-%       z = y+2;
-%       xAxisPos(n2) = n2*10; %mean(pos(y:z));
-%   end
-%  set(gca, 'xtick', xAxisPos);
+  xAxisPos = zeros(1,itemNo/3);
+  for n2 = 1:(itemNo/3) 
+      y = n2*3-2;
+      z = y+2;
+      xAxisPos(n2) = mean(pos(y:z));
+  end
+ set(gca, 'xtick', xAxisPos);
 
-xticks([10,20,30,40,50]);
-xticklabels({'10','20','30','40','50'});
-xlim([0,52]);
 
  
   grey =  [0.5, 0.5, 0.5];
-  lightgrey=[0.75,0.75,0.75];
-  darkgrey=[0.25,0.25,0.25];
   white = [1,1,1];
  dark =  [0.1, 0.1, 0.1];
  lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');
@@ -88,18 +73,14 @@ xlim([0,52]);
 %  Change Box Color
   h = findobj(gca,'Tag','Box');
    for j=1:length(h)
-       x = mod(j,5);
+       x = mod(j,3);
        if x == 1
            boxcolor = dark;
        elseif x==2
            boxcolor = grey;
-       elseif x==3
+       else
            %Covert
            boxcolor = white;
-       elseif x==4
-           boxcolor = darkgrey;
-       else
-           boxcolor = lightgrey;
        end    
      patch(get(h(j),'XData'),get(h(j),'YData'),boxcolor,'FaceAlpha',.5);
    end
@@ -107,7 +88,7 @@ xlim([0,52]);
   % Add Legend
      c = get(gca, 'Children');
    %  hleg1 = legend('\color{red} sin(x)','\color{blue} cos(x)');
-     hleg1 = legend({'DIALDroid','Didfail','Covert', 'Flair','SEALANT'},'Location','northwest');
+     hleg1 = legend(c(1:3),'COVERT','DIDFAIL','FLAIR');
 
     
    set(hleg1,'FontSize',25) 
