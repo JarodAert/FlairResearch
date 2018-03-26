@@ -11,16 +11,16 @@ for  n=1:5
         %        Covert 1,6,11...
         datap(n,(i-1)*5+1) = Covert(n,i);
         %        Flair 3,8,13...
-        datap(n,(i-1)*5+3) = Flair(n,i);
+        datap(n,(i-1)*5+2) = Flair(n,i);
         %       SEALANT 4,9,14
         datap(n,(i-1)*5+4) = SEALANT(i,n);
         %       DIALDroid 5,10,15
         datap(n,(i-1)*5+5) = DIALDroid(i,n);
         if i<31
            %        Didfail 2,7,12...
-            datap(n,(i-1)*5+2) = Didfail(n,i);
+            datap(n,(i-1)*5+3) = Didfail(n,i);
         else
-            datap(n,(i-1)*5+2) = -105;
+            datap(n,(i-1)*5+3) = -105;
         end
         
         
@@ -74,14 +74,13 @@ ylabel('AnalysisTime (Seconds)','FontSize',32);
 
 xticks([10,20,30,40,50]);
 xticklabels({'10','20','30','40','50'});
-xlim([0,52]);
-
- 
-  grey =  [0.5, 0.5, 0.5];
-  lightgrey=[0.75,0.75,0.75];
-  darkgrey=[0.25,0.25,0.25];
+xlim([0,50.75]);
+                                                                                                                                                                                                                                                                                                                                                                         
+  red =  [0.75, 0, 0];
+  blue=[0,0,0.75];
+  green=[0,0.75,0];
   white = [1,1,1];
- dark =  [0.1, 0.1, 0.1];
+ dark =  [0, 0, 0];
  lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');
  set(lines, 'Color', 'k');
 
@@ -90,16 +89,20 @@ xlim([0,52]);
    for j=1:length(h)
        x = mod(j,5);
        if x == 1
-           boxcolor = dark;
+           %Flair
+           boxcolor = white;
        elseif x==2
-           boxcolor = grey;
+           %Didfail
+           boxcolor = red;
        elseif x==3
            %Covert
-           boxcolor = white;
+           boxcolor = dark;
        elseif x==4
-           boxcolor = darkgrey;
+           %DIALDroid
+           boxcolor = blue;
        else
-           boxcolor = lightgrey;
+           %Sealant
+           boxcolor = green;
        end    
      patch(get(h(j),'XData'),get(h(j),'YData'),boxcolor,'FaceAlpha',.5);
    end
@@ -107,7 +110,7 @@ xlim([0,52]);
   % Add Legend
      c = get(gca, 'Children');
    %  hleg1 = legend('\color{red} sin(x)','\color{blue} cos(x)');
-     hleg1 = legend({'DIALDroid','Didfail','Covert', 'Flair','SEALANT'},'Location','northwest');
+     hleg1 = legend({'Didfail','Flair','Covert', 'DIALDroid','SEALANT'},'Location','northwest');
 
     
    set(hleg1,'FontSize',25) 
