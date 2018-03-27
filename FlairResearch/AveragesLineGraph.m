@@ -4,7 +4,6 @@ FlairAverage=xlsread('FlairResults.xlsx','Total Averages','D5:D54');
 SEALANTAverage=xlsread('FlairResults.xlsx','Total Averages','E5:E54');
 DIALDroidAverage=xlsread('FlairResults.xlsx','Total Averages','F5:F54');
 DidfailAverage=xlsread('FlairResults.xlsx','Total Averages','C5:C34');
-DIALDroidFitCurve=fit(X,DIALDroidAverage,'poly8','Normalize','on');
 
 black=[0,0,0];
 darkgrey=[0.25,0.25,0.25];
@@ -20,16 +19,13 @@ hold on
 plot(X,DIALDroidAverage,'--','Color',darkgrey);
 hold on
 plot(DidfailAverage,'-.','Color',grey);
-hold on
-plot(X,DIALDroidFitCurve,'Color','red');
 hold off
 
 legend({'Covert','Flair','SEALANT','DIALDroid','Didfail'},'Location','northwest','FontSize',14);
 
 %Set labels
-xlabel('Bundle Size(#Apps)','FontSize',26);
-ylabel('AnalysisTime (Seconds)','FontSize',26);
-title('Average Analysis Time','FontSize',32);
+xlabel('Bundle Size(#Apps)','FontSize',24);
+ylabel('AnalysisTime (Seconds)','FontSize',24);
 
 xlim([1,50]);
-ylim([0,2000]);
+ylim([-100,4000]);

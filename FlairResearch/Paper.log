@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  26 MAR 2018 08:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  26 MAR 2018 18:49
 entering extended mode
 **./Paper.tex
 (Paper.tex
@@ -311,44 +311,54 @@ Missing character: There is no € in font cmbx10!
 Missing character: There is no ¢ in font cmbx10!
  [2]
 Package epstopdf Info: Source file: <graphs/BoxPlotGraph.eps>
-(epstopdf)                    date: 2018-03-26 01:08:21
-(epstopdf)                    size: 201975 bytes
+(epstopdf)                    date: 2018-03-26 18:34:47
+(epstopdf)                    size: 213804 bytes
 (epstopdf)             Output file: <graphs/BoxPlotGraph-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-26 01:08:21
-(epstopdf)                    size: 401983 bytes
+(epstopdf)                    date: 2018-03-26 11:19:59
+(epstopdf)                    size: 296699 bytes
 (epstopdf)             Command: <epstopdf --outfile=graphs/BoxPlotGraph-eps-con
 verted-to.pdf graphs/BoxPlotGraph.eps>
 (epstopdf)             \includegraphics on input line 105.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=graphs/BoxPlotGraph-eps-converted-to.pdf graphs/Bo
+xPlotGraph.eps)...executed (allowed).
 
-<graphs/BoxPlotGraph-eps-converted-to.pdf, id=14, 1445.4pt x 852.18375pt>
+Package epstopdf Info: Result file: <graphs/BoxPlotGraph-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-03-26 18:49:33
+(epstopdf)                    size: 288008 bytes.
+
+<graphs/BoxPlotGraph-eps-converted-to.pdf, id=14, 1445.4pt x 724.7075pt>
 File: graphs/BoxPlotGraph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use graphs/BoxPlotGraph-eps-converted-to.pdf>
 Package pdftex.def Info: graphs/BoxPlotGraph-eps-converted-to.pdf used on input
  line 105.
-(pdftex.def)             Requested size: 505.89pt x 298.25577pt.
+(pdftex.def)             Requested size: 505.89pt x 253.64037pt.
 Package epstopdf Info: Source file: <graphs/AverageGraph.eps>
-(epstopdf)                    date: 2018-03-26 01:08:21
-(epstopdf)                    size: 21995 bytes
+(epstopdf)                    date: 2018-03-26 18:42:54
+(epstopdf)                    size: 23621 bytes
 (epstopdf)             Output file: <graphs/AverageGraph-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-03-26 01:08:21
 (epstopdf)                    size: 10775 bytes
 (epstopdf)             Command: <epstopdf --outfile=graphs/AverageGraph-eps-con
 verted-to.pdf graphs/AverageGraph.eps>
 (epstopdf)             \includegraphics on input line 113.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=graphs/AverageGraph-eps-converted-to.pdf graphs/Av
+erageGraph.eps)...executed (allowed).
 
-<graphs/AverageGraph-eps-converted-to.pdf, id=15, 553.06625pt x 404.51125pt>
+Package epstopdf Info: Result file: <graphs/AverageGraph-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-03-26 18:49:34
+(epstopdf)                    size: 5124 bytes.
+
+<graphs/AverageGraph-eps-converted-to.pdf, id=15, 421.575pt x 316.18124pt>
 File: graphs/AverageGraph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use graphs/AverageGraph-eps-converted-to.pdf>
 Package pdftex.def Info: graphs/AverageGraph-eps-converted-to.pdf used on input
  line 113.
-(pdftex.def)             Requested size: 247.94499pt x 181.34325pt.
+(pdftex.def)             Requested size: 247.94499pt x 185.96155pt.
 
 
-Package caption Warning: \label without proper reference on input line 115.
+Package caption Warning: \label without proper reference on input line 114.
 See the caption package documentation for explanation.
 
 
@@ -366,9 +376,6 @@ nverted-to.pdf>] (Paper.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  3334 strings out of 493323
@@ -377,7 +384,7 @@ Here is how much of TeX's memory you used:
  6841 multiletter control sequences out of 15000+200000
  5863 words of font info for 21 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,40p,974b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,7n,40p,972b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
@@ -385,9 +392,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb>
-Output written on Paper.pdf (4 pages, 519777 bytes).
+Output written on Paper.pdf (4 pages, 400053 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

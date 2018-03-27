@@ -56,7 +56,7 @@ end
  ax = gca;
  ax.FontSize = 19;
  
- ylim([-100 4200]);
+ ylim([-100 4000]);
  yt = get(gca,'YTick');
 %set(gca,'YTickLabel', sprintf('%.4f',yt))
   xlabel('Bundle Size(#Apps)','FontSize',32);
@@ -77,8 +77,8 @@ xticklabels({'10','20','30','40','50'});
 xlim([0,50.75]);
                                                                                                                                                                                                                                                                                                                                                                          
   red =  [0.75, 0, 0];
-  blue=[0,0,0.75];
-  green=[0,0.75,0];
+  blue=[0,0,1];
+  green=[0,0.25,0];
   white = [1,1,1];
  dark =  [0, 0, 0];
  lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');
