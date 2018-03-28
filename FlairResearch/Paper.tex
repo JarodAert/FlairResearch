@@ -64,7 +64,7 @@
 
 
 \paragraph{•}
-	Each test we ran to examine RQ1 was incremental in nature. A shell script was utilized to copy each application from a given bundle into a specific input directory. The shell script would then call a tool to be run against that input directory. Each application from a given bundle was copied one by one into the input directory, and the tool was run after each application was copied. This resulted in each test for a given bundle and tool to have 50 total runs. The order in which the bundles were copied into the input directories of each tool remained constant allowing the times outputted to be compared directly. 
+	Each test we ran to examine RQ1 was incremental in nature. A shell script was utilized to copy each application from a given bundle into a specific input directory. The shell script would then call a tool to be run against that input directory. Each application from a given bundle was copied one by one into the input directory, and the tool was run after each application was copied. This resulted in each test for a given bundle and tool having 50 total runs. The order in which the bundles were copied into the input directories of each tool remained constant allowing the times outputted to be compared directly. 
 \paragraph{•}
 	To investigate RQ1 we ran the test described above and recorded the time it took for the tools to analyze the bundles. At every step in the iterative process the time was recorded before the tool was run against the input directory and after the analysis was completed. These times were then written to a CSV file. Each test outputted its times to a single CSV file and the times from all tests were then combined into a master spreadsheet. These times were translated into graphs and are presented later in this paper.\\
 	In addition to analyzing the time it took each tool to analyze the bundles. We also noticed that DIALDroid would fail to analyze some applications. Each time it would fail to analyze an application it would output an error log file. After each test we would calculate the failure rate with the following calculation:\\
@@ -99,7 +99,7 @@
 \subsection{Results}
 
 %Figure that represents the box plot graphs of all the Tools
-\begin{figure*}[!ht]
+\begin{figure*}[t]
 
 \centering
 	\includegraphics[width=\linewidth]{BoxPlotGraph}

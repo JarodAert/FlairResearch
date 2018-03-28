@@ -75,8 +75,13 @@ ylabel('AnalysisTime (Seconds)','FontSize',32);
 xticks([10,20,30,40,50]);
 xticklabels({'10','20','30','40','50'});
 xlim([0,50.75]);
-                                                                                                                                                                                                                                                                                                                                                                         
-  red =  [0.75, 0, 0];
+                
+len = 5;
+red = [1, 0, 0];
+pink = [255, 192, 203]/255;
+colors = [linspace(red(1),pink(1),len)', linspace(red(2),pink(2),len)', linspace(red(3),pink(3),len)'];
+
+  red1 =  [0.75, 0, 0];
   blue=[0,0,1];
   green=[0,0.25,0];
   white = [1,1,1];
