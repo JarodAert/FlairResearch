@@ -1,24 +1,28 @@
-Covert = xlsread('ResultOfCovertNew.xlsx','Covert50','I6:BF10');
-Flair = xlsread('ResultOfCovertNew.xlsx','Flair50','I6:BF10');
-Didfail = xlsread('ResultOfCovertNew.xlsx','Didfail50','I6:BF10');
-SEALANT = xlsread('FlairResults.xlsx','SEALANT','K5:O54');
-DIALDroid = xlsread('FlairResults.xlsx','DIALDroid','L5:P54');
-itemNo = 250;
+Covert = xlsread('Flair Reseach Results.xlsx','Covert','R5:V10');
+Flair = xlsread('Flair Reseach Results.xlsx','Flair','R5:V10');
+Didfail = xlsread('Flair Reseach Results.xlsx','Didfail','P5:T8');
+SEALANT = xlsread('Flair Reseach Results.xlsx','SEALANT','R5:V10');
+DIALDroid = xlsread('Flair Reseach Results.xlsx','DIALDroid','AB5:AF10');
+itemNo = 30;
 %init Matrix
 datap = zeros(5,itemNo);
+disp(size(Covert));
+disp(Covert);
 for  n=1:5
-    for i=1:50
+    for i=1:6
+        disp((i-1)*5+1);
         %        Covert 1,6,11...
-        datap(n,(i-1)*5+1) = Covert(n,i);
+        datap(n,(i-1)*5+1) = Covert(i,n);
+        
         %        Flair 3,8,13...
-        datap(n,(i-1)*5+2) = Flair(n,i);
+        datap(n,(i-1)*5+2) = Flair(i,n);
         %       SEALANT 4,9,14
         datap(n,(i-1)*5+4) = SEALANT(i,n);
         %       DIALDroid 5,10,15
         datap(n,(i-1)*5+5) = DIALDroid(i,n);
-        if i<31
+        if i<4
            %        Didfail 2,7,12...
-            datap(n,(i-1)*5+3) = Didfail(n,i);
+            datap(n,(i-1)*5+3) = Didfail(i,n);
         else
             datap(n,(i-1)*5+3) = -105;
         end
@@ -56,7 +60,7 @@ end
  ax = gca;
  ax.FontSize = 19;
  
- ylim([-100 4000]);
+ ylim([-100 2500]);
  yt = get(gca,'YTick');
 %set(gca,'YTickLabel', sprintf('%.4f',yt))
   xlabel('Bundle Size(#Apps)','FontSize',32);
@@ -72,14 +76,11 @@ ylabel('AnalysisTime (Seconds)','FontSize',32);
 %   end
 %  set(gca, 'xtick', xAxisPos);
 
-xticks([10,20,30,40,50]);
-xticklabels({'10','20','30','40','50'});
-xlim([0,50.75]);
+xticks([1,2,3,4,5,6]);
+xticklabels({'1','10','20','30','40','50'});
+xlim([0,6.5]);
                 
-len = 5;
-red = [1, 0, 0];
-pink = [255, 192, 203]/255;
-colors = [linspace(red(1),pink(1),len)', linspace(red(2),pink(2),len)', linspace(red(3),pink(3),len)'];
+
 
   light =  [0.75, 0.75, 0.75];
   grey=[0.5,0.5,0.5];
@@ -119,5 +120,3 @@ colors = [linspace(red(1),pink(1),len)', linspace(red(2),pink(2),len)', linspace
 
     
    set(hleg1,'FontSize',25) 
-  
-

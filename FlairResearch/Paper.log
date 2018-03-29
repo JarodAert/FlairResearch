@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  27 MAR 2018 10:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  28 MAR 2018 18:37
 entering extended mode
 **./Paper.tex
 (Paper.tex
@@ -288,106 +288,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
-[1
+! I can't write on file `Paper.pdf'.
+Please type another file name for output
+! Emergency stop.
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.71 	\begin{center}
+                    
+*** (job aborted, file error in nonstop mode)
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Missing character: There is no â in font cmbx10!
-Missing character: There is no € in font cmbx10!
-Missing character: There is no ¢ in font cmbx10!
-Missing character: There is no â in font cmbx10!
-Missing character: There is no € in font cmbx10!
-Missing character: There is no ¢ in font cmbx10!
-Missing character: There is no â in font cmbx10!
-Missing character: There is no € in font cmbx10!
-Missing character: There is no ¢ in font cmbx10!
-Missing character: There is no â in font cmbx10!
-Missing character: There is no € in font cmbx10!
-Missing character: There is no ¢ in font cmbx10!
-Missing character: There is no â in font cmbx10!
-Missing character: There is no € in font cmbx10!
-Missing character: There is no ¢ in font cmbx10!
-Missing character: There is no â in font cmbx10!
-Missing character: There is no € in font cmbx10!
-Missing character: There is no ¢ in font cmbx10!
- [2]
-Package epstopdf Info: Source file: <graphs/BoxPlotGraph.eps>
-(epstopdf)                    date: 2018-03-26 18:34:47
-(epstopdf)                    size: 213804 bytes
-(epstopdf)             Output file: <graphs/BoxPlotGraph-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-26 18:49:33
-(epstopdf)                    size: 288008 bytes
-(epstopdf)             Command: <epstopdf --outfile=graphs/BoxPlotGraph-eps-con
-verted-to.pdf graphs/BoxPlotGraph.eps>
-(epstopdf)             \includegraphics on input line 105.
-Package epstopdf Info: Output file is already uptodate.
-
-<graphs/BoxPlotGraph-eps-converted-to.pdf, id=14, 1445.4pt x 724.7075pt>
-File: graphs/BoxPlotGraph-eps-converted-to.pdf Graphic file (type pdf)
-
-<use graphs/BoxPlotGraph-eps-converted-to.pdf>
-Package pdftex.def Info: graphs/BoxPlotGraph-eps-converted-to.pdf used on input
- line 105.
-(pdftex.def)             Requested size: 505.89pt x 253.64037pt.
-Package epstopdf Info: Source file: <graphs/AverageGraph.eps>
-(epstopdf)                    date: 2018-03-26 18:42:54
-(epstopdf)                    size: 23621 bytes
-(epstopdf)             Output file: <graphs/AverageGraph-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-26 18:49:34
-(epstopdf)                    size: 5124 bytes
-(epstopdf)             Command: <epstopdf --outfile=graphs/AverageGraph-eps-con
-verted-to.pdf graphs/AverageGraph.eps>
-(epstopdf)             \includegraphics on input line 113.
-Package epstopdf Info: Output file is already uptodate.
-
-<graphs/AverageGraph-eps-converted-to.pdf, id=15, 421.575pt x 316.18124pt>
-File: graphs/AverageGraph-eps-converted-to.pdf Graphic file (type pdf)
-
-<use graphs/AverageGraph-eps-converted-to.pdf>
-Package pdftex.def Info: graphs/AverageGraph-eps-converted-to.pdf used on input
- line 113.
-(pdftex.def)             Requested size: 247.94499pt x 185.96155pt.
-
-
-Package caption Warning: \label without proper reference on input line 114.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `figure:2' on page 3 undefined on input line 120.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
-
- []
-
-[3
-
- <./graphs/AverageGraph-eps-converted-to.pdf>] [4 <./graphs/BoxPlotGraph-eps-co
-nverted-to.pdf>] (Paper.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 3334 strings out of 493323
- 52202 string characters out of 3139066
- 129880 words of memory out of 3000000
- 6841 multiletter control sequences out of 15000+200000
- 5863 words of font info for 21 fonts, out of 3000000 for 9000
+ 3299 strings out of 493323
+ 51640 string characters out of 3139066
+ 129918 words of memory out of 3000000
+ 6827 multiletter control sequences out of 15000+200000
+ 5504 words of font info for 20 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,40p,972b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb>
-Output written on Paper.pdf (4 pages, 400052 bytes).
-PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 42i,7n,40p,868b,258s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
