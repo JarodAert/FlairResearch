@@ -6,6 +6,9 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{blindtext}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{wasysym} %For checkbox
 
 \graphicspath{ {graphs/} }
 
@@ -33,12 +36,12 @@
 \paragraph{•}
 	We tested Flair's performance in relation to the following questions:\\
 	\textbf{RQ1:} How does Flair compare to other inter-application communication analysis tools in respect to the amount of time it takes to analyze a bundle of applications?\\
-	\textbf{RQ2:} How accurately does Flair analyze privilege escalation vulnerabilities within applications when ran against a bundle of benchmark applications?\\
+	\textbf{RQ2:} How accurately does Flair analyze privilege escalation vulnerabilities within applications when run against a bundle of benchmark applications?\\
 	\textbf{RQ3:} How does Flair's accuracy in analyzing privilege escalations compare to other inter-application communication analysis tools?\\
 
 \subsection{Methods of Testing} \label{methods}
 \paragraph{•}
-	To test these questions we ran Flair four other inter-application analysis tools: Covert, Didfail, SEALANT, and DIALDroid. We used seven bundles of popular applications presented in table 1, each with fifty applications, to answer RQ1. We then used two bundles of benchmark bundles also presented in table 1 to answer RQ2 and RQ3. 
+	To test these questions we ran Flair against four other inter-application analysis tools: Covert, Didfail, SEALANT, and DIALDroid. We used seven bundles of popular applications presented in table 1, each with fifty applications, to answer RQ1. Each of these bundles contained different applications or applications in a different order than the other bundles. We then used two bundles of benchmark bundles also presented in table 1 to answer RQ2 and RQ3. 
 
 \begin{table}[h]
 \begin{center}
@@ -66,17 +69,14 @@
 \paragraph{•}
 	Each test we ran to examine RQ1 was incremental in nature. A shell script was utilized to copy each application from a given bundle into a specific input directory. The shell script would then call a tool to be run against that input directory. Each application from a given bundle was copied one by one into the input directory, and the tool was run after each application was copied. This resulted in each test for a given bundle and tool having 50 total runs. The order in which the bundles were copied into the input directories of each tool remained constant allowing the times outputted to be compared directly. 
 \paragraph{•}
-	To investigate RQ1 we ran the test described above and recorded the time it took for the tools to analyze the bundles. At every step in the iterative process the time was recorded before the tool was run against the input directory and after the analysis was completed. These times were then written to a CSV file. Each test outputted its times to a single CSV file and the times from all tests were then combined into a master spreadsheet. These times were translated into graphs and are presented later in this paper.\\
-	In addition to analyzing the time it took each tool to analyze the bundles. We also noticed that DIALDroid would fail to analyze some applications. Each time it would fail to analyze an application it would output an error log file. After each test we would calculate the failure rate with the following calculation:\\
+	To investigate RQ1 we ran the test described above and recorded the time it took for the tools to analyze the bundles. At every step in the iterative process the time was recorded before the tool was run against the input directory and after the analysis was completed. These times were then written to a CSV file. Each test outputted its times to a single CSV file and the times from all tests were then combined into a master spreadsheet. These times were translated into graphs and are presented later in this paper. All tests were run three times to increase the validity of our results.\\
+	 We also noticed that DIALDroid would fail to analyze some applications. Each time it would fail to analyze an application it would output an error log file. After each test we would calculate the failure rate with the following calculation:\\
 	\begin{center}
 		\(\frac{failed}{num}=FR\)
 	\end{center}
 	Where \textit{failed} is the number of error logs given by the tool, \textit{num} is the total number of applications run in the test, 1250, and \textit{FR} is the failure rate  in that test. These failure rates were recorded and averaged. We did not notice any of the other tools failing to analyze applications during our tests.
 \paragraph{•}
-	
-	\textbf{Here will go text explaining RQ3 procedure.}
-\paragraph{•}
-	\textbf{Here will go text explaining Question 4 procedure.}
+	To answer both RQ2 and RQ3 we used the benchmark bundles DroidBench 2.0 ICCTA-Branch, and ICC-Bench to analyze how well each tool is at detecting ICC vulnerabilities. We selected various applications from each bundles intended to represent a wide range of security vulnerabilties present in android. Each tool was run against each specific benchmark applications and it was then recorded whether or not the tool was able to detect the vulnerability present in the benchmark application. These results are presented in \c.p{Benchmark table}, later in this paper.
 
 \subsection{Variables}
 \paragraph{•}
@@ -84,7 +84,7 @@
 	\textbf{Dependent:} The dependent variables in our study are as follows: (1) Time it takes for tool to analyze a bundle. (2) Number of applications that a tool fails to analyze. (3) The accuracy of the analysis.
 	
 \subsection{Testing Environment}
-	All testing for Question 1 and RQ2 was done on virtual machines running within Oracle VirtualBox. Each of these machines was running Ubuntu 16.04 and had 8 processing threads clocked at 2.28 Ghz. The memory varied due to the fact that each tool had differing memory requirements. For Covert, Didfail, and Flair the machine was given 3 GB of memory. SEALANT required more memory to run and was given 6 GB. DIALDroid, the most memory intensive, was given 14 GB. These memory amounts were established by examining how much memory was allocated for each tool. The tools were each run with an excess of memory avaliable and then it was observed how much memory they each used. The tools were then given the amount of memory that each was observed to have used.
+	All testing for RQ11 and RQ2 was done on virtual machines running within Oracle VirtualBox. Each of these machines was running Ubuntu 16.04 and had 8 processing threads clocked at 2.28 Ghz. We intended to run each tool with 3 Gb of memory allocated to their respective VM. In our testing it became apparent that both SEALANT and DIALDroid were unable to run with only 3 Gb of memory, therefore we assigned each tool 14 Gb of memory as this was the minimum amount of memory both tools were able to run at. This is advantageous for these two tool. Nonetheless, the results in \c.f{Results section} show that they are not as efficient as Flair in terms of scale-ability and just as accurate in detecting vulnerabilities.
 \subsection{Threats to Validity}
 \paragraph{•}
 	\textbf{Inconsistent Runs:} Though we ran all tests in isolated virtual machines, there still could have been issues related to a run that is not consistent with the tools true performance. To minimize these affects we ran each tool against each bundle three times and took the averages.
@@ -93,39 +93,95 @@
 \paragraph{•}
 	\textbf{Measurement Issues:} Issues related to the methods we used to record and analyze our data. We did not notice any issued related to this.
 	
-\clearpage
-\newpage
+
 
 \subsection{Results}
-
-%Figure that represents the box plot graphs of all the Tools
-\begin{figure*}[!ht]
-
-\centering
-	\includegraphics[width=\linewidth]{BoxPlotGraph}
-	\label{figure:1}
-	\caption{Box plot graphs showing tool analysis times for various tools.}
-\end{figure*}
-
-
-	%Average Analysis Time Graph
-	\begin{figure}[H]
-		\includegraphics[width=\linewidth]{AverageGraph}
-		\label{figure:2}
-		\caption{Average analysis times for tools.}
-	\end{figure}
 	
-	\subsection{RQ1:}
-		We first look to evaluate the analysis time of Flair in relation to Covert, DIALDroid, and SEALANT. The box plot graphs presented in Figure 1 show the spread of analysis times for each tool. This data is presented in accordance with Figure 2 which represents the average analysis time of all tests run for all tools. These results show that Flair has a much smaller spread of analysis time across bundles, and much faster analysis times when analyzing bundles in an iterative fashion. Flair is able to analyze each application added to a bundle far faster since it only has to analyze the one application that was added, whereas the other tools analyze the entire bundle plus an additional application.\\
-		It is shown in Figure 2 that SEALANT and Covert follow similar trends, except SEALANT shows much greater analysis times. This is most likely because SEALANT is built on top of Covert and runs Covert within its Analysis tool. In addition to Covert SEALANT also runs IC3 in its analyzer tool. The trend of covert is maintained in the data, but extra time is added with the addition of the IC3. DIALDroid follows a trend which appears to cause a great increase in time during the first few applications of a bundle. After those first few applications, DIALDroid increases at a much slower rate. Didfail's analysis times grows far faster than any of the other tools. Though it is not presented in \ref{figure:2}, Didfail fails to make it all the way to fifty applications. It could only a bundle of thirty applications before failing. Flair maintains a near horizontal trend far below the other average times. This is due to its iterative analysis process. It has no need to analyze the whole bundle again, only the application that was added.\\
+	\subsubsection{RQ1:}
+		We first look to evaluate the analysis time of Flair in relation to Covert, DIALDroid, and SEALANT. The box plot graphs presented in Figure 1 show the spread of analysis times for each tool at various points in our incremental testing. Though, the graph shows increases in bundle size by ten(or five if we uses 5 different graphs), only one app was added at a time in our testing. This data is presented in accordance with Figure 2 which represents the average analysis time of all tests run for all tools. All of the tools show differing trends in average analysis time, spread of their analysis times, and symmetry of the analysis times at a given bundle size. \\
+		The data presented in \c.p{Average Lines graph} show that Flair maintains analysis times far below any of the other tools. Flair is able to do this since it does not have to re-analyze the entire bundle when another application is added. Unlike the other tools, Flair only analyzes the application that was added to the bundle, greatly decreasing analysis times. The other tools show much higher analysis times, with Didfail by far taking the longest to analyze bundles of applications. In addition, Didfail was unable to analyze bundles larger than 30 applications. Once 30 applications were reached, Didfail failed to produce any results from the analysis. Covert shows a steadily increasing trend of analysis times. Therefore, even though Covert forms the foundations for Flair, Flair is able to greatly reduce times analysis of bundles in an incremental environment. SEALANT and DIALDroid both maintain average analysis times that are greater than both Flair and Covert, but are far below those of Didfail. Even though they use far more resources than either Flair or Covert, they are unable to compete in scale-ability.\\
+		In \c.p{Box Plot Figure} we present the spread and symmetry of each tools analysis times at various points in the incremental testing. Each tool has a certian amount of variability presented in the IQR of their given box plots. Flair maintains the lowest amount of variability by far. Therefore, Flair's analysis times are able to more easily predicted than any of the other tools. Covert in particular shows an extremely large amount of variability in the IQRs of its box plots, particularly when the bundle sizes increase to being over thirty applications DIALDroid and SEALANT both maintain spreads that are lower than those of Covert or even Didfail, but are still far greater than the spreads for Flair. It is clear that Flair is far more consistant in its analysis of bundles, where the other tools become far less predictable when the bundle sizes increase. The symmetry of these tools also differs. SEALANT has very symmetrical data all the way through the testing. Covert maintains a similar level of symmetry in its analysis times. DIALDroid and Covert, on the other hand, have widely varying symmetries presented in their box plots. These tools tend to have their analysis times for various bundles skewed to the right, though Covert becomes more symmetrical as the bundle size increases. Didfail, like Covert, has data that skews to the right with smaller bundles, but trends towards being more symmetrical as the bundles sizes increase.// 		
+		To assess the rate of failure we used the methods described in \ref{methods} to find the percentage of applications in each test which failed. The data we collected shows that while Covert, SEALANT, Didfail, and Flair do not fail to analyze any of the applications, DIALDroid failed a significant \textit{28.54 percent} of applications on average across all runs. This was primarily because DIALDroid would attempt to allocate more than our allotted 14 GB of memory, which was more than twice that allocated to any of the other tools. SEALANT, Covert, Didfail, and Flair all were able to run without any memory issues with far less memory. Therefore, Flair is able to analyze applications as reliably in terms of failure rate as well as SEALANT, Covert, and Didfail, while analyzing applications more reliably than DIALDroid.
 		
-		To assess the rate of failure we used the methods described in \ref{methods} to find the percentage of applications in each test which failed. The data we collected shows that while Covert, SEALANT, Didfail, and Flair do not fail to analyze any of the applications, DIALDroid failed a significant \textit{32.19 percent\textbf{(NOT FINAL NUMBER)}} of applications on average across all runs. This was primarily because DIALDroid would attempt to allocate more than our allotted 14 GB of memory, which was more than twice that allocated to any of the other tools. SEALANT, Covert, Didfail, and Flair all were able to run without any memory issues with far less memory. Therefore, Flair is able to analyze applications as reliably in terms of failure rate as well as SEALANT, Covert, and Didfail, while analyzing applications more reliably than DIALDroid.
-		
-	\subsection{RQ3:}
-		text
-	\subsection{Question 4:}
-		text
+			
+	\begin{table*}[hb]
+\definecolor{trueColor}{RGB}{98,152,61}
+\definecolor{falseColor}{RGB}{192,0,0}
+\newcommand{\tp}{\textbf{\normalsize{\textcolor{trueColor}{\CheckedBox}}}}
+\newcommand{\fp}{\normalsize{\textcolor{falseColor}{\XBox}}}
+\newcommand{\fn}{\normalsize{\textcolor{falseColor}{\Square}}}
 
+\definecolor{light-gray}{gray}{0.90}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+
+\scriptsize
+\centering
+	\vspace{+0.3cm}
+	%\caption{Comparison between \@name, DidFail, and AmanDroid. TP, FP and FN are represented by symbols \tp, \fp, \fn, respectively. (X\#) indicates the number \# of detected instances for the corresponding symbol X.  
+	%\label{table_comparison}}
+	\begin{tabular}{|p{0.07cm}|l|l|l|l|l|p{0.8cm}|}
+		\hline
+		& Test Case & DidFail & SEALANT &  DIALDroid & Covert & Flair \\ %DroidGuard \\
+		\hline
+		\hline
+		%\multicolumn{7}{|c|}{\cellcolor{light-gray}DroidBench2}\\\hline
+		\parbox[t]{2mm}{\multirow{23}{*}{\rotatebox[origin=c]{90}{DroidBench2}}}
+		%\parbox[t]{2mm}{\multirow{16}{*}{\rotatebox[origin=c]{90}{IPC}}}
+		&ICC\_bindService1    &\fp \fn &\tp &\tp	 &\tp	&\tp		\\
+		&ICC\_bindService2    &\fn &\tp	&\fn &\tp &\tp			\\
+		&ICC\_bindService3    &\fn &\tp	&\fn &\tp &\tp			\\
+		&ICC\_bindService4    &\fp \scriptsize (\fn \scriptsize 2)	&(\tp \scriptsize 2) &\tp\fn &\scriptsize (\tp \scriptsize 2) &\scriptsize (\tp \scriptsize 2)	\\
+		&ICC\_sendBroadcast1  &\tp &\tp &\tp &\tp &\tp \\
+		&ICC\_startActivity1  &\fn &\fn &\tp &\tp &\tp \\
+		&ICC\_startActivity2  &\fn	&\tp	&\tp	&\tp &\tp \\
+		&ICC\_startActivity3  &\fn	&\tp	&\tp	&\tp &\tp \\
+		&ICC\_startActivity4  &\fp	&	&\fn &	& 	\\
+		&ICC\_startActivity5  &\scriptsize (\fp \scriptsize 2)	&\fn	&\fn\ & &	\\
+		&ICC\_startActivityForResult1 	&\fn	&\tp &\tp &\tp	&\tp\\
+		&ICC\_startActivityForResult2 &\fn &\tp &\tp &\tp &\tp\\
+		&ICC\_startActivityForResult3 &\fn &\t- &\fn	&\tp	&\tp\\
+		&ICC\_startActivityForResult4 &\scriptsize (\fn \scriptsize 2)	&\tp\fn	&\tp\fn  & \scriptsize (\tp \scriptsize 2)	& \scriptsize (\tp \scriptsize 2)\\
+		&ICC\_startService1   &\fp \tp &\fn &\tp	&\tp &\tp\\
+		&ICC\_startService2   &\fp \tp &\fn &\tp &\tp &\tp\\
+		%\cline{2-7}
+		%\parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{C.Provider}}}	
+		&ICC\_delete1		&\fn	&\fn &\fn 	&\tp	&\tp	\\
+		&ICC\_insert1		&\fn	&\fn  &\fn	&\tp	&\tp	\\
+		&ICC\_query1		&\fn	&\fn  &\fn	&\tp	&\tp	\\
+		&ICC\_update1		&\fn	&\fn  &\fn	&\tp	&\tp	\\
+		%\cline{2-7}
+		%\parbox[t]{2mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{IAC}}}	
+		&IAC\_startActivity1	 &\tp \fp &\fn &\fn	&\tp	&\tp\\
+		&IAC\_startService1  &\tp &\fn &\fn &\tp &\tp\\
+		&IAC\_sendBroadcast1 &\tp &\fn &\fn &\tp	&\tp\\
+		\hline
+		\parbox[t]{2mm}{\multirow{9}{*}{\rotatebox[origin=c]{90}{ICC-Bench}}}
+		%\multicolumn{7}{|c|}{ICC-Bench}\\\hline
+		&Explicit\_Src\_Sink &\fn &\fn &\tp &\tp &\tp\\		
+		&Implicit\_Action  &\tp &\fn &\tp & \tp &\tp\\
+		&Implicit\_Category  &\tp &\fn &\tp &\tp &\tp\\
+		&Implicit\_Data1 &\tp &\fn &\tp &\tp  &\tp\\
+		&Implicit\_Data2 &\tp &\fn &\tp &\tp  &\tp\\
+		&Implicit\_Mix1 &\tp &\tp &\tp &\tp  &\tp\\
+		&Implicit\_Mix2 &\tp &\fn &\tp &\tp  &\tp\\
+		&DynRegisteredReceiver1 &\fn &\fn &\tp &\fn &\fn\\ 	
+		&DynRegisteredReceiver2 &\fn &\fn &\tp &\fn &\fn\\ 			
+		\hline		
+		\multicolumn{2}{|l|}{\textbf{Precision}}& 55\%&XX\%&XX\%&100\%&100\%\\
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Recall}}& 37\%&XX\%&XX\%&97\%&97\%\\
+		\hline
+		\multicolumn{2}{|l|}{\textbf{F-measure}}& 44\%&XX\%&XX\%&98\%&98\%\\
+		\hline
+		\hline
+\end{tabular}
+\end{table*}		
+		
+	\subsubsection{RQ2:}
+		To test Flair's accuracy in identifying ICC vulnerabilities in Android we used a selection of test applications from two benchmark bundles: DroidBench 2.0 ICCTA Branch and ICC-Bench. The results of these tests are shown in \c.p{Benchmarks Table}. These results that Flair is able to detect nearly all ICC vulnerabilties within these benchmark bundles. Flair is able to maintain a very high level of accuracy in detecting ICC vulnerabilities, while still greatly decreasing analysis time and variability. 
+		
+	\subsubsection{RQ3:}
+		We also ran the same benchmark applications against Didfail, SEALANT,DIALDroid, and Covert so that we could compare how Flair related to other tools. While Covert was able to maintain the same levels of accuracy as Flair, our results showed that the other tools were not as accurate at detecting ICC vulnerabilities. Though, DIALDroid was the able to detect the two vulnerabilities that Flair was unable to detect, DynRegisteredReciever1 and 2, it was unable to detect many of the other vulnerabilities that we tested for. In particular, DIALDroid struggled to detect all vulnerabilties when there were multiple present in a single application. On both ICC bindService4 and ICC startActivityForResult4 it detected on of the present vulnerabilties, but failed to address the other. SEALANT failed to detect many of the present in our tests, as did Didfail. Didfail also reported multiple false positives, whereas we did not notice any of the other tools reporting false positives. Overall, Flair and Covert present accurate and reliable analysis of benchmark applications, while Didfail, SEALANT, and DIALDroid struggle to report all of the vulnerabilties present in Android applications today.
 
 \section[3]{Conclusion}
 Here we will have a conclusion.
