@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 MAR 2018 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 MAR 2018 03:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -181,6 +181,12 @@ Overfull \hbox (3.69864pt too wide) in paragraph at lines 31--33
 LaTeX Font Warning: Font shape `U/wasy/bx/n' in size <10> not available
 (Font)              Font shape `U/wasy/b/n' tried instead on input line 33.
 
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 45.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <7> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 45.
 
 Overfull \hbox (3.69864pt too wide) in paragraph at lines 61--63
 [][]| 
@@ -189,23 +195,24 @@ Overfull \hbox (3.69864pt too wide) in paragraph at lines 61--63
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./OldChart.aux) ) 
 Here is how much of TeX's memory you used:
- 2178 strings out of 492995
- 29398 string characters out of 6132704
+ 2194 strings out of 492995
+ 29674 string characters out of 6132704
  118025 words of memory out of 5000000
- 5728 multiletter control sequences out of 15000+600000
+ 5741 multiletter control sequences out of 15000+600000
  5113 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,15n,35p,234b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/wasy2-ps/wasy
-10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/wasy2-ps/wasyb10.
-pfb>
-Output written on OldChart.pdf (1 page, 42427 bytes).
+/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/wasy2-ps/wasy10
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/wasy2-ps/wasyb10.pf
+b>
+Output written on OldChart.pdf (1 page, 49577 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
