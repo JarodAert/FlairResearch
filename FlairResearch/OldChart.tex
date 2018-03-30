@@ -22,59 +22,59 @@
 	\vspace{+0.3cm}
 	%\caption{Comparison between \@name, DidFail, and AmanDroid. TP, FP and FN are represented by symbols \tp, \fp, \fn, respectively. (X\#) indicates the number \# of detected instances for the corresponding symbol X.  
 	%\label{table_comparison}}
-	\begin{tabular}{|p{0.07cm}|l|l|l|l|p{0.8cm}|}
+	\begin{tabular}{|p{0.07cm}|l|l|l|l|l|p{0.8cm}|}
 		\hline
-		& Test Case & DidFail & AmanDroid &  {\footnotesize S}EPAR \\ %DroidGuard \\
+		& Test Case & DidFail & SEALANT &  DIALDroid & Covert & Flair \\ %DroidGuard \\
 		\hline
 		\hline
 		%\multicolumn{7}{|c|}{\cellcolor{light-gray}DroidBench2}\\\hline
 		\parbox[t]{2mm}{\multirow{23}{*}{\rotatebox[origin=c]{90}{DroidBench2}}}
 		%\parbox[t]{2mm}{\multirow{16}{*}{\rotatebox[origin=c]{90}{IPC}}}
-		&ICC\_bindService1    &\fp \fn	&\fn	 &\tp		\\
-		&ICC\_bindService2    &\fn		&\fn	 &\tp		\\
-		&ICC\_bindService3    &\fn		&\fn	 &\tp		\\
-		&ICC\_bindService4    &\fp \scriptsize (\fn \scriptsize 2)	&\scriptsize (\fn \scriptsize 2)	 &\scriptsize (\tp \scriptsize 2)	\\
-		&ICC\_sendBroadcast1  &\tp			&\tp &\tp \\
-		&ICC\_startActivity1  &\fn 		&\tp	 &\tp \\
-		&ICC\_startActivity2  &\fn			&\tp		&\tp \\
-		&ICC\_startActivity3  &\fn			&\tp		&\tp \\
-		&ICC\_startActivity4  &\fp		&	&		\\
-		&ICC\_startActivity5  &\scriptsize (\fp \scriptsize 2)		&	&	\\
-		&ICC\_startActivityForResult1 	&\fn		&\tp  &\tp	\\
-		&ICC\_startActivityForResult2 &\fn		&\fn  &\tp \\
-		&ICC\_startActivityForResult3 &\fn		&\fn\fp	&\tp	\\
-		&ICC\_startActivityForResult4 &\scriptsize (\fn \scriptsize 2)	&\tp\fp\fn	 & \scriptsize (\tp \scriptsize 2)	\\
-		&ICC\_startService1   &\fp \fn	 &\tp	&\tp	\\
-		&ICC\_startService2   &\fp \fn	 &\fn	&\tp	\\
+		&ICC\_bindService1    &\fp \fn &\fn &\tp	 &\tp	&\tp		\\
+		&ICC\_bindService2    &\fn &\fn	&\fn &\tp &\tp			\\
+		&ICC\_bindService3    &\fn &\fn	&\fn &\tp &\tp			\\
+		&ICC\_bindService4    &\fp \scriptsize (\fn \scriptsize 2)	&\fn &\tp\fn &\scriptsize (\tp \scriptsize 2) &\scriptsize (\tp \scriptsize 2)	\\
+		&ICC\_sendBroadcast1  &\tp &\fn &\fn &\tp &\tp \\
+		&ICC\_startActivity1  &\fn &\fn &\fn &\tp &\tp \\
+		&ICC\_startActivity2  &\fn	&\fn	&\fn	&\tp &\tp \\
+		&ICC\_startActivity3  &\fn	&\fn	&\fn	&\tp &\tp \\
+		&ICC\_startActivity4  &\fp	&	&\fn &	& 	\\
+		&ICC\_startActivity5  &\scriptsize (\fp \scriptsize 2)	&\fn	&\fn & &	\\
+		&ICC\_startActivityForResult1 	&\fn	&\fn &\fn &\tp	&\tp\\
+		&ICC\_startActivityForResult2 &\fn &\fn &\fn &\tp &\tp\\
+		&ICC\_startActivityForResult3 &\fn &\fn &\fn	&\tp	&\tp\\
+		&ICC\_startActivityForResult4 &\scriptsize (\fn \scriptsize 2)	&\fn	&\fn  & \scriptsize (\tp \scriptsize 2)	& \scriptsize (\tp \scriptsize 2)\\
+		&ICC\_startService1   &\fp \fn &\fn &\fn	&\tp &\tp\\
+		&ICC\_startService2   &\fp \fn &\fn &\fn &\tp &\tp\\
 		%\cline{2-7}
 		%\parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{C.Provider}}}	
-		&ICC\_delete1		&\fn		&\fn 	&\tp		\\
-		&ICC\_insert1		&\fn		&\fn 	&\tp		\\
-		&ICC\_query1			&\fn		&\fn 	&\tp		\\
-		&ICC\_update1		&\fn		&\fn 	&\tp		\\
+		&ICC\_delete1		&\fn	&\fn &\fn 	&\tp	&\tp	\\
+		&ICC\_insert1		&\fn	&\fn  &\fn	&\tp	&\tp	\\
+		&ICC\_query1		&\fn	&\fn  &\fn	&\tp	&\tp	\\
+		&ICC\_update1		&\fn	&\fn  &\fn	&\tp	&\tp	\\
 		%\cline{2-7}
 		%\parbox[t]{2mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{IAC}}}	
-		&IAC\_startActivity1	 &\tp \fp	 &\fn	&\tp	\\
-		&IAC\_startService1  &\tp		 &\fn	&\tp	\\
-		&IAC\_sendBroadcast1 &\tp		 &\fn	&\tp	\\
+		&IAC\_startActivity1	 &\tp \fp &\fn &\fn	&\tp	&\tp\\
+		&IAC\_startService1  &\tp &\fn &\fn &\tp &\tp\\
+		&IAC\_sendBroadcast1 &\tp &\fn &\fn &\tp	&\tp\\
 		\hline
 		\parbox[t]{2mm}{\multirow{9}{*}{\rotatebox[origin=c]{90}{ICC-Bench}}}
 		%\multicolumn{7}{|c|}{ICC-Bench}\\\hline
-		&Explicit\_Src\_Sink &\fn &\tp &\tp\\		
-		&Implicit\_Action  &\tp &\tp & \tp\\
-		&Implicit\_Category  &\tp &\tp &\tp \\
-		&Implicit\_Data1 &\tp &\tp &\tp  \\
-		&Implicit\_Data2 &\tp &\tp &\tp  \\
-		&Implicit\_Mix1 &\tp &\tp &\tp  \\
-		&Implicit\_Mix2 &\tp &\tp &\tp  \\
-		&DynRegisteredReceiver1 &\fn &\tp &\fn \\ 	
-		&DynRegisteredReceiver2 &\fn &\fn &\fn \\ 			
+		&Explicit\_Src\_Sink &\fn &\fn &\fn &\tp &\tp\\		
+		&Implicit\_Action  &\tp &\fn &\fn & \tp &\tp\\
+		&Implicit\_Category  &\tp &\fn &\fn &\tp &\tp\\
+		&Implicit\_Data1 &\tp &\fn &\fn &\tp  &\tp\\
+		&Implicit\_Data2 &\tp &\fn &\fn &\tp  &\tp\\
+		&Implicit\_Mix1 &\tp &\fn &\fn &\tp  &\tp\\
+		&Implicit\_Mix2 &\tp &\fn &\fn &\tp  &\tp\\
+		&DynRegisteredReceiver1 &\fn &\fn &\fn &\fn &\fn\\ 	
+		&DynRegisteredReceiver2 &\fn &\fn &\fn &\fn &\fn\\ 			
 		\hline		
-		\multicolumn{2}{|l|}{\textbf{Precision}}& 55\%&86\%&100\%\\
+		\multicolumn{2}{|l|}{\textbf{Precision}}& 55\%&XX\%&XX\%&100\%&100\%\\
 		\hline
-		\multicolumn{2}{|l|}{\textbf{Recall}}& 37\%&48\%&97\%\\
+		\multicolumn{2}{|l|}{\textbf{Recall}}& 37\%&XX\%&XX\%&97\%&97\%\\
 		\hline
-		\multicolumn{2}{|l|}{\textbf{F-measure}}& 44\%&63\%&98\%\\
+		\multicolumn{2}{|l|}{\textbf{F-measure}}& 44\%&XX\%&XX\%&98\%&98\%\\
 		\hline
 		\hline
 \end{tabular}

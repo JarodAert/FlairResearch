@@ -1,12 +1,12 @@
 %Read Data in
-Covert = xlsread('ResultOfCovertNew.xlsx','Covert50','I6:BF10');
-itemNo=50;
+Covert = xlsread('Flair Reseach Results.xlsx','Covert','R17:V27');
+itemNo=11;
 %Transfer data into an array
 datap = zeros(5,itemNo);
 for  n=1:5
-    for i=1:50
+    for i=1:itemNo
         %        Covert 1,4,7...
-        datap(n,i) = Covert(n,i);        
+        datap(n,i) = Covert(i,n);        
     end
 end
 
@@ -23,12 +23,14 @@ end
  boxplot(datap,g,'positions',pos,'whisker',5,'Widths',0.26,'Color',[0.25,0.25,0.25]);
  
  %Give some buffer on each side
- xlim([0,51]);
+ xlim([0,11.5]);
+ set(gca,'xtick',1:11);
+ set(gca,'xticklabel',{'1','5','10','15','20','25','30','35','40','45','50'});
  
 %Set labels
 xlabel('Bundle Size(#Apps)','FontSize',26);
 ylabel('AnalysisTime (Seconds)','FontSize',26);
-title('Covert Analysis','FontSize',32);
+%title('Covert Analysis','FontSize',32);
 
 %Set Y limits
 ylim([-100 2500]);

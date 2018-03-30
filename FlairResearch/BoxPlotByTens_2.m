@@ -39,16 +39,16 @@ for i=1:itemNo
     posDidfail(i) = i-0.2;
     posSEALANT(i) = i;
 end
-disp(size(posDialDroid));
+
  DialDroidPlot=boxplot(DialDroidData,'positions',posDialDroid,'whisker',5,'Widths',0.1,'Colors',[0 0 0]);
  hold on
- CovertBoxPlot=boxplot(CovertData,'positions',posCovert,'whisker',5,'Widths',0.1);
+ CovertBoxPlot=boxplot(CovertData,'positions',posCovert,'whisker',5,'Widths',0.1,'Colors',[0 0 0]);
  hold on
- FlairBoxPlot=boxplot(FlairData,'positions',posFlair,'whisker',5,'Widths',0.1);
+ FlairBoxPlot=boxplot(FlairData,'positions',posFlair,'whisker',5,'Widths',0.1,'Colors',[0 0 0]);
  hold on
- DidfailBoxPlot=boxplot(DidfailData,'positions',posDidfail,'whisker',5,'Widths',0.1);
+ DidfailBoxPlot=boxplot(DidfailData,'positions',posDidfail,'whisker',5,'Widths',0.1,'Colors',[0 0 0]);
  hold on
- SEALANTBoxPlot=boxplot(SEALANTData,'positions',posSEALANT,'whisker',5,'Widths',0.1);
+ SEALANTBoxPlot=boxplot(SEALANTData,'positions',posSEALANT,'whisker',5,'Widths',0.1,'Colors',[0 0 0]);
 hold off
  
  
@@ -57,8 +57,7 @@ hold off
   dark=[0.25,0.25,0.25];
   white = [1,1,1];
  black =  [0, 0, 0];
- lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');
- set(lines, 'Color', black, 'LineWidth', 1);
+
  
  h = findobj(gcf,'Tag','Box');
  disp(size(h));
@@ -72,20 +71,19 @@ hold off
            boxcolor = grey;
        elseif j>12 && j<19
            %Flair
-           boxcolor = dark;
-       elseif j>18 && j<25
-           %Didfail
            boxcolor = black;
-       else
+           
+       elseif j>18 && j<25
            %Covert
            boxcolor = light;
+       else
+           %DIALDroid
+           boxcolor = dark;
        end    
-     patch(get(h(j),'XData'),get(h(j),'YData'),boxcolor,'FaceAlpha',.9);
-     if x==1
-        %hatch(h(j),0.1,[0.1 0.1 0.1],'-',11,1);
-     end
+     p=patch(get(h(j),'XData'),get(h(j),'YData'),boxcolor,'FaceAlpha',.8);
+     uistack(p,'bottom');
    end
-   
+ 
     j=zeros(5,1);
    j(1)=patch(NaN,NaN,NaN,white);
    j(2)=patch(NaN,NaN,NaN,grey);
@@ -94,10 +92,18 @@ hold off
    j(5)=patch(NaN,NaN,NaN,light);
    
     c = get(gca, 'Children');
-   hleg1 = legend(j,{'SEALANT','Didfail','Flair', 'Covert','DialDroid'},'Location','NorthWest');
+   hleg1 = legend(j,{'SEALANT','Didfail','DIALDroid', 'Flair','Covert'},'Location','NorthWest');
    set(hleg1,'FontSize',25) 
    
    set(gca,'xtick',1:6);
     set(gca,'xticklabel',{'1','10','20','30','40','50'});
     xlim([0.5,6.5]);
+    
+    ylim([-100,4000]);
+    
+ lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');
+ set(lines, 'Color', black, 'LineWidth', 1.5);
+ for j=1:length(lines)
+     uistack(lines(j),'top');
+ end
  
