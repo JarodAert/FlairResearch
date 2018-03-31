@@ -85,14 +85,14 @@ hold off
    end
  
     j=zeros(5,1);
-   j(1)=patch(NaN,NaN,NaN,white);
-   j(2)=patch(NaN,NaN,NaN,grey);
+   j(1)=patch(NaN,NaN,NaN,grey);
+   j(2)=patch(NaN,NaN,NaN,white);
    j(3)=patch(NaN,NaN,NaN,dark);
-   j(4)=patch(NaN,NaN,NaN,black);
-   j(5)=patch(NaN,NaN,NaN,light);
+   j(4)=patch(NaN,NaN,NaN,light);
+   j(5)=patch(NaN,NaN,NaN,black);
    
     c = get(gca, 'Children');
-   hleg1 = legend(j,{'SEALANT','Didfail','DIALDroid', 'Flair','Covert'},'Location','NorthWest');
+   hleg1 = legend(j,{'Didfail','SEALANT','DIALDroid', 'Covert','Flair'},'Location','NorthWest');
    set(hleg1,'FontSize',25) 
    
    set(gca,'xtick',1:6);
@@ -100,6 +100,8 @@ hold off
     xlim([0.5,6.5]);
     
     ylim([-100,4000]);
+    xt=get(gca,'XTick');
+    set(gca,'FontSize',16);
     
  lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');
  set(lines, 'Color', black, 'LineWidth', 1.5);

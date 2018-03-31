@@ -46,3 +46,6 @@ lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');
            boxcolor = [0.25,0.25,0.25];    
      patch(get(h(j),'XData'),get(h(j),'YData'),boxcolor,'FaceAlpha',.5);
    end
+
+xt=get(gca,'XTick');
+set(gca,'FontSize',16);

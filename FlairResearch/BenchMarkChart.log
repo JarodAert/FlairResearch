@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 MAR 2018 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 MAR 2018 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -86,7 +86,7 @@ Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-No file BenchMarkChart.aux.
+(./BenchMarkChart.aux)
 \openout1 = `BenchMarkChart.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -101,6 +101,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
+
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count89
@@ -172,6 +173,11 @@ LaTeX Font Info:    Try loading font information for U+wasy on input line 25.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
+Overfull \hbox (1.1643pt too wide) in paragraph at lines 27--28
+[]\OT1/cmr/m/n/7 SEALANT| 
+ []
+
+
 Overfull \hbox (3.69864pt too wide) in paragraph at lines 31--33
 [][]| 
  []
@@ -188,8 +194,8 @@ Overfull \hbox (3.69864pt too wide) in paragraph at lines 61--63
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./BenchMarkChart.aux) ) 
 Here is how much of TeX's memory you used:
- 2176 strings out of 492995
- 29414 string characters out of 6132704
+ 2178 strings out of 492995
+ 29452 string characters out of 6132704
  118025 words of memory out of 5000000
  5728 multiletter control sequences out of 15000+600000
  5113 words of font info for 20 fonts, out of 8000000 for 9000
@@ -201,7 +207,7 @@ sfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/wasy2-p
 s/wasy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/wasy2-ps/wa
 syb10.pfb>
-Output written on BenchMarkChart.pdf (1 page, 42458 bytes).
+Output written on BenchMarkChart.pdf (1 page, 42611 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
