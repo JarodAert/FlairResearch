@@ -21,14 +21,15 @@ hold on
 plot(X,FlairAverage,'-','Color',black,'linewidth',2);
 hold off
 
-legend({'Covert','Flair','SEALANT','DIALDroid','Didfail'},'Location','northwest','FontSize',14);
+hleg1=legend({'Didfail','SEALANT','DIALDroid','Covert','Flair'},'Location','northwest','FontSize',14);
+set(hleg1,'FontSize',25)
 
 %Set labels
 xlabel('Bundle Size(#Apps)','FontSize',24);
 ylabel('AnalysisTime (Seconds)','FontSize',24);
 
 xlim([1,50]);
-ylim([-100,2500]);
+ylim([-100,4000]);
 
 xt=get(gca,'XTick');
 set(gca,'FontSize',16);
