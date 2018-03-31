@@ -10,15 +10,15 @@ darkgrey=[0.25,0.25,0.25];
 grey=[0.5,0.5,0.5];
 lightgrey=[0.75,0.75,0.75];
 
-plot(X,CovertAverage,'Color',black);
+plot(DidfailAverage,'Color',lightgrey,'linewidth',2);
 hold on
-plot(X,FlairAverage,'Color',darkgrey);
+plot(X,SEALANTAverage,'--','Color',darkgrey,'linewidth',2);
 hold on
-plot(X,SEALANTAverage,'Color',grey);
+plot(X,DIALDroidAverage,'-.','Color',grey,'linewidth',2);
 hold on
-plot(X,DIALDroidAverage,'--','Color',darkgrey);
+plot(X,CovertAverage,':','Color',darkgrey,'linewidth',2);
 hold on
-plot(DidfailAverage,'-.','Color',grey);
+plot(X,FlairAverage,'-','Color',black,'linewidth',2);
 hold off
 
 legend({'Covert','Flair','SEALANT','DIALDroid','Didfail'},'Location','northwest','FontSize',14);
@@ -29,3 +29,6 @@ ylabel('AnalysisTime (Seconds)','FontSize',24);
 
 xlim([1,50]);
 ylim([-100,2500]);
+
+xt=get(gca,'XTick');
+set(gca,'FontSize',16);
