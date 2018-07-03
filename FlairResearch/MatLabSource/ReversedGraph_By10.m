@@ -89,7 +89,7 @@ hold off
    
     c = get(gca, 'Children');
    hleg1 = legend(j,{'Didfail','SEALANT','DIALDroid', 'Covert','Flair'},'Location','NorthEast');
-   set(hleg1,'FontSize',25) 
+   set(hleg1,'FontSize',32) 
    
    set(gca,'xtick',1:6);
     set(gca,'xticklabel',{'50','40','30','20','10','1'});
