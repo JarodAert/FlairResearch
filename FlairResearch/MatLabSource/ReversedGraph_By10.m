@@ -1,6 +1,6 @@
 Covert = xlsread('Flair Reseach Results-Full.xlsx','Covert','R60:V65');
 Flair = xlsread('Flair Reseach Results-Full.xlsx','Flair','R59:V64');
-Didfail = xlsread('Flair Reseach Results-Full.xlsx','Didfail','P39:T42');
+Didfail = xlsread('Flair Reseach Results-Full.xlsx','Didfail','P39:T44');
 SEALANT = xlsread('Flair Reseach Results-Full.xlsx','SEALANT','R64:V69');
 DIALDroid = xlsread('Flair Reseach Results-Full.xlsx','DIALDroid','AB59:AF64');
 itemNo = 6;
@@ -17,11 +17,7 @@ for  n=1:5
         CovertData(n,i)=Covert(i,n);
         FlairData(n,i)=Flair(i,n);
         SEALANTData(n,i)=SEALANT(i,n);
-        if i<5
-         DidfailData(n,i)=Didfail(i,n);
-        else
-         DidfailData(n,i)=-105;
-        end
+        DidfailData(n,i)=Didfail(i,n);
     end
 end
 
@@ -68,7 +64,7 @@ hold off
            
        elseif j>6 && j<13
            %SEALANT
-           boxcolor = grey;
+           boxcolor = white;
        elseif j>12 && j<19
            %Flair
            boxcolor = black;
@@ -85,7 +81,7 @@ hold off
    end
  
     j=zeros(5,1);
-   j(1)=patch(NaN,NaN,NaN,grey);
+   j(1)=patch(NaN,NaN,NaN,white);
    j(2)=patch(NaN,NaN,NaN,white);
    j(3)=patch(NaN,NaN,NaN,dark);
    j(4)=patch(NaN,NaN,NaN,light);
@@ -100,8 +96,8 @@ hold off
     xlim([0.5,6.5]);
     
     %Set labels
-xlab=xlabel('Bundle Size(#Apps)','FontSize',26);
-ylab=ylabel('AnalysisTime (Seconds)','FontSize',26);
+xlab=xlabel('Bundle Size(#Apps)','FontSize',32);
+ylab=ylabel('AnalysisTime (Seconds)','FontSize',32);
 
    
     ylim([-100,2500]);
