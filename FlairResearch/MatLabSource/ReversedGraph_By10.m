@@ -1,8 +1,8 @@
-Covert = xlsread('Flair Reseach Results-Full.xlsx','Covert','R60:V10');
-Flair = xlsread('Flair Reseach Results-Full.xlsx','Flair','R5:V10');
-Didfail = xlsread('Flair Reseach Results-Full.xlsx','Didfail','P5:T8');
-SEALANT = xlsread('Flair Reseach Results-Full.xlsx','SEALANT','R5:V10');
-DIALDroid = xlsread('Flair Reseach Results-Full.xlsx','DIALDroid','AB5:AF10');
+Covert = xlsread('Flair Reseach Results-Full.xlsx','Covert','R60:V65');
+Flair = xlsread('Flair Reseach Results-Full.xlsx','Flair','R59:V64');
+Didfail = xlsread('Flair Reseach Results-Full.xlsx','Didfail','P39:T42');
+SEALANT = xlsread('Flair Reseach Results-Full.xlsx','SEALANT','R64:V69');
+DIALDroid = xlsread('Flair Reseach Results-Full.xlsx','DIALDroid','AB59:AF64');
 itemNo = 6;
 
 DialDroidData=zeros(5,itemNo);
@@ -92,14 +92,19 @@ hold off
    j(5)=patch(NaN,NaN,NaN,black);
    
     c = get(gca, 'Children');
-   hleg1 = legend(j,{'Didfail','SEALANT','DIALDroid', 'Covert','Flair'},'Location','NorthWest');
+   hleg1 = legend(j,{'Didfail','SEALANT','DIALDroid', 'Covert','Flair'},'Location','NorthEast');
    set(hleg1,'FontSize',25) 
    
    set(gca,'xtick',1:6);
-    set(gca,'xticklabel',{'1','10','20','30','40','50'});
+    set(gca,'xticklabel',{'50','40','30','20','10','1'});
     xlim([0.5,6.5]);
     
-    ylim([-100,4000]);
+    %Set labels
+xlab=xlabel('Bundle Size(#Apps)','FontSize',26);
+ylab=ylabel('AnalysisTime (Seconds)','FontSize',26);
+
+   
+    ylim([-100,2500]);
     xt=get(gca,'XTick');
     set(gca,'FontSize',16);
     
