@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>lu.uni.serval.iac_sendbroadcast1_source</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents>
+        <Intent>
+            <calledAt>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.iac_sendbroadcast1.ACTION"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>sendBroadcast</consumerMethod>
+            <id>eq52rr1ugq1oqoop4e3ita2mr6</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.iac_sendbroadcast1.ACTION"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>sendBroadcast</consumerMethod>
+            <id>5sflc1r63pgdl2f4qfh84s8tbp</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.iac_sendbroadcast1.ACTION"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>sendBroadcast</consumerMethod>
+            <id>rek0j4c6gujpnethpc2bnqcpa9</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.iac_sendbroadcast1.ACTION"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>sendBroadcast</consumerMethod>
+            <id>ln8sj0tub8sd1fveq2cv0qkp1f</id>
+            <random/>
+        </Intent>
+    </newIntents>
+    <ContentProviders/>
+    <usesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/IAC_sendBroadcast1/InterAppCommunication_sendbroadcast1_source.apk</apkFile>
+    <name>InterAppCommunication_sendbroadcast1_source</name>
+</application>

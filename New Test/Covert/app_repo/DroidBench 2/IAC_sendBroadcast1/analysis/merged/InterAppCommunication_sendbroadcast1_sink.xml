@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>lu.uni.serval.iac_sendbroadcast1_sink</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.iac_sendbroadcast1_sink.LaunchingActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>receiver</type>
+            <name>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>lu.uni.serval.iac_sendbroadcast1.ACTION</actions>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("DroidBench") </source>
+                    <sourceCalledAt>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+        <Component>
+            <type>receiver</type>
+            <name>lu.uni.serval.iac_sendbroadcast1_sink.IsolateReceiver</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.iac_sendbroadcast1_sink.IsolateReceiver: void onReceive(android.content.Context,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("DroidBench") </source>
+                    <sourceCalledAt>lu.uni.serval.iac_sendbroadcast1_sink.IsolateReceiver: void onReceive(android.content.Context,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+    </components>
+    <newIntents/>
+    <ContentProviders/>
+    <usesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions/>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/IAC_sendBroadcast1/InterAppCommunication_sendbroadcast1_sink.apk</apkFile>
+    <name>InterAppCommunication_sendbroadcast1_sink</name>
+</application>

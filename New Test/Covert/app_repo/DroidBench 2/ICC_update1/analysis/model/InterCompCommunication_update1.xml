@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>lu.uni.serval.icc_update1</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.icc_update1.OutFlowActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>provider</type>
+            <name>lu.uni.serval.icc_update1.InFlowProvider</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>provider</type>
+            <name>lu.uni.serval.icc_update1.IsolateProvider</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents/>
+    <ContentProviders>
+        <ContentProvider>
+            <dbMethod>delete</dbMethod>
+            <calledAt>lu.uni.serval.icc_update1.IsolateProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>query</dbMethod>
+            <calledAt>lu.uni.serval.icc_update1.IsolateProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>query</dbMethod>
+            <calledAt>lu.uni.serval.icc_update1.InFlowProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>delete</dbMethod>
+            <calledAt>lu.uni.serval.icc_update1.InFlowProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>content://lu.uni.serval.icc_update1/isolate</uris>
+            <uris>content:///isolatelu.uni.serval.icc_update1</uris>
+            <dbMethod>update</dbMethod>
+            <calledAt>lu.uni.serval.icc_update1.IsolateProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>content://lu.uni.serval.icc_update1/deviceid</uris>
+            <uris>content:///deviceidlu.uni.serval.icc_update1</uris>
+            <dbMethod>update</dbMethod>
+            <calledAt>lu.uni.serval.icc_update1.InFlowProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>content://lu.uni.serval.icc_update1/deviceid</uris>
+            <dbMethod>update</dbMethod>
+            <calledAt>lu.uni.serval.icc_update1.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>insert</dbMethod>
+            <calledAt>lu.uni.serval.icc_update1.InFlowProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>insert</dbMethod>
+            <calledAt>lu.uni.serval.icc_update1.IsolateProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+    </ContentProviders>
+    <usesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/ICC_update1/InterCompCommunication_update1.apk</apkFile>
+    <name>InterCompCommunication_update1</name>
+</application>

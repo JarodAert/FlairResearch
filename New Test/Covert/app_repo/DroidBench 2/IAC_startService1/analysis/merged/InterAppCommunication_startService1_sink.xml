@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>lu.uni.serval.iac_startservice1_sink</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.iac_startservice1_sink.LaunchingActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>service</type>
+            <name>lu.uni.serval.iac_startservice1_sink.InFlowService</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>lu.uni.serval.iac_startservice1.ACTION</actions>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r2) </sink>
+                    <sinkCalledAt>lu.uni.serval.iac_startservice1_sink.InFlowService: int onStartCommand(android.content.Intent,int,int)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("DroidBench") </source>
+                    <sourceCalledAt>lu.uni.serval.iac_startservice1_sink.InFlowService: int onStartCommand(android.content.Intent,int,int)</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+        <Component>
+            <type>service</type>
+            <name>lu.uni.serval.iac_startservice1_sink.IsolateService</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r2) </sink>
+                    <sinkCalledAt>lu.uni.serval.iac_startservice1_sink.IsolateService: int onStartCommand(android.content.Intent,int,int)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("DroidBench") </source>
+                    <sourceCalledAt>lu.uni.serval.iac_startservice1_sink.IsolateService: int onStartCommand(android.content.Intent,int,int)</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+    </components>
+    <newIntents/>
+    <ContentProviders/>
+    <usesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions/>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/IAC_startService1/InterAppCommunication_startService1_sink.apk</apkFile>
+    <name>InterAppCommunication_startService1_sink</name>
+</application>

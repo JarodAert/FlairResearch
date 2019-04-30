@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>lu.uni.serval.icc_bindservice2</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.icc_bindservice2.OutFlowActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>Parameter</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.OutFlowActivity$InnerServiceConnection: void onServiceConnected(android.content.ComponentName,android.os.IBinder)&gt;</sinkCalledAt>
+                    <source>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.OutFlowActivity$InnerServiceConnection: void onServiceConnected(android.content.ComponentName,android.os.IBinder)&gt;</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>Parameter</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.OutFlowActivity$InnerServiceConnection: void onServiceConnected(android.content.ComponentName,android.os.IBinder)&gt;</sinkCalledAt>
+                    <source>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.OutFlowActivity$InnerServiceConnection: void onServiceConnected(android.content.ComponentName,android.os.IBinder)&gt;</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>Parameter</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.OutFlowActivity$InnerServiceConnection: void onServiceConnected(android.content.ComponentName,android.os.IBinder)&gt;</sinkCalledAt>
+                    <source>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.OutFlowActivity$InnerServiceConnection: void onServiceConnected(android.content.ComponentName,android.os.IBinder)&gt;</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>Parameter</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.OutFlowActivity$InnerServiceConnection: void onServiceConnected(android.content.ComponentName,android.os.IBinder)&gt;</sinkCalledAt>
+                    <source>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.OutFlowActivity$InnerServiceConnection: void onServiceConnected(android.content.ComponentName,android.os.IBinder)&gt;</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+        <Component>
+            <type>service</type>
+            <name>lu.uni.serval.icc_bindservice2.InFlowService</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>service</type>
+            <name>lu.uni.serval.icc_bindservice2.IsolateService</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.InFlowService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.ContextWrapper: java.lang.Object getSystemService(java.lang.String)&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>f5m0d9nkq96pmetuigg5rf36jc</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.InFlowService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.ContextWrapper: java.lang.Object getSystemService(java.lang.String)&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>83n5bof3ck07nj3tv9s8s16jnj</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.IsolateService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.ContextWrapper: java.lang.Object getSystemService(java.lang.String)&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>4a1hh09uq8eipdi4a5v5a1g772</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.OutFlowActivity</sender>
+            <component>lu.uni.serval.icc_bindservice2.InFlowService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>1g1ig5j8qhvkj7a0so0vtc6i7</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.InFlowService</sender>
+            <component>lu.uni.serval.icc_bindservice2.OutFlowActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>40tcamkqis76ohtbubf9lip7ei</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.IsolateService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>59c9ie8l7k23gbok5sfoipsg18</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.InFlowService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>mejokmdib1u9p12p7uoubth89f</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.OutFlowActivity</sender>
+            <component>lu.uni.serval.icc_bindservice2.InFlowService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>dgs9eanv307e5oabjj60r7hu40</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.InFlowService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.ContextWrapper: java.lang.Object getSystemService(java.lang.String)&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>4g3lp3n8voe7hrpri26pddqjca</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.IsolateService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.ContextWrapper: java.lang.Object getSystemService(java.lang.String)&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>v6u6ao36n6rorqtbkjn46p7orj</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.InFlowService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>ol1icn2o8109bdoo9aqd0giqrn</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.InFlowService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>60cbddqf7n58m14nllr7gvrhr8</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.IsolateService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>pf51dejeet03ae5ioiilvngrkh</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.IsolateService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>itvnf0l7idu124bo06ev6t54q2</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.IsolateService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.ContextWrapper: java.lang.Object getSystemService(java.lang.String)&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>iim2bbgffplqt1cdhjlbtuemm3</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.InFlowService</sender>
+            <component>lu.uni.serval.icc_bindservice2.OutFlowActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.ContextWrapper: java.lang.Object getSystemService(java.lang.String)&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.InFlowService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>t4gbp36gh50fdu21h5sp2tjli1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.OutFlowActivity</sender>
+            <component>lu.uni.serval.icc_bindservice2.InFlowService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>mm3al9qvts9mbg2lunq0ri7gro</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.OutFlowActivity</sender>
+            <component>lu.uni.serval.icc_bindservice2.InFlowService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>age28rshln3lpj2vdk9ih6fs1c</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.IsolateService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.ContextWrapper: java.lang.Object getSystemService(java.lang.String)&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>mlsgq3fu4bmoro6t41mnkm3fje</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()</calledAt>
+            <sender>lu.uni.serval.icc_bindservice2.IsolateService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;</sink>
+                    <sinkCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;lu.uni.serval.icc_bindservice2.IsolateService$LocalBinder: java.lang.String getDeviceId()&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>o053jh1ub2m5jeb4hpce8imhse</id>
+            <random/>
+        </Intent>
+    </newIntents>
+    <ContentProviders/>
+    <usesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/ICC_bindService2/InterCompCommunication_bindService2.apk</apkFile>
+    <name>InterCompCommunication_bindService2</name>
+</application>

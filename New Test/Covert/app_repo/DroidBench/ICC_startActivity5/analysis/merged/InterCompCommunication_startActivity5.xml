@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>lu.uni.serval.icc_startactivity5</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.icc_startactivity5.OutFlowActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.icc_startactivity5.InFlowActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>lu.uni.serval.icc_startactivity4.ACTION</actions>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.InFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("DroidBench") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.InFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.InFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.InFlowActivity: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.InFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.icc_startactivity5.IsolateActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.IsolateActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.IsolateActivity: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.IsolateActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.IsolateActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("DroidBench") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.IsolateActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+    </components>
+    <newIntents>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.icc_startactivity5.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.icc_startactivity4.ACTION"</action>
+            <dataType>"text/plain"</dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>p90sdvpkl38bc8jo4mcvjloag5</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.icc_startactivity5.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.icc_startactivity4.ACTION"</action>
+            <dataType>"text/plain"</dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>niv2go0fdf2onsp3qsnug0hbh0</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.icc_startactivity5.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.icc_startactivity4.ACTION"</action>
+            <dataType>"text/plain"</dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>bsrno03hrm7b0jqtfjaaics4nj</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.icc_startactivity5.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.icc_startactivity4.ACTION"</action>
+            <dataType>"text/plain"</dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_startactivity5.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
+                    <sourceCalledAt>lu.uni.serval.icc_startactivity5.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>qqjht35f9n52ttmqkfnige5ops</id>
+            <random/>
+        </Intent>
+    </newIntents>
+    <ContentProviders/>
+    <usesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/ICC_startActivity5/InterCompCommunication_startActivity5.apk</apkFile>
+    <name>InterCompCommunication_startActivity5</name>
+</application>

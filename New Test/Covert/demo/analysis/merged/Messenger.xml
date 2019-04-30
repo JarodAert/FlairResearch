@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>com.sdalab.messenger</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>com.sdalab.messenger.MainActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>service</type>
+            <name>com.sdalab.messenger.SendSmsService</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>sendSMS</actions>
+                    <data>
+                        <scheme></scheme>
+                        <mimeType>text/plain</mimeType>
+                        <host></host>
+                        <pathPattern></pathPattern>
+                    </data>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r2, null, $r3, null, null) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("message") </source>
+                    <sourceCalledAt>com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>SMS_MMS</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r2, null, $r3, null, null) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)</sinkCalledAt>
+                    <source> staticinvoke &lt;android.telephony.SmsManager: android.telephony.SmsManager getDefault()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>SMS_MMS</sinkDomain>
+                    <sourceDomain>NETWORK_INFORMATION</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r2, null, $r3, null, null) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("destinationAddress") </source>
+                    <sourceCalledAt>com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>SMS_MMS</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+        <Component>
+            <type>service</type>
+            <name>com.sdalab.messenger.PublishDataService</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>shareMsg</actions>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;org.apache.http.message.BasicNameValuePair: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;("message", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("message") </source>
+                    <sourceCalledAt>com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)</sourceCalledAt>
+                    <sinkDomain>NETWORK</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;org.apache.http.message.BasicNameValuePair: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;("message", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("sender") </source>
+                    <sourceCalledAt>com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)</sourceCalledAt>
+                    <sinkDomain>NETWORK</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;org.apache.http.message.BasicNameValuePair: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;("name", $r2) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("message") </source>
+                    <sourceCalledAt>com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)</sourceCalledAt>
+                    <sinkDomain>NETWORK</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;org.apache.http.message.BasicNameValuePair: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;("name", $r2) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("sender") </source>
+                    <sourceCalledAt>com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)</sourceCalledAt>
+                    <sinkDomain>NETWORK</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Http Response:", $r2) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)</sinkCalledAt>
+                    <source> staticinvoke &lt;org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)&gt;($r4, "UTF-8") </source>
+                    <sourceCalledAt>com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)</sourceCalledAt>
+                    <sinkDomain>LOG</sinkDomain>
+                    <sourceDomain>NETWORK</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+    </components>
+    <newIntents>
+        <Intent>
+            <calledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</calledAt>
+            <sender>com.sdalab.messenger.MainActivity</sender>
+            <component>com.sdalab.messenger.PublishDataService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r10.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startService</consumerMethod>
+            <id>u6s1a5sq8fru1h7enff3023t12</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</calledAt>
+            <sender>com.sdalab.messenger.MainActivity</sender>
+            <component>com.sdalab.messenger.SendSmsService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r10.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startService</consumerMethod>
+            <id>2jpoqtslmbhb4dtkuekscodsra</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</calledAt>
+            <sender>com.sdalab.messenger.MainActivity</sender>
+            <component>com.sdalab.messenger.SendSmsService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r10.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startService</consumerMethod>
+            <id>gsuhk5ms30pe63j50k5q5slorb</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</calledAt>
+            <sender>com.sdalab.messenger.MainActivity</sender>
+            <component>com.sdalab.messenger.PublishDataService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r10.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startService</consumerMethod>
+            <id>3pu647n9ef36qb9jaidt3fdmk0</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</calledAt>
+            <sender>com.sdalab.messenger.MainActivity</sender>
+            <component>com.sdalab.messenger.PublishDataService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r10.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startService</consumerMethod>
+            <id>nuamnvrj7e2ehkfbnor42li66e</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</calledAt>
+            <sender>com.sdalab.messenger.MainActivity</sender>
+            <component>com.sdalab.messenger.SendSmsService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r10.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startService</consumerMethod>
+            <id>vcmhindcum773icmvnbu1b1qe4</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</calledAt>
+            <sender>com.sdalab.messenger.MainActivity</sender>
+            <component>com.sdalab.messenger.SendSmsService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r10.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("destinationAddress", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startService</consumerMethod>
+            <id>jkf950sdn8qpsn740n0p18iup1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</calledAt>
+            <sender>com.sdalab.messenger.MainActivity</sender>
+            <component>com.sdalab.messenger.PublishDataService</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("sender", $r7) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r10.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.view.View findViewById(int)&gt;(2131034178) </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("message", $r9) </sink>
+                    <sinkCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>startService</consumerMethod>
+            <id>3ch5s5gde6jhlnsmg8vihdu1qn</id>
+            <random/>
+        </Intent>
+    </newIntents>
+    <ContentProviders/>
+    <usesPermissions>
+        <permission>INTERNET</permission>
+        <permission>SEND_SMS</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>SEND_SMS</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/demo/Messenger.apk</apkFile>
+    <name>Messenger</name>
+</application>

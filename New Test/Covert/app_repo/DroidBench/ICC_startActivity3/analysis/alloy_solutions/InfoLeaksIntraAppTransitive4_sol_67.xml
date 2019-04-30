@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><alloy builddate="2009/03/19 02:02 EDT">
+
+<instance bitwidth="4" command="Check InfoLeaksIntraAppTransitive4 for 1 but exactly 1 Application, exactly 6 Component, exactly 1 IntentFilter, exactly 16 Intent, exactly 5 DetailedPath" filename="" maxseq="1">
+
+<sig ID="0" builtin="yes" label="seq/Int" parentID="1">
+</sig>
+
+<sig ID="1" builtin="yes" label="Int" parentID="2">
+</sig>
+
+<sig ID="3" builtin="yes" label="String" parentID="2">
+</sig>
+
+<sig ID="4" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/existingApps" one="yes" parentID="2">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/existingApps$0"/>
+</sig>
+
+<field ID="5" label="apps" parentID="4">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/existingApps$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<sig ID="7" label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3" one="yes" parentID="6">
+   <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/>
+</sig>
+
+<sig ID="6" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Application" parentID="2">
+</sig>
+
+<field ID="8" label="usesPermissions" parentID="6">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/READ_PHONE_STATE$0"/> </tuple>
+   <types> <type ID="6"/> <type ID="9"/> </types>
+</field>
+
+<field ID="10" label="appPermissions" parentID="6">
+   <types> <type ID="6"/> <type ID="9"/> </types>
+</field>
+
+<field ID="11" label="APIPermissions" parentID="6">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/READ_PHONE_STATE$0"/> </tuple>
+   <types> <type ID="6"/> <type ID="9"/> </types>
+</field>
+
+<sig ID="12" label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_InFlowActivity" one="yes" parentID="13">
+   <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_InFlowActivity$0"/>
+</sig>
+
+<sig ID="14" label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity" one="yes" parentID="13">
+   <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/>
+</sig>
+
+<sig ID="15" label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2" one="yes" parentID="13">
+   <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/>
+</sig>
+
+<sig ID="16" label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3" one="yes" parentID="13">
+   <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/>
+</sig>
+
+<sig ID="17" label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IsolateActivity" one="yes" parentID="13">
+   <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IsolateActivity$0"/>
+</sig>
+
+<sig ID="18" label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_OutFlowActivity" one="yes" parentID="13">
+   <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_OutFlowActivity$0"/>
+</sig>
+
+<sig ID="13" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Activity" parentID="19">
+</sig>
+
+<sig ID="20" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Service" parentID="19">
+</sig>
+
+<sig ID="21" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Receiver" parentID="19">
+</sig>
+
+<sig ID="22" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Provider" parentID="19">
+</sig>
+
+<sig ID="19" abstract="yes" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Component" parentID="2">
+</sig>
+
+<field ID="23" label="app" parentID="19">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_InFlowActivity$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IsolateActivity$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_OutFlowActivity$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3$0"/> </tuple>
+   <types> <type ID="19"/> <type ID="6"/> </types>
+</field>
+
+<field ID="24" label="intentFilter" parentID="19">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_OutFlowActivity$0"/> <atom label="lu_uni_serval_icc_startactivity3/IntentFilter1$0"/> </tuple>
+   <types> <type ID="19"/> <type ID="25"/> </types>
+</field>
+
+<field ID="26" label="compPermissions" parentID="19">
+   <types> <type ID="19"/> <type ID="9"/> </types>
+</field>
+
+<field ID="27" label="detailedPaths" parentID="19">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_InFlowActivity$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_3$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_2$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_2$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_2$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IsolateActivity$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_3$0"/> </tuple>
+   <types> <type ID="19"/> <type ID="28"/> </types>
+</field>
+
+<sig ID="29" label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1" one="yes" parentID="28">
+   <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/>
+</sig>
+
+<sig ID="30" label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_2" one="yes" parentID="28">
+   <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_2$0"/>
+</sig>
+
+<sig ID="31" label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_3" one="yes" parentID="28">
+   <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_3$0"/>
+</sig>
+
+<sig ID="32" label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_4" one="yes" parentID="28">
+   <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_4$0"/>
+</sig>
+
+<sig ID="33" label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_5" one="yes" parentID="28">
+   <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_5$0"/>
+</sig>
+
+<sig ID="28" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/DetailedPath" parentID="2">
+</sig>
+
+<field ID="34" label="source" parentID="28">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_2$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_3$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_4$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/UNIQUE_IDENTIFIER$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_5$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/UNDEFINED$0"/> </tuple>
+   <types> <type ID="28"/> <type ID="35"/> </types>
+</field>
+
+<field ID="36" label="sink" parentID="28">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_2$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/UNDEFINED$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_3$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/LOG$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_4$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC$0"/> </tuple>
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_5$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC$0"/> </tuple>
+   <types> <type ID="28"/> <type ID="35"/> </types>
+</field>
+
+<sig ID="37" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NO_CATEGORY" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NO_CATEGORY$0"/>
+</sig>
+
+<sig ID="38" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/HARDWARE_INFO" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/HARDWARE_INFO$0"/>
+</sig>
+
+<sig ID="39" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/FILE_INFORMATION" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/FILE_INFORMATION$0"/>
+</sig>
+
+<sig ID="40" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/BLUETOOTH_INFORMATION" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/BLUETOOTH_INFORMATION$0"/>
+</sig>
+
+<sig ID="41" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/VOIP_INFORMATION" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/VOIP_INFORMATION$0"/>
+</sig>
+
+<sig ID="42" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/INTER_APP_COMMUNICATION" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/INTER_APP_COMMUNICATION$0"/>
+</sig>
+
+<sig ID="43" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/VOIP" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/VOIP$0"/>
+</sig>
+
+<sig ID="44" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/PHONE_STATE" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/PHONE_STATE$0"/>
+</sig>
+
+<sig ID="45" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/SYNCHRONIZATION_DATA" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/SYNCHRONIZATION_DATA$0"/>
+</sig>
+
+<sig ID="46" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/EMAIL_SETTINGS" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/EMAIL_SETTINGS$0"/>
+</sig>
+
+<sig ID="47" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/FILE" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/FILE$0"/>
+</sig>
+
+<sig ID="48" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/SYSTEM_SETTINGS" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/SYSTEM_SETTINGS$0"/>
+</sig>
+
+<sig ID="49" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IMAGE" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IMAGE$0"/>
+</sig>
+
+<sig ID="50" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC$0"/>
+</sig>
+
+<sig ID="51" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NEW" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NEW$0"/>
+</sig>
+
+<sig ID="52" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/UNDEFINED" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/UNDEFINED$0"/>
+</sig>
+
+<sig ID="53" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC_NEW" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IPC_NEW$0"/>
+</sig>
+
+<sig ID="54" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/BUNDLE" one="yes" parentID="35">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/BUNDLE$0"/>
+</sig>
+
+<sig ID="55" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/UNIQUE_IDENTIFIER" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/UNIQUE_IDENTIFIER$0"/>
+</sig>
+
+<sig ID="57" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/LOCATION_INFORMATION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/LOCATION_INFORMATION$0"/>
+</sig>
+
+<sig ID="58" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NETWORK_INFORMATION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NETWORK_INFORMATION$0"/>
+</sig>
+
+<sig ID="59" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/ACCOUNT_INFORMATION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/ACCOUNT_INFORMATION$0"/>
+</sig>
+
+<sig ID="60" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/EMAIL_INFORMATION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/EMAIL_INFORMATION$0"/>
+</sig>
+
+<sig ID="61" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/DATABASE_INFORMATION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/DATABASE_INFORMATION$0"/>
+</sig>
+
+<sig ID="62" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/PHONE_INFORMATION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/PHONE_INFORMATION$0"/>
+</sig>
+
+<sig ID="63" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/PHONE_CONNECTION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/PHONE_CONNECTION$0"/>
+</sig>
+
+<sig ID="64" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/EMAIL" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/EMAIL$0"/>
+</sig>
+
+<sig ID="65" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/BLUETOOTH" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/BLUETOOTH$0"/>
+</sig>
+
+<sig ID="66" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/ACCOUNT_SETTINGS" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/ACCOUNT_SETTINGS$0"/>
+</sig>
+
+<sig ID="67" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/VIDEO" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/VIDEO$0"/>
+</sig>
+
+<sig ID="68" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NETWORK" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NETWORK$0"/>
+</sig>
+
+<sig ID="69" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/LOG" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/LOG$0"/>
+</sig>
+
+<sig ID="70" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/AUDIO" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/AUDIO$0"/>
+</sig>
+
+<sig ID="71" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/SMS_MMS" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/SMS_MMS$0"/>
+</sig>
+
+<sig ID="72" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/CONTACT_INFORMATION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/CONTACT_INFORMATION$0"/>
+</sig>
+
+<sig ID="73" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/CALENDAR_INFORMATION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/CALENDAR_INFORMATION$0"/>
+</sig>
+
+<sig ID="74" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/BROWSER_INFORMATION" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/BROWSER_INFORMATION$0"/>
+</sig>
+
+<sig ID="75" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NFC" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NFC$0"/>
+</sig>
+
+<sig ID="76" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/WIDGET" one="yes" parentID="56">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/WIDGET$0"/>
+</sig>
+
+<sig ID="56" abstract="yes" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/SIGResource" parentID="35">
+</sig>
+
+<sig ID="35" abstract="yes" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Resource" parentID="2">
+</sig>
+
+<sig ID="77" label="lu_uni_serval_icc_startactivity3/IntentFilter1" one="yes" parentID="25">
+   <atom label="lu_uni_serval_icc_startactivity3/IntentFilter1$0"/>
+</sig>
+
+<sig ID="25" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/IntentFilter" parentID="2">
+</sig>
+
+<field ID="78" label="actions" parentID="25">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/IntentFilter1$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_action_MAIN_A$0"/> </tuple>
+   <types> <type ID="25"/> <type ID="79"/> </types>
+</field>
+
+<field ID="80" label="dataType" parentID="25">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/IntentFilter1$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <types> <type ID="25"/> <type ID="81"/> </types>
+</field>
+
+<field ID="82" label="dataScheme" parentID="25">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/IntentFilter1$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <types> <type ID="25"/> <type ID="83"/> </types>
+</field>
+
+<field ID="84" label="categories" parentID="25">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/IntentFilter1$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0"/> </tuple>
+   <types> <type ID="25"/> <type ID="85"/> </types>
+</field>
+
+<sig ID="86" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction" one="yes" parentID="79">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/>
+</sig>
+
+<sig ID="87" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_action_MAIN_A" one="yes" parentID="79">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_action_MAIN_A$0"/>
+</sig>
+
+<sig ID="79" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Action" parentID="2">
+</sig>
+
+<sig ID="88" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C" one="yes" parentID="85">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/>
+</sig>
+
+<sig ID="89" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C" one="yes" parentID="85">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0"/>
+</sig>
+
+<sig ID="85" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Category" parentID="2">
+</sig>
+
+<sig ID="90" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme" one="yes" parentID="83">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/>
+</sig>
+
+<sig ID="91" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/YesScheme" one="yes" parentID="83">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/YesScheme$0"/>
+</sig>
+
+<sig ID="83" abstract="yes" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/DataScheme" parentID="2">
+</sig>
+
+<sig ID="92" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType" one="yes" parentID="81">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/>
+</sig>
+
+<sig ID="81" abstract="yes" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/DataType" parentID="2">
+</sig>
+
+<sig ID="93" label="this/intent1__ej9i48kvsv04su05vpmbtf3212" one="yes" parentID="94">
+   <atom label="intent1__ej9i48kvsv04su05vpmbtf3212$0"/>
+</sig>
+
+<sig ID="95" label="this/intent2__b14gb1ltg3vdfs8bmp1gp8d2ne" one="yes" parentID="94">
+   <atom label="intent2__b14gb1ltg3vdfs8bmp1gp8d2ne$0"/>
+</sig>
+
+<sig ID="96" label="this/intent3__ov3c3jlnffch5qu3afeor6j3fk" one="yes" parentID="94">
+   <atom label="intent3__ov3c3jlnffch5qu3afeor6j3fk$0"/>
+</sig>
+
+<sig ID="97" label="this/intent4__q8l7i9eta73fo4a9v88sk07gnu" one="yes" parentID="94">
+   <atom label="intent4__q8l7i9eta73fo4a9v88sk07gnu$0"/>
+</sig>
+
+<sig ID="98" label="this/intent5__qo1017ck89q6thn5lt6o9hnql7" one="yes" parentID="94">
+   <atom label="intent5__qo1017ck89q6thn5lt6o9hnql7$0"/>
+</sig>
+
+<sig ID="99" label="this/intent6__ls1m2u54v6p14lrad4bkmdo84r" one="yes" parentID="94">
+   <atom label="intent6__ls1m2u54v6p14lrad4bkmdo84r$0"/>
+</sig>
+
+<sig ID="100" label="this/intent7__c6392sc13o2oblh1ablo60mn25" one="yes" parentID="94">
+   <atom label="intent7__c6392sc13o2oblh1ablo60mn25$0"/>
+</sig>
+
+<sig ID="101" label="this/intent8__igcn8b7rungtu2cgfa7h2kqp9j" one="yes" parentID="94">
+   <atom label="intent8__igcn8b7rungtu2cgfa7h2kqp9j$0"/>
+</sig>
+
+<sig ID="102" label="this/intent9__qm8i0k63rr0kd96607so6j57qg" one="yes" parentID="94">
+   <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/>
+</sig>
+
+<sig ID="103" label="this/intent10__cvkdl00c45m9d13rlcd0ekk54r" one="yes" parentID="94">
+   <atom label="intent10__cvkdl00c45m9d13rlcd0ekk54r$0"/>
+</sig>
+
+<sig ID="104" label="this/intent11__v79lu63d96bld8mrqm9vo6ooha" one="yes" parentID="94">
+   <atom label="intent11__v79lu63d96bld8mrqm9vo6ooha$0"/>
+</sig>
+
+<sig ID="105" label="this/intent12__aks2i6un06181v7tmjtetrkrcc" one="yes" parentID="94">
+   <atom label="intent12__aks2i6un06181v7tmjtetrkrcc$0"/>
+</sig>
+
+<sig ID="106" label="this/intent13__6vno5u1i3lb7ueoufpkek88tko" one="yes" parentID="94">
+   <atom label="intent13__6vno5u1i3lb7ueoufpkek88tko$0"/>
+</sig>
+
+<sig ID="107" label="this/intent14__s96274por2n9rj1pqf8lnin7o5" one="yes" parentID="94">
+   <atom label="intent14__s96274por2n9rj1pqf8lnin7o5$0"/>
+</sig>
+
+<sig ID="108" label="this/intent15__29ahhfdbrlfroeocthhbevkh8g" one="yes" parentID="94">
+   <atom label="intent15__29ahhfdbrlfroeocthhbevkh8g$0"/>
+</sig>
+
+<sig ID="109" label="this/intent16__kf5h6hd042ma62k7qf6q6snuo" one="yes" parentID="94">
+   <atom label="intent16__kf5h6hd042ma62k7qf6q6snuo$0"/>
+</sig>
+
+<sig ID="94" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Intent" parentID="2">
+</sig>
+
+<field ID="110" label="sender" parentID="94">
+   <tuple> <atom label="intent1__ej9i48kvsv04su05vpmbtf3212$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_OutFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent2__b14gb1ltg3vdfs8bmp1gp8d2ne$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> </tuple>
+   <tuple> <atom label="intent3__ov3c3jlnffch5qu3afeor6j3fk$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> </tuple>
+   <tuple> <atom label="intent4__q8l7i9eta73fo4a9v88sk07gnu$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> </tuple>
+   <tuple> <atom label="intent5__qo1017ck89q6thn5lt6o9hnql7$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> </tuple>
+   <tuple> <atom label="intent6__ls1m2u54v6p14lrad4bkmdo84r$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent7__c6392sc13o2oblh1ablo60mn25$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_OutFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent8__igcn8b7rungtu2cgfa7h2kqp9j$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_OutFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent10__cvkdl00c45m9d13rlcd0ekk54r$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> </tuple>
+   <tuple> <atom label="intent11__v79lu63d96bld8mrqm9vo6ooha$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> </tuple>
+   <tuple> <atom label="intent12__aks2i6un06181v7tmjtetrkrcc$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> </tuple>
+   <tuple> <atom label="intent13__6vno5u1i3lb7ueoufpkek88tko$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_OutFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent14__s96274por2n9rj1pqf8lnin7o5$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent15__29ahhfdbrlfroeocthhbevkh8g$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> </tuple>
+   <tuple> <atom label="intent16__kf5h6hd042ma62k7qf6q6snuo$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> </tuple>
+   <types> <type ID="94"/> <type ID="19"/> </types>
+</field>
+
+<field ID="111" label="component" parentID="94">
+   <tuple> <atom label="intent1__ej9i48kvsv04su05vpmbtf3212$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent2__b14gb1ltg3vdfs8bmp1gp8d2ne$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> </tuple>
+   <tuple> <atom label="intent3__ov3c3jlnffch5qu3afeor6j3fk$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_InFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent4__q8l7i9eta73fo4a9v88sk07gnu$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_InFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent5__qo1017ck89q6thn5lt6o9hnql7$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> </tuple>
+   <tuple> <atom label="intent6__ls1m2u54v6p14lrad4bkmdo84r$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> </tuple>
+   <tuple> <atom label="intent7__c6392sc13o2oblh1ablo60mn25$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent8__igcn8b7rungtu2cgfa7h2kqp9j$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> </tuple>
+   <tuple> <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent10__cvkdl00c45m9d13rlcd0ekk54r$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> </tuple>
+   <tuple> <atom label="intent11__v79lu63d96bld8mrqm9vo6ooha$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_InFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent12__aks2i6un06181v7tmjtetrkrcc$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> </tuple>
+   <tuple> <atom label="intent13__6vno5u1i3lb7ueoufpkek88tko$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent14__s96274por2n9rj1pqf8lnin7o5$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> </tuple>
+   <tuple> <atom label="intent15__29ahhfdbrlfroeocthhbevkh8g$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_InFlowActivity$0"/> </tuple>
+   <tuple> <atom label="intent16__kf5h6hd042ma62k7qf6q6snuo$0"/> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> </tuple>
+   <types> <type ID="94"/> <type ID="19"/> </types>
+</field>
+
+<field ID="112" label="action" parentID="94">
+   <tuple> <atom label="intent1__ej9i48kvsv04su05vpmbtf3212$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent2__b14gb1ltg3vdfs8bmp1gp8d2ne$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent3__ov3c3jlnffch5qu3afeor6j3fk$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent4__q8l7i9eta73fo4a9v88sk07gnu$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent5__qo1017ck89q6thn5lt6o9hnql7$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent6__ls1m2u54v6p14lrad4bkmdo84r$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent7__c6392sc13o2oblh1ablo60mn25$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent8__igcn8b7rungtu2cgfa7h2kqp9j$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent10__cvkdl00c45m9d13rlcd0ekk54r$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent11__v79lu63d96bld8mrqm9vo6ooha$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent12__aks2i6un06181v7tmjtetrkrcc$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent13__6vno5u1i3lb7ueoufpkek88tko$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent14__s96274por2n9rj1pqf8lnin7o5$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent15__29ahhfdbrlfroeocthhbevkh8g$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <tuple> <atom label="intent16__kf5h6hd042ma62k7qf6q6snuo$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoAction$0"/> </tuple>
+   <types> <type ID="94"/> <type ID="79"/> </types>
+</field>
+
+<field ID="113" label="dataType" parentID="94">
+   <tuple> <atom label="intent1__ej9i48kvsv04su05vpmbtf3212$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent2__b14gb1ltg3vdfs8bmp1gp8d2ne$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent3__ov3c3jlnffch5qu3afeor6j3fk$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent4__q8l7i9eta73fo4a9v88sk07gnu$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent5__qo1017ck89q6thn5lt6o9hnql7$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent6__ls1m2u54v6p14lrad4bkmdo84r$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent7__c6392sc13o2oblh1ablo60mn25$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent8__igcn8b7rungtu2cgfa7h2kqp9j$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent10__cvkdl00c45m9d13rlcd0ekk54r$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent11__v79lu63d96bld8mrqm9vo6ooha$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent12__aks2i6un06181v7tmjtetrkrcc$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent13__6vno5u1i3lb7ueoufpkek88tko$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent14__s96274por2n9rj1pqf8lnin7o5$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent15__29ahhfdbrlfroeocthhbevkh8g$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <tuple> <atom label="intent16__kf5h6hd042ma62k7qf6q6snuo$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoMIMEType$0"/> </tuple>
+   <types> <type ID="94"/> <type ID="81"/> </types>
+</field>
+
+<field ID="114" label="dataScheme" parentID="94">
+   <tuple> <atom label="intent1__ej9i48kvsv04su05vpmbtf3212$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent2__b14gb1ltg3vdfs8bmp1gp8d2ne$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent3__ov3c3jlnffch5qu3afeor6j3fk$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent4__q8l7i9eta73fo4a9v88sk07gnu$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent5__qo1017ck89q6thn5lt6o9hnql7$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent6__ls1m2u54v6p14lrad4bkmdo84r$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent7__c6392sc13o2oblh1ablo60mn25$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent8__igcn8b7rungtu2cgfa7h2kqp9j$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent10__cvkdl00c45m9d13rlcd0ekk54r$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent11__v79lu63d96bld8mrqm9vo6ooha$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent12__aks2i6un06181v7tmjtetrkrcc$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent13__6vno5u1i3lb7ueoufpkek88tko$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent14__s96274por2n9rj1pqf8lnin7o5$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent15__29ahhfdbrlfroeocthhbevkh8g$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <tuple> <atom label="intent16__kf5h6hd042ma62k7qf6q6snuo$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/NoScheme$0"/> </tuple>
+   <types> <type ID="94"/> <type ID="83"/> </types>
+</field>
+
+<field ID="115" label="categories" parentID="94">
+   <tuple> <atom label="intent1__ej9i48kvsv04su05vpmbtf3212$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent2__b14gb1ltg3vdfs8bmp1gp8d2ne$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent3__ov3c3jlnffch5qu3afeor6j3fk$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent4__q8l7i9eta73fo4a9v88sk07gnu$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent5__qo1017ck89q6thn5lt6o9hnql7$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent6__ls1m2u54v6p14lrad4bkmdo84r$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent7__c6392sc13o2oblh1ablo60mn25$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent8__igcn8b7rungtu2cgfa7h2kqp9j$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent10__cvkdl00c45m9d13rlcd0ekk54r$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent11__v79lu63d96bld8mrqm9vo6ooha$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent12__aks2i6un06181v7tmjtetrkrcc$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent13__6vno5u1i3lb7ueoufpkek88tko$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent14__s96274por2n9rj1pqf8lnin7o5$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent15__29ahhfdbrlfroeocthhbevkh8g$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <tuple> <atom label="intent16__kf5h6hd042ma62k7qf6q6snuo$0"/> <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0"/> </tuple>
+   <types> <type ID="94"/> <type ID="85"/> </types>
+</field>
+
+<field ID="116" label="detailedPaths" parentID="94">
+   <tuple> <atom label="intent1__ej9i48kvsv04su05vpmbtf3212$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_4$0"/> </tuple>
+   <tuple> <atom label="intent1__ej9i48kvsv04su05vpmbtf3212$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_5$0"/> </tuple>
+   <tuple> <atom label="intent2__b14gb1ltg3vdfs8bmp1gp8d2ne$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent3__ov3c3jlnffch5qu3afeor6j3fk$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent4__q8l7i9eta73fo4a9v88sk07gnu$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent5__qo1017ck89q6thn5lt6o9hnql7$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent6__ls1m2u54v6p14lrad4bkmdo84r$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent7__c6392sc13o2oblh1ablo60mn25$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_4$0"/> </tuple>
+   <tuple> <atom label="intent7__c6392sc13o2oblh1ablo60mn25$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_5$0"/> </tuple>
+   <tuple> <atom label="intent8__igcn8b7rungtu2cgfa7h2kqp9j$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_4$0"/> </tuple>
+   <tuple> <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_5$0"/> </tuple>
+   <tuple> <atom label="intent10__cvkdl00c45m9d13rlcd0ekk54r$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent11__v79lu63d96bld8mrqm9vo6ooha$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent12__aks2i6un06181v7tmjtetrkrcc$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent13__6vno5u1i3lb7ueoufpkek88tko$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_4$0"/> </tuple>
+   <tuple> <atom label="intent13__6vno5u1i3lb7ueoufpkek88tko$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_5$0"/> </tuple>
+   <tuple> <atom label="intent14__s96274por2n9rj1pqf8lnin7o5$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent15__29ahhfdbrlfroeocthhbevkh8g$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <tuple> <atom label="intent16__kf5h6hd042ma62k7qf6q6snuo$0"/> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <types> <type ID="94"/> <type ID="28"/> </types>
+</field>
+
+<sig ID="117" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Yes" one="yes" parentID="118">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Yes$0"/>
+</sig>
+
+<sig ID="119" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/No" one="yes" parentID="118">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/No$0"/>
+</sig>
+
+<sig ID="118" abstract="yes" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Extra" parentID="2">
+</sig>
+
+<sig ID="120" label="lu_uni_serval_icc_startactivity3/appDeclaration/READ_PHONE_STATE" one="yes" parentID="9">
+   <atom label="lu_uni_serval_icc_startactivity3/appDeclaration/READ_PHONE_STATE$0"/>
+</sig>
+
+<sig ID="9" abstract="yes" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/Permission" parentID="2">
+</sig>
+
+<sig ID="121" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/GeneratedExp" parentID="2">
+</sig>
+
+<field ID="122" label="c1" parentID="121">
+   <types> <type ID="121"/> <type ID="19"/> </types>
+</field>
+
+<field ID="123" label="c2" parentID="121">
+   <types> <type ID="121"/> <type ID="19"/> </types>
+</field>
+
+<field ID="124" label="b" parentID="121">
+   <types> <type ID="121"/> <type ID="19"/> </types>
+</field>
+
+<field ID="125" label="i1" parentID="121">
+   <types> <type ID="121"/> <type ID="94"/> </types>
+</field>
+
+<field ID="126" label="i2" parentID="121">
+   <types> <type ID="121"/> <type ID="94"/> </types>
+</field>
+
+<field ID="127" label="d1" parentID="121">
+   <types> <type ID="121"/> <type ID="28"/> </types>
+</field>
+
+<field ID="128" label="d2" parentID="121">
+   <types> <type ID="121"/> <type ID="28"/> </types>
+</field>
+
+<field ID="129" label="dIntent" parentID="121">
+   <types> <type ID="121"/> <type ID="28"/> </types>
+</field>
+
+<field ID="130" label="dComponent" parentID="121">
+   <types> <type ID="121"/> <type ID="28"/> </types>
+</field>
+
+<sig ID="131" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/GeneratedExpActivityLunch" parentID="2">
+</sig>
+
+<field ID="132" label="c2" parentID="131">
+   <types> <type ID="131"/> <type ID="19"/> </types>
+</field>
+
+<field ID="133" label="b" parentID="131">
+   <types> <type ID="131"/> <type ID="19"/> </types>
+</field>
+
+<field ID="134" label="i2" parentID="131">
+   <types> <type ID="131"/> <type ID="94"/> </types>
+</field>
+
+<field ID="135" label="dComponent" parentID="131">
+   <types> <type ID="131"/> <type ID="28"/> </types>
+</field>
+
+<sig ID="136" label="lu_uni_serval_icc_startactivity3/appDeclaration/androidDeclaration/GeneratedExpIntentHijack" parentID="2">
+</sig>
+
+<field ID="137" label="c1" parentID="136">
+   <types> <type ID="136"/> <type ID="19"/> </types>
+</field>
+
+<field ID="138" label="b" parentID="136">
+   <types> <type ID="136"/> <type ID="19"/> </types>
+</field>
+
+<field ID="139" label="i1" parentID="136">
+   <types> <type ID="136"/> <type ID="94"/> </types>
+</field>
+
+<field ID="140" label="d1" parentID="136">
+   <types> <type ID="136"/> <type ID="28"/> </types>
+</field>
+
+<field ID="141" label="dIntent" parentID="136">
+   <types> <type ID="136"/> <type ID="28"/> </types>
+</field>
+
+<sig ID="2" builtin="yes" label="univ">
+</sig>
+
+<skolem ID="142" label="$InfoLeaksIntraAppTransitive4_cmp1">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_OutFlowActivity$0"/> </tuple>
+   <types> <type ID="19"/> </types>
+</skolem>
+
+<skolem ID="143" label="$InfoLeaksIntraAppTransitive4_intCmp1">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity$0"/> </tuple>
+   <types> <type ID="19"/> </types>
+</skolem>
+
+<skolem ID="144" label="$InfoLeaksIntraAppTransitive4_intCmp2">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2$0"/> </tuple>
+   <types> <type ID="19"/> </types>
+</skolem>
+
+<skolem ID="145" label="$InfoLeaksIntraAppTransitive4_intCmp3">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3$0"/> </tuple>
+   <types> <type ID="19"/> </types>
+</skolem>
+
+<skolem ID="146" label="$InfoLeaksIntraAppTransitive4_cmp2">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/lu_uni_serval_icc_startactivity3_InFlowActivity$0"/> </tuple>
+   <types> <type ID="19"/> </types>
+</skolem>
+
+<skolem ID="147" label="$InfoLeaksIntraAppTransitive4_i1">
+   <tuple> <atom label="intent9__qm8i0k63rr0kd96607so6j57qg$0"/> </tuple>
+   <types> <type ID="94"/> </types>
+</skolem>
+
+<skolem ID="148" label="$InfoLeaksIntraAppTransitive4_i2">
+   <tuple> <atom label="intent14__s96274por2n9rj1pqf8lnin7o5$0"/> </tuple>
+   <types> <type ID="94"/> </types>
+</skolem>
+
+<skolem ID="149" label="$InfoLeaksIntraAppTransitive4_i3">
+   <tuple> <atom label="intent2__b14gb1ltg3vdfs8bmp1gp8d2ne$0"/> </tuple>
+   <types> <type ID="94"/> </types>
+</skolem>
+
+<skolem ID="150" label="$InfoLeaksIntraAppTransitive4_i4">
+   <tuple> <atom label="intent15__29ahhfdbrlfroeocthhbevkh8g$0"/> </tuple>
+   <types> <type ID="94"/> </types>
+</skolem>
+
+<skolem ID="151" label="$InfoLeaksIntraAppTransitive4_d1">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_4$0"/> </tuple>
+   <types> <type ID="28"/> </types>
+</skolem>
+
+<skolem ID="152" label="$InfoLeaksIntraAppTransitive4_d2">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <types> <type ID="28"/> </types>
+</skolem>
+
+<skolem ID="153" label="$InfoLeaksIntraAppTransitive4_d3">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <types> <type ID="28"/> </types>
+</skolem>
+
+<skolem ID="154" label="$InfoLeaksIntraAppTransitive4_d4">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_1$0"/> </tuple>
+   <types> <type ID="28"/> </types>
+</skolem>
+
+<skolem ID="155" label="$InfoLeaksIntraAppTransitive4_d5">
+   <tuple> <atom label="lu_uni_serval_icc_startactivity3/detailedPath_lu_uni_serval_icc_startactivity3_3$0"/> </tuple>
+   <types> <type ID="28"/> </types>
+</skolem>
+
+<skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_3"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IsolateActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_3"/><atom label="&#9;lu.uni.serval.icc_startactivity3.InFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_2"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_2"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_2"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_2"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_2"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_2"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_2"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_2"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_2"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_3"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IsolateActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_3"/><atom label="&#9;lu.uni.serval.icc_startactivity3.InFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_4"/><atom label="&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_5"/><atom label="&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_4"/><atom label="&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_5"/><atom label="&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_4"/><atom label="&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_5"/><atom label="&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_4"/><atom label="&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_5"/><atom label="&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)"/></tuple></skolem><skolem label="methodName"><tuple><atom label="detailedPath_lu_uni_serval_icc_startactivity3_1"/><atom label="&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)"/></tuple></skolem></instance>
+
+<source content="//Automatically Generated&#10;module ICC &#10;&#10;open lu_uni_serval_icc_startactivity3&#10;&#10;&#10;one sig intent1__ej9i48kvsv04su05vpmbtf3212 extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_OutFlowActivity&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_5 + detailedPath_lu_uni_serval_icc_startactivity3_4&#10;}&#10;one sig intent2__b14gb1ltg3vdfs8bmp1gp8d2ne extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent3__ov3c3jlnffch5qu3afeor6j3fk extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3&#10;&#9;component=lu_uni_serval_icc_startactivity3_InFlowActivity&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent4__q8l7i9eta73fo4a9v88sk07gnu extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3&#10;&#9;component=lu_uni_serval_icc_startactivity3_InFlowActivity&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent5__qo1017ck89q6thn5lt6o9hnql7 extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent6__ls1m2u54v6p14lrad4bkmdo84r extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent7__c6392sc13o2oblh1ablo60mn25 extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_OutFlowActivity&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_5 + detailedPath_lu_uni_serval_icc_startactivity3_4&#10;}&#10;one sig intent8__igcn8b7rungtu2cgfa7h2kqp9j extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent9__qm8i0k63rr0kd96607so6j57qg extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_OutFlowActivity&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_5 + detailedPath_lu_uni_serval_icc_startactivity3_4&#10;}&#10;one sig intent10__cvkdl00c45m9d13rlcd0ekk54r extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent11__v79lu63d96bld8mrqm9vo6ooha extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3&#10;&#9;component=lu_uni_serval_icc_startactivity3_InFlowActivity&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent12__aks2i6un06181v7tmjtetrkrcc extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent13__6vno5u1i3lb7ueoufpkek88tko extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_OutFlowActivity&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_5 + detailedPath_lu_uni_serval_icc_startactivity3_4&#10;}&#10;one sig intent14__s96274por2n9rj1pqf8lnin7o5 extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent15__29ahhfdbrlfroeocthhbevkh8g extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3&#10;&#9;component=lu_uni_serval_icc_startactivity3_InFlowActivity&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;one sig intent16__kf5h6hd042ma62k7qf6q6snuo extends Intent{}{&#10;//  lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)&#10;    sender=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity&#10;&#9;component=lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2&#10;&#9;action=NoAction&#10;&#9;categories=android_intent_category_DEFAULT_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;&#9;detailedPaths=detailedPath_lu_uni_serval_icc_startactivity3_1&#10;}&#10;&#10;&#10;fact {&#10;existingApps.apps = lu_uni_serval_icc_startactivity3&#10;}&#10;&#10;check privEscal for 1 but exactly 1 Application, exactly 6 Component, exactly 1 IntentFilter, exactly 16 Intent, exactly 5 DetailedPath &#10;&#10;check InfoLeaksInterApp for 1 but exactly 1 Application, exactly 6 Component, exactly 1 IntentFilter, exactly 16 Intent, exactly 5 DetailedPath &#10;&#10;check InfoLeaksIntraAppTransitive1 for 1 but exactly 1 Application, exactly 6 Component, exactly 1 IntentFilter, exactly 16 Intent, exactly 5 DetailedPath &#10;check InfoLeaksIntraAppTransitive2 for 1 but exactly 1 Application, exactly 6 Component, exactly 1 IntentFilter, exactly 16 Intent, exactly 5 DetailedPath &#10;check InfoLeaksIntraAppTransitive3 for 1 but exactly 1 Application, exactly 6 Component, exactly 1 IntentFilter, exactly 16 Intent, exactly 5 DetailedPath &#10;check InfoLeaksIntraAppTransitive4 for 1 but exactly 1 Application, exactly 6 Component, exactly 1 IntentFilter, exactly 16 Intent, exactly 5 DetailedPath &#10;&#10;&#10;pred generateInfoLeak{&#10; some GeneratedExp&#10;}&#10;//The exact number of each element is the one shown minus one (except Service &amp; Receiver (=), and DetailedPath (=-2))&#10;run generateInfoLeak for 1 but exactly 2 Application, exactly 7 Activity, exactly 0 Service, exactly 0 Receiver, exactly 2 IntentFilter, exactly 17 Intent, exactly 7 DetailedPath&#10;&#10;pred generateActivityLunch{&#10; some GeneratedExpActivityLunch&#10;}&#10;//The exact number of each element is the one shown minus one (except Service, Receiver &amp; IntentFilter (=))&#10;run generateActivityLunch for 1 but exactly 2 Application, exactly 7 Activity, exactly 0 Service, exactly 0 Receiver, exactly 1 IntentFilter, exactly 17 Intent, exactly 6 DetailedPath&#10;&#10;&#10;pred generateIntentHijack{&#10;&#9;some GeneratedExpIntentHijack&#10;}&#10;//The exact number of each element is the one shown minus one (except Service &amp; Receiver)&#10;run generateIntentHijack for 1 but exactly 2 Application, exactly 7 Activity, exactly 0 Service, exactly 0 Receiver, exactly 2 IntentFilter, exactly 16 Intent, exactly 6 DetailedPath&#10;" filename="ICC.als"/>
+
+<source content="//Automatically Generated&#10;open appDeclaration&#10;&#10;one sig lu_uni_serval_icc_startactivity3 extends Application{}{&#10;&#9;usesPermissions = READ_PHONE_STATE&#10;&#9;no appPermissions&#10;&#9;APIPermissions = READ_PHONE_STATE&#10;}&#10;&#10;&#10;one sig lu_uni_serval_icc_startactivity3_InFlowActivity extends Activity{}{&#10;&#9;app in lu_uni_serval_icc_startactivity3&#10;&#9;no intentFilter&#10;&#9;detailedPaths = detailedPath_lu_uni_serval_icc_startactivity3_3&#10;&#9;no compPermissions&#10;}&#10;&#10;one sig lu_uni_serval_icc_startactivity3_IntermediateFlowActivity extends Activity{}{&#10;&#9;app in lu_uni_serval_icc_startactivity3&#10;&#9;no intentFilter&#10;&#9;detailedPaths = detailedPath_lu_uni_serval_icc_startactivity3_2 + detailedPath_lu_uni_serval_icc_startactivity3_1&#10;&#9;no compPermissions&#10;}&#10;&#10;one sig lu_uni_serval_icc_startactivity3_IntermediateFlowActivity2 extends Activity{}{&#10;&#9;app in lu_uni_serval_icc_startactivity3&#10;&#9;no intentFilter&#10;&#9;detailedPaths = detailedPath_lu_uni_serval_icc_startactivity3_2 + detailedPath_lu_uni_serval_icc_startactivity3_1&#10;&#9;no compPermissions&#10;}&#10;&#10;one sig lu_uni_serval_icc_startactivity3_IntermediateFlowActivity3 extends Activity{}{&#10;&#9;app in lu_uni_serval_icc_startactivity3&#10;&#9;no intentFilter&#10;&#9;detailedPaths = detailedPath_lu_uni_serval_icc_startactivity3_2 + detailedPath_lu_uni_serval_icc_startactivity3_1&#10;&#9;no compPermissions&#10;}&#10;&#10;one sig lu_uni_serval_icc_startactivity3_IsolateActivity extends Activity{}{&#10;&#9;app in lu_uni_serval_icc_startactivity3&#10;&#9;no intentFilter&#10;&#9;detailedPaths = detailedPath_lu_uni_serval_icc_startactivity3_3&#10;&#9;no compPermissions&#10;}&#10;&#10;one sig lu_uni_serval_icc_startactivity3_OutFlowActivity extends Activity{}{&#10;&#9;app in lu_uni_serval_icc_startactivity3&#10;&#9;intentFilter = IntentFilter1&#10;&#9;no detailedPaths&#10;&#9;no compPermissions&#10;}&#10;&#10;&#10;one sig IntentFilter1 extends IntentFilter{}{&#10;&#9;actions=android_intent_action_MAIN_A&#10;&#9;categories=android_intent_category_LAUNCHER_C&#10;&#9;dataType=NoMIMEType&#10;&#9;dataScheme=NoScheme&#10;}&#10;&#10;one sig detailedPath_lu_uni_serval_icc_startactivity3_1 extends DetailedPath{}{&#10;/*detailedPath_lu_uni_serval_icc_startactivity3_1_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;source = IPC &#10;/*detailedPath_lu_uni_serval_icc_startactivity3_1_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;sink = IPC &#10;}&#10;one sig detailedPath_lu_uni_serval_icc_startactivity3_2 extends DetailedPath{}{&#10;/*detailedPath_lu_uni_serval_icc_startactivity3_2_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;source = IPC &#10;/*detailedPath_lu_uni_serval_icc_startactivity3_2_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity2: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.IntermediateFlowActivity3: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;sink = UNDEFINED &#10;}&#10;one sig detailedPath_lu_uni_serval_icc_startactivity3_3 extends DetailedPath{}{&#10;/*detailedPath_lu_uni_serval_icc_startactivity3_3_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.IsolateActivity: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.InFlowActivity: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;source = IPC &#10;/*detailedPath_lu_uni_serval_icc_startactivity3_3_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.IsolateActivity: void onCreate(android.os.Bundle)&#10;&#9;lu.uni.serval.icc_startactivity3.InFlowActivity: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;sink = LOG &#10;}&#10;one sig detailedPath_lu_uni_serval_icc_startactivity3_4 extends DetailedPath{}{&#10;/*detailedPath_lu_uni_serval_icc_startactivity3_4_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;source = UNIQUE_IDENTIFIER &#10;/*detailedPath_lu_uni_serval_icc_startactivity3_4_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;sink = IPC &#10;}&#10;one sig detailedPath_lu_uni_serval_icc_startactivity3_5 extends DetailedPath{}{&#10;/*detailedPath_lu_uni_serval_icc_startactivity3_5_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;source = UNDEFINED &#10;/*detailedPath_lu_uni_serval_icc_startactivity3_5_calledAt&#10;&#9;lu.uni.serval.icc_startactivity3.OutFlowActivity: void onCreate(android.os.Bundle)@&#10;*/&#10;&#9;sink = IPC &#10;}&#10;&#10;fact{&#10;#lu_uni_serval_icc_startactivity3.~app = 6 &#10;}&#10;&#10;pred show(){&#10;#Application=1&#10;#Component=6&#10;#IntentFilter=1&#10;#DetailedPath=5&#10;#DataScheme=2&#10;#existingApps.apps=1&#10;no Intent&#10;}&#10;run show&#10;" filename="lu_uni_serval_icc_startactivity3.als"/>
+
+<source content="module androidDeclaration&#10;&#10;one sig existingApps{ //device&#10;&#9;apps: set  Application&#10;//&#9;intents: set Intent&#10;}&#10;&#10; sig Application{&#10;&#9;// permissions that the application needs&#10;&#9;// changed for synthesizer&#10;&#9;usesPermissions: set Permission, // requiredPermission&#10;&#9;// permissions required to access components of this application&#10;&#9;// changed for synthesizer&#10;&#9;appPermissions: set Permission, &#10;&#9;// permissions actually used by this application via calling APIs, obtained using PScout permission mapping &#10;&#9;// changed for synthesizer&#10;&#9;APIPermissions: set Permission&#10;&#10;//&#9;components: set Component&#10;}&#10;&#10;abstract sig Component{&#10;&#9;app: one Application,&#10;&#9;//a component may have any number of filters, &#10;&#9;//each one describing a different component's capability&#10;&#9;intentFilter: set IntentFilter,&#10;&#9;// permissions required to access this component -- changed to compPermissions from &quot;permissions&quot;&#10;&#9;// changed for synthesizer&#10;&#9;compPermissions: set Permission,&#10;&#9;// permissions actually used by this component via calling APIs (and Intents), obtained using PScout permission mapping &#10;&#9;// changed for synthesizer&#10;//&#9;compUsesPermissions: set Permission,&#10;&#10;&#10;&#9;// sensitive datapath&#10;&#9;detailedPaths: set DetailedPath&#10;}&#10;&#10; sig DetailedPath{&#10;//&#9;source, sink: one (Resource+IPC)&#10;&#9;source: one Resource,//+IntentFilter,&#10;&#9;sink: one Resource//+Intent&#10;}&#10;&#10;&#10;// Source and Sink resources&#10;abstract sig Resource{}&#10;//one sig NETWORK, EMAIL, IMEI, SMS, MIC, CALENDAR, ACCOUNT, SDCARD, CONTACTS, CAMERA, LOG, SIMCARD, LOCATION, IPC, DATABASE, GENERAL, BUNDLE, NEW, UNDEFINED, IPC_NEW extends Resource{} &#10;//one sig&#9;NO_CATEGORY, HARDWARE_INFO, UNIQUE_IDENTIFIER,LOCATION_INFORMATION, NETWORK_INFORMATION, ACCOUNT_INFORMATION, EMAIL_INFORMATION, FILE_INFORMATION, BLUETOOTH_INFORMATION, VOIP_INFORMATION, DATABASE_INFORMATION, PHONE_INFORMATION, PHONE_CONNECTION, INTER_APP_COMMUNICATION, VOIP, PHONE_STATE, EMAIL, BLUETOOTH, ACCOUNT_SETTINGS, VIDEO, SYNCHRONIZATION_DATA, NETWORK, EMAIL_SETTINGS, FILE, LOG, AUDIO, SMS_MMS, CONTACT_INFORMATION, CALENDAR_INFORMATION, SYSTEM_SETTINGS, IMAGE, BROWSER_INFORMATION, NFC, IPC, NEW, UNDEFINED, IPC_NEW, BUNDLE, WIDGET extends Resource{} &#10;one sig&#9;NO_CATEGORY, HARDWARE_INFO,  FILE_INFORMATION, BLUETOOTH_INFORMATION, VOIP_INFORMATION, INTER_APP_COMMUNICATION, VOIP, PHONE_STATE,  SYNCHRONIZATION_DATA, EMAIL_SETTINGS, FILE,   SYSTEM_SETTINGS, IMAGE, IPC, NEW, UNDEFINED, IPC_NEW, BUNDLE extends Resource{} &#10;&#10;abstract sig SIGResource extends Resource{}&#10;one sig UNIQUE_IDENTIFIER, LOCATION_INFORMATION, NETWORK_INFORMATION, ACCOUNT_INFORMATION, EMAIL_INFORMATION,DATABASE_INFORMATION, PHONE_INFORMATION, PHONE_CONNECTION,EMAIL, BLUETOOTH, ACCOUNT_SETTINGS, VIDEO,NETWORK, LOG,AUDIO, SMS_MMS, CONTACT_INFORMATION, CALENDAR_INFORMATION,BROWSER_INFORMATION, NFC, WIDGET extends SIGResource{}&#10;&#10;// To inform the system which implicit intents they can handle, &#10;// components can have one or more intent filters.&#10; sig IntentFilter{&#10;&#9;// A filter may list more than one [actions]&#10;&#9;// The list cannot be empty&#10;&#9;actions: some Action,&#10;&#9;// changed for synthesizer&#10;&#9;//data: one Data,&#9; // set Data,&#9;&#10;&#9;dataType: some DataType,&#10;&#9;dataScheme: some DataScheme,&#10;&#9;// For an intent to pass the category test, every category &#10;&#9;// in the Intent object must match a category in the filter. &#10;&#9;// The filter can list additional categories, &#10;&#9;//but it cannot omit any that are in the intent.&#10;&#9;categories: set Category,&#10;&#9;//Added for synthesizer, representing a path from this IntentFilter to an API call (by Flowdroid)&#10;&#9;// details of path, such as the particular API, are added, similar to Intents in the ICC module.&#10;}&#10;&#10;&#10;&#10; sig Activity extends Component{&#10;}&#10;&#10;fact{&#10;&#10;&#9;// changed for synthesizer&#10;  // each intent-filter belongs to exactly one component&#10;  //all i:IntentFilter| one i.~intentFilter&#10;&#10;  // to improve efficiency of Alloy we reuse repetative &#10;  all i:IntentFilter| some i.~intentFilter&#10;&#10;&#10;// Three of the core components of an application, namely&#10;// activities, services, and broadcast receivers, can&#10;// have one or more intent filters.&#10;//To exclude provider from having intent filters, &#10;//we add a separate fact constraint specification.&#10;//  no i:IntentFilter| i.~intentFilter in Provider&#10;&#10;&#10;&#10;&#9;//An IntentFilter that has NoAction, do not include any other actions&#10;&#9;no i:IntentFilter| NoAction in i.actions &amp;&amp; #i.actions &gt; 1&#10;//&#9;no c:Component| NoAction in c.intentFilter.actions &amp;&amp; #app.intentFilter.actions &gt; 1&#10;&#10;}&#10;&#10;&#10;&#9;// changed for synthesizer&#10; sig Service extends Component{}&#10; sig Receiver extends Component{}&#10; sig Provider extends Component{}&#10;&#10;&#10;// Elements of an intent:&#10;// Only three attributes of an Intent object are consulted &#10;// when it is tested against an intent filter:&#10;// Action is a string that names the general action  to be performed.&#10; sig Action{}&#10;// Category is a string containing additional information about the kind of&#10;//component that should handle the intent&#10; sig Category{}&#10;// Data is a tuple consisting of both the URI of the data to be acted on and its MIME media type. &#10;// This attribute indicates the data to be processed by the action.&#10;&#10;&#10;// An intentFilter should have at least one action, we put this sig here to enable modeling those intentFilters do not have any action. &#10;one sig NoAction extends Action{}{&#10;&#10;}&#10;&#10;one sig android_intent_category_DEFAULT_C extends Category{} &#10;one sig android_intent_category_LAUNCHER_C extends Category{}&#10;one sig android_intent_action_MAIN_A extends Action{}&#10;&#10;abstract sig DataScheme{}&#10;abstract sig DataType{}&#10;&#10;one sig NoMIMEType extends DataType{}&#10;one sig NoScheme extends DataScheme{}&#10;one sig YesScheme extends DataScheme{}&#10;&#10; sig Intent{&#10;&#9;sender: one Component,&#10;&#9;component: lone Component,&#10;&#9;action: one Action, //lone Action,&#10;&#9;dataType: one DataType,&#10;&#9;dataScheme: one DataScheme, &#10;&#9;categories: set Category, //some Category, &#10;//&#9;extra: one Extra // for synthesizer, we assume the Intent from the Source App should be Yes&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;// otherwise, we need to add another field representing whether the Intent contains data (by flowdroid) or not&#10;&#9;detailedPaths: set DetailedPath&#10;}&#10;&#10;&#10;abstract sig Extra{}&#10;one sig Yes extends Extra{}&#10;one sig No extends Extra{}&#10;&#10;abstract sig Permission{}&#10;&#10;&#10;sig GeneratedExp{&#10;&#9;disj c1, c2,b: Component,&#10;&#9;disj i1,i2:Intent,&#10;&#9;disj d1,d2,dIntent,dComponent:DetailedPath&#10;}{&#10;&#9;i1.sender = c1 &#10;&#9;no i1.component // i1 is an implicit Intent&#10;&#9;b in newIntentResolver[i1]&#10; &#9;i2.sender = b&#10;&#9;c2 in setExplicitIntent[i2] //newIntentResolver[i2]&#10;&#10;&#9;no c1.app &amp; c2.app &#10;&#9;no c1.app &amp; b.app&#10;&#9;no c2.app &amp; b.app &#10;&#10;&#9;c1.app in existingApps.apps&#10;&#9;c2.app in existingApps.apps&#10;&#9;&#10;//&#9;some i1.detailedPaths &amp;&amp; i1.detailedPaths.sink = IPC &amp;&amp; i1.detailedPaths.source != IPC  &amp;&amp; i1.detailedPaths.source != UNDEFINED&#10;//&#9;some c2.detailedPaths &amp;&amp; c2.detailedPaths.source = IPC &amp;&amp; c2.detailedPaths.sink != IPC  &amp;&amp; c2.detailedPaths.sink != UNDEFINED&#10;&#9;dIntent in i1.detailedPaths &amp;&amp; dIntent.sink = IPC &amp;&amp; //dIntent.source != IPC  &amp;&amp; dIntent.source != UNDEFINED&#10;&#9;dIntent.source in SIGResource  // to reduce warnings&#10;&#9;dComponent in c2.detailedPaths &amp;&amp; dComponent.source = IPC &amp;&amp; //dComponent.sink != IPC  &amp;&amp; dComponent.sink != UNDEFINED&#10;&#9;dComponent.sink in SIGResource  // to reduce warnings&#10;&#9;not (b.app in existingApps.apps)&#10;&#10;&#9;&#10;&#10;&#9;b in Activity&#10;&#9;#b.detailedPaths = 1&#10;&#9;b.detailedPaths = d2&#10;&#10;&#9;#i2.detailedPaths = 1&#10;&#9;i2.detailedPaths = d1&#10;&#9;&#10;&#9;d1.source = IPC_NEW&#10;&#9;d1.sink = IPC_NEW&#10;&#9;one d1.source &#10;&#9;one d1.sink &#10;&#10;&#9;d2.source = IPC_NEW&#10;&#9;d2.sink = IPC_NEW&#10;&#9;one d2.source &#10;&#9;one d2.sink &#9;&#10;}&#10;&#10;&#10;sig GeneratedExpActivityLunch{&#10;&#9;disj c2,b: one Component,&#10;&#9;i2: Intent,&#10;&#9;dComponent: one DetailedPath&#10;}{&#10; &#9;i2.sender = b&#10;&#9;c2 in setExplicitIntent[i2]&#10;&#10;&#9;no c2.app &amp; b.app &#10;&#10;&#9;c2.app in existingApps.apps&#10;&#9;not (b.app in existingApps.apps)&#10;&#9;&#10;&#9;some i2.detailedPaths &amp;&amp; i2.detailedPaths.sink = IPC &amp;&amp; i2.detailedPaths.source = NEW&#9;&#10;//&#9;some c2.detailedPaths &amp;&amp; c2.detailedPaths.source = IPC &amp;&amp; c2.detailedPaths.sink != IPC  &amp;&amp; c2.detailedPaths.sink != UNDEFINED&#10;&#9;dComponent in c2.detailedPaths &amp;&amp; dComponent.source = IPC &amp;&amp; //dComponent.sink != IPC  &amp;&amp; dComponent.sink != UNDEFINED&#10;&#9;dComponent.sink in SIGResource  // to reduce warnings&#10;&#10;&#9;b in Activity&#10;&#9;no b.detailedPaths &#10;&#9;no b.intentFilter&#10;}&#10;&#10;sig GeneratedExpIntentHijack{&#10;&#9;disj c1, b: Component,&#10;&#9;i1:Intent,&#10;&#9;disj d1, dIntent:DetailedPath&#10;}{&#10;&#9;i1.sender = c1 &#10;&#9;no i1.component // i1 is an implicit Intent&#10;&#9;b in newIntentResolver[i1]&#10;&#10;&#9;no c1.app &amp; b.app&#10;&#10;&#9;c1.app in existingApps.apps&#10;&#9;not (b.app in existingApps.apps)&#10;&#10;//&#9;some i1.detailedPaths &amp;&amp; i1.detailedPaths.sink = IPC &amp;&amp; i1.detailedPaths.source != IPC  &amp;&amp; i1.detailedPaths.source != UNDEFINED&#10;&#9;dIntent in i1.detailedPaths &amp;&amp; dIntent.sink = IPC &amp;&amp; //dIntent.source != IPC  &amp;&amp; dIntent.source != UNDEFINED&#10;&#9;dIntent.source in SIGResource  // to reduce warnings&#10;&#9;&#10;&#9;b in Activity&#10;&#9;#b.detailedPaths = 1&#10;&#9;b.detailedPaths = d1&#10;&#10;&#9;&#10;&#9;d1.source = IPC&#10;&#9;d1.sink = NEW // the sink in generated component could be anything, e.g. SMS&#10;&#9;one d1.source &#10;&#9;one d1.sink &#10;&#10;&#9;&#10;}&#10;&#10;&#10;&#10;&#10;&#10;fun setExplicitIntent(i:Intent): set Component{&#10;&#9;{c:Component| &#9;some i.detailedPaths &amp;&amp;   some f: IntentFilter| f.~intentFilter in c &amp;&amp; &#10;&#9;some c.detailedPaths &amp;&amp; &#10;&#9;c = i.component &amp;&amp; i.categories = android_intent_category_DEFAULT_C  &amp;&amp; i.action = NoAction &amp;&amp; i.dataType = NoMIMEType &amp;&amp; i.dataScheme = NoScheme &#10; }&#10;}&#10;&#10;fun newIntentResolver(i:Intent): set Component{&#10;&#9;{c:Component| &#9;//some i.detailedPaths &amp;&amp; &#10;&#9;&#9;{&#10;       // Explicit Intent&#10;&#9;&#9;some i.component  implies {c = i.component}&#10;       // Implicit Intent&#10;&#9;&#9;else {&#10;&#9;&#9;&#9;&#9;&#9;some f: IntentFilter| f.~intentFilter in c &amp;&amp; i.action in f.actions&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&amp;&amp; i.categories in f.categories&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&amp;&amp; (i.dataScheme in f.dataScheme &amp;&amp; i.dataType in f.dataType)  }&#10;   } &#10;  }&#10;}&#10;&#10;&#10;assert  privEscal{&#10;&#9;&#9;no disj src, dst: Component, i:Intent| &#10;&#9;&#9;&#9;&#9;(src in i.sender) &amp;&amp;  &#10;&#9;&#9;&#9;&#9;(dst in newIntentResolver[i]) &amp;&amp;&#10;&#9;&#9;&#9;&#9;some (dst.detailedPaths.sink &amp; Resource) &amp;&amp; &#10;&#9;&#9;&#9;&#9;// The target application has a permission missing in the sender application and not being checked in the target component&#10;&#9;&#9;&#9;&#9;(some p: dst.app.usesPermissions | not (p in src.app.usesPermissions)  &amp;&amp; not ((p in dst.compPermissions)||(p in dst.app.appPermissions)))&#9;&#9;&#9;&#9;&#9;&#9;&#10;}&#10;&#10;fact noSimilarGeneratedExp{&#10;&#9;no disj t1,t2 : GeneratedExp| &#9;t1.c1 = t2.c1 &amp;&amp;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;t1.c2 = t2.c2 &amp;&amp;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;t1.b = t2.b &#10;}&#10;&#10;&#10;//Added by Alireza&#10;assert  InfoLeaksInterApp{&#10;&#9;&#9;no disj cmp1, cmp2: Component, i:Intent, disj d1,d2: DetailedPath| &#10;&#9;&#9;&#9;&#9;cmp2 in newIntentResolver[i] &amp;&amp;&#10;&#9;&#9;&#9;&#9;i.sender in cmp1 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1 in i.detailedPaths &amp;&amp; &#10;&#9;&#9;&#9;&#9;d2 in cmp2.detailedPaths &amp;&amp; &#10;&#9;&#9;&#9;&#9;d1.source != IPC &amp;&amp; d1.sink = IPC &amp;&amp; d1.source != UNDEFINED &amp;&amp; d1.source != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;d2.source = IPC &amp;&amp; d2.sink != IPC &amp;&amp; d2.sink != UNDEFINED &amp;&amp; d2.sink != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;cmp1.app != cmp2.app&#10;}&#10;&#10;assert  InfoLeaksIntraApp{&#10;&#9;&#9;no disj cmp1, cmp2: Component, i:Intent, disj d1,d2: DetailedPath| &#10;&#9;&#9;&#9;&#9;i.sender in cmp1 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1 in i.detailedPaths &amp;&amp; &#10;&#9;&#9;&#9;&#9;d2 in cmp2.detailedPaths &amp;&amp; d2.source = IPC &amp;&amp;&#10;&#9;&#9;&#9;&#9;cmp1.app = cmp2.app &amp;&amp;&#10;&#9;&#9;&#9;&#9;i.component = cmp2&#10;}&#10;&#10;&#10;assert  InfoLeaksIntraAppTransitive1{&#10;&#9;&#9; no disj cmp1, cmp2: Component, i:Intent, disj d1,d2: DetailedPath| &#10;&#9;&#9;&#9;&#9;i.sender in cmp1 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1 in i.detailedPaths &amp;&amp; d1.sink = IPC &amp;&amp; //d1.source != IPC &amp;&amp; d1.source != UNDEFINED &amp;&amp; d1.source != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1.source  in SIGResource &amp;&amp; // to reduce warnings&#10;&#10;&#9;&#9;&#9;&#9;d2 in cmp2.detailedPaths &amp;&amp; d2.source = IPC &amp;&amp; //d2.sink != IPC &amp;&amp; d2.sink != UNDEFINED &amp;&amp; d2.sink != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;d2.sink  in SIGResource &amp;&amp; // to reduce warnings&#10;&#10;&#9;&#9;&#9;&#9;cmp1.app = cmp2.app &amp;&amp;&#10;&#9;&#9;&#9;&#9;i.component = cmp2&#10;}&#10;&#10;assert  InfoLeaksIntraAppTransitive2{&#10;&#9;&#9; no /*disj*/ cmp1, intCmp, cmp2: Component, disj i1,i2:Intent, d1,d2,d3: DetailedPath| &#10;&#9;&#9;&#9;&#9;i1.sender in cmp1 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1 in i1.detailedPaths &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1.source != IPC &amp;&amp; d1.sink = IPC &amp;&amp; //d1.source != UNDEFINED &amp;&amp; d1.source != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1.source  in SIGResource &amp;&amp; // to reduce warnings&#10;&#9;&#9;&#9;&#9;i1.component = intCmp &amp;&amp;&#10;&#10;&#9;&#9;&#9;&#9;i2.sender in intCmp &amp;&amp;&#10;&#9;&#9;&#9;&#9;d2 in i2.detailedPaths &amp;&amp;&#10;&#9;&#9;&#9;&#9;d2.source = IPC &amp;&amp; d2.sink = IPC &amp;&amp;&#10;&#9;&#9;&#9;&#9;i2.component = cmp2 &amp;&amp;&#10; &#10;&#9;&#9;&#9;&#9;d3 in cmp2.detailedPaths &amp;&amp; d3.source = IPC &amp;&amp; //d3.sink != IPC &amp;&amp; d3.sink != UNDEFINED &amp;&amp; d3.sink != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;d3.sink  in SIGResource &amp;&amp; // to reduce warnings&#10;&#10;&#9;&#9;&#9;&#9;cmp1.app = cmp2.app &amp;&amp; cmp2.app=  intCmp.app &#10;}&#10;&#10;assert  InfoLeaksIntraAppTransitive3{&#10;&#9;&#9; no /*disj*/ cmp1, intCmp1, intCmp2, cmp2: Component, disj i1,i2,i3:Intent, d1,d2,d3,d4: DetailedPath| &#10;&#9;&#9;&#9;&#9;i1.sender in cmp1 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1 in i1.detailedPaths &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1.source != IPC &amp;&amp; d1.sink = IPC &amp;&amp; //d1.source != UNDEFINED &amp;&amp; d1.source != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1.source  in SIGResource &amp;&amp; // to reduce warnings&#10;&#9;&#9;&#9;&#9;i1.component = intCmp1 &amp;&amp;&#10;&#10;&#9;&#9;&#9;&#9;i2.sender in intCmp1 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d2 in i2.detailedPaths &amp;&amp;&#10;&#9;&#9;&#9;&#9;d2.source = IPC &amp;&amp; d2.sink = IPC &amp;&amp;&#10;&#9;&#9;&#9;&#9;i2.component = intCmp2 &amp;&amp;&#10;&#10;&#9;&#9;&#9;&#9;i3.sender in intCmp2 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d3 in i3.detailedPaths &amp;&amp;&#10;&#9;&#9;&#9;&#9;d3.source = IPC &amp;&amp; d3.sink = IPC &amp;&amp;&#10;&#9;&#9;&#9;&#9;i3.component = cmp2 &amp;&amp;&#10; &#10;&#9;&#9;&#9;&#9;d4 in cmp2.detailedPaths &amp;&amp; d4.source = IPC &amp;&amp; //d4.sink != IPC &amp;&amp; d4.sink != UNDEFINED &amp;&amp; d4.sink != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;d4.sink  in SIGResource &amp;&amp; // to reduce warnings&#10;&#10;&#9;&#9;&#9;&#9;cmp1.app = cmp2.app &amp;&amp; cmp2.app=  intCmp1.app &amp;&amp; cmp2.app=  intCmp2.app &#10;}&#10;&#10;assert  InfoLeaksIntraAppTransitive4{&#10;&#9;&#9; no /*disj*/ cmp1, intCmp1, intCmp2, intCmp3, cmp2: Component, disj i1,i2,i3,i4:Intent, d1,d2,d3,d4,d5: DetailedPath| &#10;&#9;&#9;&#9;&#9;i1.sender in cmp1 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1 in i1.detailedPaths &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1.source != IPC &amp;&amp; d1.sink = IPC &amp;&amp; //d1.source != UNDEFINED &amp;&amp; d1.source != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;d1.source  in SIGResource &amp;&amp; // to reduce warnings&#10;&#9;&#9;&#9;&#9;i1.component = intCmp1 &amp;&amp;&#10;&#10;&#9;&#9;&#9;&#9;i2.sender in intCmp1 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d2 in i2.detailedPaths &amp;&amp;&#10;&#9;&#9;&#9;&#9;d2.source = IPC &amp;&amp; d2.sink = IPC &amp;&amp;&#10;&#9;&#9;&#9;&#9;i2.component = intCmp2 &amp;&amp;&#10;&#10;&#9;&#9;&#9;&#9;i3.sender in intCmp2 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d3 in i3.detailedPaths &amp;&amp;&#10;&#9;&#9;&#9;&#9;d3.source = IPC &amp;&amp; d3.sink = IPC &amp;&amp;&#10;&#9;&#9;&#9;&#9;i3.component = intCmp3 &amp;&amp;&#10; &#10;&#9;&#9;&#9;&#9;i4.sender in intCmp3 &amp;&amp;&#10;&#9;&#9;&#9;&#9;d4 in i4.detailedPaths &amp;&amp;&#10;&#9;&#9;&#9;&#9;d4.source = IPC &amp;&amp; d4.sink = IPC &amp;&amp;&#10;&#9;&#9;&#9;&#9;i4.component = cmp2 &amp;&amp;&#10;&#10;&#9;&#9;&#9;&#9;d5 in cmp2.detailedPaths &amp;&amp; d5.source = IPC &amp;&amp; //d5.sink != IPC &amp;&amp; d5.sink != UNDEFINED &amp;&amp; d5.sink != NO_CATEGORY &amp;&amp;&#10;&#9;&#9;&#9;&#9;d5.sink  in SIGResource &amp;&amp; // to reduce warnings&#10;&#9;&#9;&#9;&#9;cmp1.app = cmp2.app &amp;&amp; cmp2.app=  intCmp1.app &amp;&amp; cmp2.app=  intCmp2.app &amp;&amp; cmp2.app=  intCmp3.app &#10;}&#10;pred show(){&#10;//&#9;some IntentFilter&#10;//&#9;some Activity&#10;//&#9;some Provider&#10;}&#10;run show for 20&#10;" filename="androidDeclaration.als"/>
+
+<source content="//Automatically Generated&#10;module appDeclaration &#10;&#10;open androidDeclaration&#10;&#10;&#10;&#10;one sig READ_PHONE_STATE extends Permission{}&#10;&#10;&#10;pred show{}&#10;run show&#10;" filename="appDeclaration.als"/>
+
+</alloy>
