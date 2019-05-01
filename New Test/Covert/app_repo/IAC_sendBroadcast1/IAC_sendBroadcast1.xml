@@ -4,447 +4,6 @@
     <apps/>
     <vulnerabilities>
         <vulnerability>
-            <type>Inter-app Data Leakage</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent, and send its data via an Explicit Intent (Component = InFlowReceiver) to app lu.uni.serval.iac.sendbroadcast1.sink that puts this data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
-                        <alloyLabel>i1</alloyLabel>
-                    </element>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
-                        <element>
-                            <type>SOURCE_TYPE</type>
-                            <description>UNIQUE_IDENTIFIER</description>
-                            <alloyLabel>dIntent</alloyLabel>
-                        </element>
-                        <alloyLabel>dIntent</alloyLabel>
-                    </element>
-                    <alloyLabel>c1</alloyLabel>
-                </element>
-                <alloyLabel>c1</alloyLabel>
-            </vulnerabilityElements>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Explicit Intent (Component = InFlowReceiver)</description>
-                        <alloyLabel>i2</alloyLabel>
-                    </element>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
-                        <element>
-                            <type>SINK_TYPE</type>
-                            <description>LOG</description>
-                            <alloyLabel>dComponent</alloyLabel>
-                        </element>
-                        <alloyLabel>dComponent</alloyLabel>
-                    </element>
-                    <alloyLabel>c2</alloyLabel>
-                </element>
-                <alloyLabel>c2</alloyLabel>
-            </vulnerabilityElements>
-        </vulnerability>
-        <vulnerability>
-            <type>Inter-app Data Leakage</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent, and send its data via an Explicit Intent (Component = InFlowReceiver) to app lu.uni.serval.iac.sendbroadcast1.sink that puts this data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
-                        <alloyLabel>i1</alloyLabel>
-                    </element>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
-                        <element>
-                            <type>SOURCE_TYPE</type>
-                            <description>UNIQUE_IDENTIFIER</description>
-                            <alloyLabel>dIntent</alloyLabel>
-                        </element>
-                        <alloyLabel>dIntent</alloyLabel>
-                    </element>
-                    <alloyLabel>c1</alloyLabel>
-                </element>
-                <alloyLabel>c1</alloyLabel>
-            </vulnerabilityElements>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Explicit Intent (Component = InFlowReceiver)</description>
-                        <alloyLabel>i2</alloyLabel>
-                    </element>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
-                        <element>
-                            <type>SINK_TYPE</type>
-                            <description>LOG</description>
-                            <alloyLabel>dComponent</alloyLabel>
-                        </element>
-                        <alloyLabel>dComponent</alloyLabel>
-                    </element>
-                    <alloyLabel>c2</alloyLabel>
-                </element>
-                <alloyLabel>c2</alloyLabel>
-            </vulnerabilityElements>
-        </vulnerability>
-        <vulnerability>
-            <type>Inter-app Data Leakage</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent, and send its data via an Explicit Intent (Component = InFlowReceiver) to app lu.uni.serval.iac.sendbroadcast1.sink that puts this data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
-                        <alloyLabel>i1</alloyLabel>
-                    </element>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
-                        <element>
-                            <type>SOURCE_TYPE</type>
-                            <description>UNIQUE_IDENTIFIER</description>
-                            <alloyLabel>dIntent</alloyLabel>
-                        </element>
-                        <alloyLabel>dIntent</alloyLabel>
-                    </element>
-                    <alloyLabel>c1</alloyLabel>
-                </element>
-                <alloyLabel>c1</alloyLabel>
-            </vulnerabilityElements>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Explicit Intent (Component = InFlowReceiver)</description>
-                        <alloyLabel>i2</alloyLabel>
-                    </element>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
-                        <element>
-                            <type>SINK_TYPE</type>
-                            <description>LOG</description>
-                            <alloyLabel>dComponent</alloyLabel>
-                        </element>
-                        <alloyLabel>dComponent</alloyLabel>
-                    </element>
-                    <alloyLabel>c2</alloyLabel>
-                </element>
-                <alloyLabel>c2</alloyLabel>
-            </vulnerabilityElements>
-        </vulnerability>
-        <vulnerability>
-            <type>Inter-app Data Leakage</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent, and send its data via an Explicit Intent (Component = InFlowReceiver) to app lu.uni.serval.iac.sendbroadcast1.sink that puts this data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
-                        <alloyLabel>i1</alloyLabel>
-                    </element>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
-                        <element>
-                            <type>SOURCE_TYPE</type>
-                            <description>UNIQUE_IDENTIFIER</description>
-                            <alloyLabel>dIntent</alloyLabel>
-                        </element>
-                        <alloyLabel>dIntent</alloyLabel>
-                    </element>
-                    <alloyLabel>c1</alloyLabel>
-                </element>
-                <alloyLabel>c1</alloyLabel>
-            </vulnerabilityElements>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Explicit Intent (Component = InFlowReceiver)</description>
-                        <alloyLabel>i2</alloyLabel>
-                    </element>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
-                        <element>
-                            <type>SINK_TYPE</type>
-                            <description>LOG</description>
-                            <alloyLabel>dComponent</alloyLabel>
-                        </element>
-                        <alloyLabel>dComponent</alloyLabel>
-                    </element>
-                    <alloyLabel>c2</alloyLabel>
-                </element>
-                <alloyLabel>c2</alloyLabel>
-            </vulnerabilityElements>
-        </vulnerability>
-        <vulnerability>
-            <type>Sensitive Data Leakage</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). The malicious app, lu.uni.serval.iac.sendbroadcast1.sink , receives the Intent and puts its payload data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
-                        <element>
-                            <type>SOURCE_TYPE</type>
-                            <description>UNIQUE_IDENTIFIER</description>
-                            <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
-                        </element>
-                        <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
-                    </element>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
-                        <alloyLabel>$InfoLeaksInterApp_i</alloyLabel>
-                    </element>
-                    <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
-                </element>
-                <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
-            </vulnerabilityElements>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
-                        <element>
-                            <type>SINK_TYPE</type>
-                            <description>LOG</description>
-                            <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
-                        </element>
-                        <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
-                    </element>
-                    <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
-                </element>
-                <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
-            </vulnerabilityElements>
-        </vulnerability>
-        <vulnerability>
-            <type>Sensitive Data Leakage</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). The malicious app, lu.uni.serval.iac.sendbroadcast1.sink , receives the Intent and puts its payload data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
-                        <element>
-                            <type>SOURCE_TYPE</type>
-                            <description>UNIQUE_IDENTIFIER</description>
-                            <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
-                        </element>
-                        <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
-                    </element>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
-                        <alloyLabel>$InfoLeaksInterApp_i</alloyLabel>
-                    </element>
-                    <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
-                </element>
-                <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
-            </vulnerabilityElements>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
-                        <element>
-                            <type>SINK_TYPE</type>
-                            <description>LOG</description>
-                            <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
-                        </element>
-                        <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
-                    </element>
-                    <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
-                </element>
-                <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
-            </vulnerabilityElements>
-        </vulnerability>
-        <vulnerability>
-            <type>Sensitive Data Leakage</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). The malicious app, lu.uni.serval.iac.sendbroadcast1.sink , receives the Intent and puts its payload data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
-                        <element>
-                            <type>SOURCE_TYPE</type>
-                            <description>UNIQUE_IDENTIFIER</description>
-                            <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
-                        </element>
-                        <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
-                    </element>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
-                        <alloyLabel>$InfoLeaksInterApp_i</alloyLabel>
-                    </element>
-                    <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
-                </element>
-                <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
-            </vulnerabilityElements>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
-                        <element>
-                            <type>SINK_TYPE</type>
-                            <description>LOG</description>
-                            <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
-                        </element>
-                        <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
-                    </element>
-                    <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
-                </element>
-                <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
-            </vulnerabilityElements>
-        </vulnerability>
-        <vulnerability>
-            <type>Sensitive Data Leakage</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). The malicious app, lu.uni.serval.iac.sendbroadcast1.sink , receives the Intent and puts its payload data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
-                        <element>
-                            <type>SOURCE_TYPE</type>
-                            <description>UNIQUE_IDENTIFIER</description>
-                            <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
-                        </element>
-                        <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
-                    </element>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
-                        <alloyLabel>$InfoLeaksInterApp_i</alloyLabel>
-                    </element>
-                    <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
-                </element>
-                <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
-            </vulnerabilityElements>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
-                        <element>
-                            <type>SINK_TYPE</type>
-                            <description>LOG</description>
-                            <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
-                        </element>
-                        <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
-                    </element>
-                    <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
-                </element>
-                <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
-            </vulnerabilityElements>
-        </vulnerability>
-        <vulnerability>
-            <type>Intent Hijack</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent.</description>
-            <vulnerabilityElements>
-                <type>APP</type>
-                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
-                <element>
-                    <type>COMPONENT</type>
-                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
-                    <element>
-                        <type>INTENT</type>
-                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
-                        <alloyLabel>i1</alloyLabel>
-                    </element>
-                    <element>
-                        <type>METHOD</type>
-                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
-                        <element>
-                            <type>SOURCE_TYPE</type>
-                            <description>UNIQUE_IDENTIFIER</description>
-                            <alloyLabel>dIntent</alloyLabel>
-                        </element>
-                        <alloyLabel>dIntent</alloyLabel>
-                    </element>
-                    <alloyLabel>c1</alloyLabel>
-                </element>
-                <alloyLabel>c1</alloyLabel>
-            </vulnerabilityElements>
-        </vulnerability>
-        <vulnerability>
             <type>Intent Spoofing</type>
             <description>App lu.uni.serval.iac.sendbroadcast1.sink puts data (retrieved from an Explicit Intent (Component = InFlowReceiver)) on an unsafe sink (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver). A malicious app can send a sensitive data from this channel.</description>
             <vulnerabilityElements>
@@ -474,8 +33,8 @@
             </vulnerabilityElements>
         </vulnerability>
         <vulnerability>
-            <type>Intent Hijack</type>
-            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent.</description>
+            <type>Inter-app Data Leakage</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent, and send its data via an Explicit Intent (Component = InFlowReceiver) to app lu.uni.serval.iac.sendbroadcast1.sink that puts this data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
             <vulnerabilityElements>
                 <type>APP</type>
                 <description>lu.uni.serval.iac.sendbroadcast1.source</description>
@@ -500,6 +59,183 @@
                     <alloyLabel>c1</alloyLabel>
                 </element>
                 <alloyLabel>c1</alloyLabel>
+            </vulnerabilityElements>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Explicit Intent (Component = InFlowReceiver)</description>
+                        <alloyLabel>i2</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
+                        <element>
+                            <type>SINK_TYPE</type>
+                            <description>LOG</description>
+                            <alloyLabel>dComponent</alloyLabel>
+                        </element>
+                        <alloyLabel>dComponent</alloyLabel>
+                    </element>
+                    <alloyLabel>c2</alloyLabel>
+                </element>
+                <alloyLabel>c2</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+        <vulnerability>
+            <type>Inter-app Data Leakage</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent, and send its data via an Explicit Intent (Component = InFlowReceiver) to app lu.uni.serval.iac.sendbroadcast1.sink that puts this data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
+                        <alloyLabel>i1</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
+                        <element>
+                            <type>SOURCE_TYPE</type>
+                            <description>UNIQUE_IDENTIFIER</description>
+                            <alloyLabel>dIntent</alloyLabel>
+                        </element>
+                        <alloyLabel>dIntent</alloyLabel>
+                    </element>
+                    <alloyLabel>c1</alloyLabel>
+                </element>
+                <alloyLabel>c1</alloyLabel>
+            </vulnerabilityElements>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Explicit Intent (Component = InFlowReceiver)</description>
+                        <alloyLabel>i2</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
+                        <element>
+                            <type>SINK_TYPE</type>
+                            <description>LOG</description>
+                            <alloyLabel>dComponent</alloyLabel>
+                        </element>
+                        <alloyLabel>dComponent</alloyLabel>
+                    </element>
+                    <alloyLabel>c2</alloyLabel>
+                </element>
+                <alloyLabel>c2</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+        <vulnerability>
+            <type>Sensitive Data Leakage</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). The malicious app, lu.uni.serval.iac.sendbroadcast1.sink , receives the Intent and puts its payload data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
+                        <element>
+                            <type>SOURCE_TYPE</type>
+                            <description>UNIQUE_IDENTIFIER</description>
+                            <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
+                        </element>
+                        <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
+                    </element>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
+                        <alloyLabel>$InfoLeaksInterApp_i</alloyLabel>
+                    </element>
+                    <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
+                </element>
+                <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
+            </vulnerabilityElements>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
+                        <element>
+                            <type>SINK_TYPE</type>
+                            <description>LOG</description>
+                            <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
+                        </element>
+                        <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
+                    </element>
+                    <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
+                </element>
+                <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+        <vulnerability>
+            <type>Sensitive Data Leakage</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). The malicious app, lu.uni.serval.iac.sendbroadcast1.sink , receives the Intent and puts its payload data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
+                        <element>
+                            <type>SOURCE_TYPE</type>
+                            <description>UNIQUE_IDENTIFIER</description>
+                            <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
+                        </element>
+                        <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
+                    </element>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
+                        <alloyLabel>$InfoLeaksInterApp_i</alloyLabel>
+                    </element>
+                    <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
+                </element>
+                <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
+            </vulnerabilityElements>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
+                        <element>
+                            <type>SINK_TYPE</type>
+                            <description>LOG</description>
+                            <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
+                        </element>
+                        <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
+                    </element>
+                    <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
+                </element>
+                <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
             </vulnerabilityElements>
         </vulnerability>
         <vulnerability>
@@ -558,6 +294,270 @@
                     <alloyLabel>c1</alloyLabel>
                 </element>
                 <alloyLabel>c1</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+        <vulnerability>
+            <type>Intent Hijack</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent.</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
+                        <alloyLabel>i1</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
+                        <element>
+                            <type>SOURCE_TYPE</type>
+                            <description>UNIQUE_IDENTIFIER</description>
+                            <alloyLabel>dIntent</alloyLabel>
+                        </element>
+                        <alloyLabel>dIntent</alloyLabel>
+                    </element>
+                    <alloyLabel>c1</alloyLabel>
+                </element>
+                <alloyLabel>c1</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+        <vulnerability>
+            <type>Inter-app Data Leakage</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent, and send its data via an Explicit Intent (Component = InFlowReceiver) to app lu.uni.serval.iac.sendbroadcast1.sink that puts this data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
+                        <alloyLabel>i1</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
+                        <element>
+                            <type>SOURCE_TYPE</type>
+                            <description>UNIQUE_IDENTIFIER</description>
+                            <alloyLabel>dIntent</alloyLabel>
+                        </element>
+                        <alloyLabel>dIntent</alloyLabel>
+                    </element>
+                    <alloyLabel>c1</alloyLabel>
+                </element>
+                <alloyLabel>c1</alloyLabel>
+            </vulnerabilityElements>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Explicit Intent (Component = InFlowReceiver)</description>
+                        <alloyLabel>i2</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
+                        <element>
+                            <type>SINK_TYPE</type>
+                            <description>LOG</description>
+                            <alloyLabel>dComponent</alloyLabel>
+                        </element>
+                        <alloyLabel>dComponent</alloyLabel>
+                    </element>
+                    <alloyLabel>c2</alloyLabel>
+                </element>
+                <alloyLabel>c2</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+        <vulnerability>
+            <type>Sensitive Data Leakage</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). The malicious app, lu.uni.serval.iac.sendbroadcast1.sink , receives the Intent and puts its payload data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
+                        <element>
+                            <type>SOURCE_TYPE</type>
+                            <description>UNIQUE_IDENTIFIER</description>
+                            <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
+                        </element>
+                        <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
+                    </element>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
+                        <alloyLabel>$InfoLeaksInterApp_i</alloyLabel>
+                    </element>
+                    <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
+                </element>
+                <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
+            </vulnerabilityElements>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
+                        <element>
+                            <type>SINK_TYPE</type>
+                            <description>LOG</description>
+                            <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
+                        </element>
+                        <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
+                    </element>
+                    <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
+                </element>
+                <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+        <vulnerability>
+            <type>Sensitive Data Leakage</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). The malicious app, lu.uni.serval.iac.sendbroadcast1.sink , receives the Intent and puts its payload data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
+                        <element>
+                            <type>SOURCE_TYPE</type>
+                            <description>UNIQUE_IDENTIFIER</description>
+                            <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
+                        </element>
+                        <alloyLabel>$InfoLeaksInterApp_d1</alloyLabel>
+                    </element>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
+                        <alloyLabel>$InfoLeaksInterApp_i</alloyLabel>
+                    </element>
+                    <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
+                </element>
+                <alloyLabel>$InfoLeaksInterApp_cmp1</alloyLabel>
+            </vulnerabilityElements>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
+                        <element>
+                            <type>SINK_TYPE</type>
+                            <description>LOG</description>
+                            <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
+                        </element>
+                        <alloyLabel>$InfoLeaksInterApp_d2</alloyLabel>
+                    </element>
+                    <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
+                </element>
+                <alloyLabel>$InfoLeaksInterApp_cmp2</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+        <vulnerability>
+            <type>Intent Hijack</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source publicly sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent.</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
+                        <alloyLabel>i1</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
+                        <element>
+                            <type>SOURCE_TYPE</type>
+                            <description>UNIQUE_IDENTIFIER</description>
+                            <alloyLabel>dIntent</alloyLabel>
+                        </element>
+                        <alloyLabel>dIntent</alloyLabel>
+                    </element>
+                    <alloyLabel>c1</alloyLabel>
+                </element>
+                <alloyLabel>c1</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+        <vulnerability>
+            <type>Inter-app Data Leakage</type>
+            <description>App lu.uni.serval.iac.sendbroadcast1.source sends an Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=) containing sensitive data (UNIQUE_IDENTIFIER) in one of its components (lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity). A malicious app can receive the Intent, and send its data via an Explicit Intent (Component = InFlowReceiver) to app lu.uni.serval.iac.sendbroadcast1.sink that puts this data on an unsafe output (LOG) in one of its components (lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver).</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.source</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.source.OutFlowActivity</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Implicit Intent (Action = lu_uni_serval_iac_sendbroadcast1_ACTION, Category = android_intent_category_DEFAULT, Data=)</description>
+                        <alloyLabel>i1</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)</description>
+                        <element>
+                            <type>SOURCE_TYPE</type>
+                            <description>UNIQUE_IDENTIFIER</description>
+                            <alloyLabel>dIntent</alloyLabel>
+                        </element>
+                        <alloyLabel>dIntent</alloyLabel>
+                    </element>
+                    <alloyLabel>c1</alloyLabel>
+                </element>
+                <alloyLabel>c1</alloyLabel>
+            </vulnerabilityElements>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>lu.uni.serval.iac.sendbroadcast1.sink</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>lu.uni.serval.iac.sendbroadcast1.sink.InFlowReceiver</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Explicit Intent (Component = InFlowReceiver)</description>
+                        <alloyLabel>i2</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</description>
+                        <element>
+                            <type>SINK_TYPE</type>
+                            <description>LOG</description>
+                            <alloyLabel>dComponent</alloyLabel>
+                        </element>
+                        <alloyLabel>dComponent</alloyLabel>
+                    </element>
+                    <alloyLabel>c2</alloyLabel>
+                </element>
+                <alloyLabel>c2</alloyLabel>
             </vulnerabilityElements>
         </vulnerability>
     </vulnerabilities>

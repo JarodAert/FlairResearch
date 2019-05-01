@@ -27,7 +27,7 @@ one sig detailedPath_lu_uni_serval_iac_sendbroadcast1_source_1 extends DetailedP
 /*detailedPath_lu_uni_serval_iac_sendbroadcast1_source_1_calledAt
 	lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)@
 */
-	source = UNIQUE_IDENTIFIER 
+	source = UNDEFINED 
 /*detailedPath_lu_uni_serval_iac_sendbroadcast1_source_1_calledAt
 	lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)@
 */
@@ -37,7 +37,7 @@ one sig detailedPath_lu_uni_serval_iac_sendbroadcast1_source_2 extends DetailedP
 /*detailedPath_lu_uni_serval_iac_sendbroadcast1_source_2_calledAt
 	lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)@
 */
-	source = UNDEFINED 
+	source = UNIQUE_IDENTIFIER 
 /*detailedPath_lu_uni_serval_iac_sendbroadcast1_source_2_calledAt
 	lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)@
 */

@@ -35,14 +35,6 @@
                     <sinkDomain>LOG</sinkDomain>
                     <sourceDomain>IPC</sourceDomain>
                 </Flow>
-                <Flow>
-                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
-                    <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</sinkCalledAt>
-                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("DroidBench") </source>
-                    <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)</sourceCalledAt>
-                    <sinkDomain>LOG</sinkDomain>
-                    <sourceDomain>IPC</sourceDomain>
-                </Flow>
             </sensitiveFlows>
         </Component>
         <Component>
@@ -80,7 +72,7 @@
             <sensitiveData>false</sensitiveData>
             <sensitiveFlows>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -88,7 +80,7 @@
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -96,7 +88,7 @@
                     <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -104,7 +96,7 @@
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -113,7 +105,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>sendBroadcast</consumerMethod>
-            <id>lrho3kntc692h37g08imgnoc0l</id>
+            <id>anp2asb63s2ntiot9i3hjc8esi</id>
             <random/>
         </Intent>
         <Intent>
@@ -127,7 +119,7 @@
             <sensitiveData>false</sensitiveData>
             <sensitiveFlows>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -135,7 +127,7 @@
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -143,7 +135,7 @@
                     <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -151,7 +143,7 @@
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -160,7 +152,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>sendBroadcast</consumerMethod>
-            <id>kg2pohg379e9r0efnilvtcslnv</id>
+            <id>psrtoamm5595pkgsis0sdfk651</id>
             <random/>
         </Intent>
         <Intent>
@@ -174,7 +166,7 @@
             <sensitiveData>false</sensitiveData>
             <sensitiveFlows>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -182,7 +174,7 @@
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -190,7 +182,7 @@
                     <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -198,7 +190,7 @@
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -207,7 +199,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>sendBroadcast</consumerMethod>
-            <id>754of3m29kleekmic0se5h9vnv</id>
+            <id>49ugoccdf4lvf43pk487cjth5</id>
             <random/>
         </Intent>
         <Intent>
@@ -221,7 +213,7 @@
             <sensitiveData>false</sensitiveData>
             <sensitiveFlows>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -229,7 +221,7 @@
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -237,7 +229,7 @@
                     <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r0.&lt;lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: java.lang.Object getSystemService(java.lang.String)&gt;("phone") </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -245,7 +237,7 @@
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("lu.uni.serval.icc_sendBroadcast1.ACTION") </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
                     <sinkCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
                     <sourceCalledAt>lu.uni.serval.icc_sendBroadcast1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
@@ -254,7 +246,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>sendBroadcast</consumerMethod>
-            <id>rhr9uc44gldua511t7tupu857f</id>
+            <id>m3tdt3b3nm98uoc2tpci52apj5</id>
             <random/>
         </Intent>
     </newIntents>

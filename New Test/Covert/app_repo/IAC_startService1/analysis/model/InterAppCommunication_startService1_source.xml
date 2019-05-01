@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>lu.uni.serval.iac_startservice1_source</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.iac_startservice1_source.OutFlowActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents>
+        <Intent>
+            <calledAt>lu.uni.serval.iac_startservice1_source.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.iac_startservice1_source.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.iac_startservice1.ACTION"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>vnu1asdug12ql5bc9eim3bgn9l</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.iac_startservice1_source.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.iac_startservice1_source.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.iac_startservice1.ACTION"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>jc6sq08nsr0pai7n0jh324u95t</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.iac_startservice1_source.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.iac_startservice1_source.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.iac_startservice1.ACTION"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>hcit3l08nddq10t3paltfd9lh7</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>lu.uni.serval.iac_startservice1_source.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>lu.uni.serval.iac_startservice1_source.OutFlowActivity</sender>
+            <component></component>
+            <action>"lu.uni.serval.iac_startservice1.ACTION"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>9ik8r61adokpcai197avr9fils</id>
+            <random/>
+        </Intent>
+    </newIntents>
+    <ContentProviders/>
+    <usesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/IAC_startService1/InterAppCommunication_startService1_source.apk</apkFile>
+    <name>InterAppCommunication_startService1_source</name>
+</application>

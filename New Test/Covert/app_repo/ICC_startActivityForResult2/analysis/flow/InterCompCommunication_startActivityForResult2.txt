@@ -1,0 +1,102 @@
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-18/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.graphics.pdf.PdfDocument$Page is a phantom class!
+Warning: android.graphics.pdf.PdfDocument$PageInfo is a phantom class!
+Warning: android.graphics.pdf.PdfDocument is a phantom class!
+Warning: android.print.PageRange is a phantom class!
+Warning: android.print.PrintAttributes$Builder is a phantom class!
+Warning: android.print.PrintAttributes$MediaSize is a phantom class!
+Warning: android.print.PrintAttributes is a phantom class!
+Warning: android.print.PrintDocumentAdapter$LayoutResultCallback is a phantom class!
+Warning: android.print.PrintDocumentAdapter$WriteResultCallback is a phantom class!
+Warning: android.print.PrintDocumentAdapter is a phantom class!
+Warning: android.print.PrintDocumentInfo$Builder is a phantom class!
+Warning: android.print.PrintDocumentInfo is a phantom class!
+Warning: android.print.PrintJob is a phantom class!
+Warning: android.print.PrintManager is a phantom class!
+Warning: android.print.pdf.PrintedPdfDocument is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Callback analysis done.
+Warning: TextView is a phantom class!
+Warning: lu.uni.serval.icc_startactivityforresult2.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 0 layout controls in file res/layout/activity_main.xml
+Found 0 layout controls
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-18/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.graphics.pdf.PdfDocument$Page is a phantom class!
+Warning: android.graphics.pdf.PdfDocument$PageInfo is a phantom class!
+Warning: android.graphics.pdf.PdfDocument is a phantom class!
+Warning: android.print.PageRange is a phantom class!
+Warning: android.print.PrintAttributes$Builder is a phantom class!
+Warning: android.print.PrintAttributes$MediaSize is a phantom class!
+Warning: android.print.PrintAttributes is a phantom class!
+Warning: android.print.PrintDocumentAdapter$LayoutResultCallback is a phantom class!
+Warning: android.print.PrintDocumentAdapter$WriteResultCallback is a phantom class!
+Warning: android.print.PrintDocumentAdapter is a phantom class!
+Warning: android.print.PrintDocumentInfo$Builder is a phantom class!
+Warning: android.print.PrintDocumentInfo is a phantom class!
+Warning: android.print.PrintJob is a phantom class!
+Warning: android.print.PrintManager is a phantom class!
+Warning: android.print.pdf.PrintedPdfDocument is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.0 seconds.
+[Spark] Solution found in 0.0 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 0 layout controls
+Found 4 callback methods for 3 components
+Entry point calculation done.
+Created a SourceSinkManager with 18074 sources, 8337 sinks, and 4 callback methods.
+Running data flow analysis...
+Running data flow analysis on ../../../app_repo/ICC_startActivityForResult2/InterCompCommunication_startActivityForResult2.apk with 18074 sources and 8337 sinks...
+Starting infoflow computation...
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-18/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.graphics.pdf.PdfDocument$Page is a phantom class!
+Warning: android.graphics.pdf.PdfDocument$PageInfo is a phantom class!
+Warning: android.graphics.pdf.PdfDocument is a phantom class!
+Warning: android.print.PageRange is a phantom class!
+Warning: android.print.PrintAttributes$Builder is a phantom class!
+Warning: android.print.PrintAttributes$MediaSize is a phantom class!
+Warning: android.print.PrintAttributes is a phantom class!
+Warning: android.print.PrintDocumentAdapter$LayoutResultCallback is a phantom class!
+Warning: android.print.PrintDocumentAdapter$WriteResultCallback is a phantom class!
+Warning: android.print.PrintDocumentAdapter is a phantom class!
+Warning: android.print.PrintDocumentInfo$Builder is a phantom class!
+Warning: android.print.PrintDocumentInfo is a phantom class!
+Warning: android.print.PrintJob is a phantom class!
+Warning: android.print.PrintManager is a phantom class!
+Warning: android.print.pdf.PrintedPdfDocument is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.0 seconds.
+[Spark] Solution found in 0.0 seconds.
+Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 14 (in <lu.uni.serval.icc_startactivityforresult2.InFlowActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- @parameter0: android.os.Bundle (in <lu.uni.serval.icc_startactivityforresult2.InFlowActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r0.<lu.uni.serval.icc_startactivityforresult2.InFlowActivity: void setResult(int,android.content.Intent)>(1, $r2) (in <lu.uni.serval.icc_startactivityforresult2.InFlowActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- virtualinvoke $r0.<lu.uni.serval.icc_startactivityforresult2.InFlowActivity: java.lang.Object getSystemService(java.lang.String)>("phone") (in <lu.uni.serval.icc_startactivityforresult2.InFlowActivity: void onCreate(android.os.Bundle)>)
+	- virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <lu.uni.serval.icc_startactivityforresult2.InFlowActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("DroidBench", $r3) (in <lu.uni.serval.icc_startactivityforresult2.InFlowActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- virtualinvoke $r0.<lu.uni.serval.icc_startactivityforresult2.InFlowActivity: java.lang.Object getSystemService(java.lang.String)>("phone") (in <lu.uni.serval.icc_startactivityforresult2.InFlowActivity: void onCreate(android.os.Bundle)>)
+	- virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <lu.uni.serval.icc_startactivityforresult2.InFlowActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DroidBench", $r2) (in <lu.uni.serval.icc_startactivityforresult2.OutFlowActivity: void onActivityResult(int,int,android.content.Intent)>), from the following sources:
+	- @parameter2: android.content.Intent (in <lu.uni.serval.icc_startactivityforresult2.OutFlowActivity: void onActivityResult(int,int,android.content.Intent)>)
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("DroidBench") (in <lu.uni.serval.icc_startactivityforresult2.OutFlowActivity: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 12 (in <lu.uni.serval.icc_startactivityforresult2.OutFlowActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- @parameter0: android.os.Bundle (in <lu.uni.serval.icc_startactivityforresult2.OutFlowActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r0.<lu.uni.serval.icc_startactivityforresult2.IsolateActivity: void setResult(int,android.content.Intent)>(1, $r2) (in <lu.uni.serval.icc_startactivityforresult2.IsolateActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- virtualinvoke $r0.<lu.uni.serval.icc_startactivityforresult2.IsolateActivity: android.content.Intent getIntent()>() (in <lu.uni.serval.icc_startactivityforresult2.IsolateActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 16 (in <lu.uni.serval.icc_startactivityforresult2.IsolateActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- @parameter0: android.os.Bundle (in <lu.uni.serval.icc_startactivityforresult2.IsolateActivity: void onCreate(android.os.Bundle)>)
+Analysis has run for 7.748657185 seconds

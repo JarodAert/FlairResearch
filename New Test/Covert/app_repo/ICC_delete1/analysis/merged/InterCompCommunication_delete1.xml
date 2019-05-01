@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>lu.uni.serval.icc_delete1</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>lu.uni.serval.icc_delete1.OutFlowActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])&gt;($r4, "deviceid=?", $r8) </sink>
+                    <sinkCalledAt>lu.uni.serval.icc_delete1.OutFlowActivity: void onCreate(android.os.Bundle)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;() </source>
+                    <sourceCalledAt>lu.uni.serval.icc_delete1.OutFlowActivity: void onCreate(android.os.Bundle)</sourceCalledAt>
+                    <sinkDomain>DATABASE_INFORMATION</sinkDomain>
+                    <sourceDomain>UNIQUE_IDENTIFIER</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+        </Component>
+        <Component>
+            <type>provider</type>
+            <name>lu.uni.serval.icc_delete1.InFlowProvider</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>provider</type>
+            <name>lu.uni.serval.icc_delete1.IsolateProvider</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents/>
+    <ContentProviders>
+        <ContentProvider>
+            <dbMethod>query</dbMethod>
+            <calledAt>lu.uni.serval.icc_delete1.InFlowProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>insert</dbMethod>
+            <calledAt>lu.uni.serval.icc_delete1.IsolateProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>content://lu.uni.serval.icc_delete1/isolate</uris>
+            <uris>content:///isolatelu.uni.serval.icc_delete1</uris>
+            <dbMethod>delete</dbMethod>
+            <calledAt>lu.uni.serval.icc_delete1.IsolateProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>update</dbMethod>
+            <calledAt>lu.uni.serval.icc_delete1.InFlowProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>insert</dbMethod>
+            <calledAt>lu.uni.serval.icc_delete1.InFlowProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>content://lu.uni.serval.icc_delete1/deviceid</uris>
+            <dbMethod>delete</dbMethod>
+            <calledAt>lu.uni.serval.icc_delete1.OutFlowActivity: void onCreate(android.os.Bundle)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>content://lu.uni.serval.icc_delete1/deviceid</uris>
+            <uris>content:///deviceidlu.uni.serval.icc_delete1</uris>
+            <dbMethod>delete</dbMethod>
+            <calledAt>lu.uni.serval.icc_delete1.InFlowProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>update</dbMethod>
+            <calledAt>lu.uni.serval.icc_delete1.IsolateProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <dbMethod>query</dbMethod>
+            <calledAt>lu.uni.serval.icc_delete1.IsolateProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</calledAt>
+            <exitOrEntry>entry</exitOrEntry>
+        </ContentProvider>
+    </ContentProviders>
+    <usesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>READ_PHONE_STATE</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/ICC_delete1/InterCompCommunication_delete1.apk</apkFile>
+    <name>InterCompCommunication_delete1</name>
+</application>

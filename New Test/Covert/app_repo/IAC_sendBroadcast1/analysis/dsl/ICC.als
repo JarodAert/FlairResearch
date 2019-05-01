@@ -5,7 +5,7 @@ open lu_uni_serval_iac_sendbroadcast1_source
 open lu_uni_serval_iac_sendbroadcast1_sink
 
 
-one sig intent1__5sflc1r63pgdl2f4qfh84s8tbp extends Intent{}{
+one sig intent1__qi51l19gtune6v2uqtd1r2aqbm extends Intent{}{
 //  lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)
     sender=lu_uni_serval_iac_sendbroadcast1_source_OutFlowActivity
 	no component
@@ -15,7 +15,7 @@ one sig intent1__5sflc1r63pgdl2f4qfh84s8tbp extends Intent{}{
 	dataScheme=NoScheme
 	detailedPaths=detailedPath_lu_uni_serval_iac_sendbroadcast1_source_1 + detailedPath_lu_uni_serval_iac_sendbroadcast1_source_2
 }
-one sig intent2__eq52rr1ugq1oqoop4e3ita2mr6 extends Intent{}{
+one sig intent2__3i0ahr2066gav9n15en6vml9sl extends Intent{}{
 //  lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)
     sender=lu_uni_serval_iac_sendbroadcast1_source_OutFlowActivity
 	no component
@@ -25,7 +25,7 @@ one sig intent2__eq52rr1ugq1oqoop4e3ita2mr6 extends Intent{}{
 	dataScheme=NoScheme
 	detailedPaths=detailedPath_lu_uni_serval_iac_sendbroadcast1_source_1 + detailedPath_lu_uni_serval_iac_sendbroadcast1_source_2
 }
-one sig intent3__rek0j4c6gujpnethpc2bnqcpa9 extends Intent{}{
+one sig intent3__k0njof5rle8ga96ofip6giq37o extends Intent{}{
 //  lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)
     sender=lu_uni_serval_iac_sendbroadcast1_source_OutFlowActivity
 	no component
@@ -35,7 +35,7 @@ one sig intent3__rek0j4c6gujpnethpc2bnqcpa9 extends Intent{}{
 	dataScheme=NoScheme
 	detailedPaths=detailedPath_lu_uni_serval_iac_sendbroadcast1_source_1 + detailedPath_lu_uni_serval_iac_sendbroadcast1_source_2
 }
-one sig intent4__ln8sj0tub8sd1fveq2cv0qkp1f extends Intent{}{
+one sig intent4__9fl27d4kkm45l14a9e1jleh0n9 extends Intent{}{
 //  lu.uni.serval.iac_sendbroadcast1_source.OutFlowActivity: void onCreate(android.os.Bundle)
     sender=lu_uni_serval_iac_sendbroadcast1_source_OutFlowActivity
 	no component

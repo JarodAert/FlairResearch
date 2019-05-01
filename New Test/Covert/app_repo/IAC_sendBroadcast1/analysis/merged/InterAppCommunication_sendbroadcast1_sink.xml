@@ -53,14 +53,6 @@
                     <sinkDomain>LOG</sinkDomain>
                     <sourceDomain>IPC</sourceDomain>
                 </Flow>
-                <Flow>
-                    <sink>&lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3) </sink>
-                    <sinkCalledAt>lu.uni.serval.iac_sendbroadcast1_sink.IsolateReceiver: void onReceive(android.content.Context,android.content.Intent)</sinkCalledAt>
-                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getStringExtra(java.lang.String)&gt;("DroidBench") </source>
-                    <sourceCalledAt>lu.uni.serval.iac_sendbroadcast1_sink.IsolateReceiver: void onReceive(android.content.Context,android.content.Intent)</sourceCalledAt>
-                    <sinkDomain>LOG</sinkDomain>
-                    <sourceDomain>IPC</sourceDomain>
-                </Flow>
             </sensitiveFlows>
         </Component>
     </components>

@@ -1,0 +1,175 @@
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-19/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+Callback analysis done.
+Found 0 layout controls in file res/layout/abc_action_bar_decor.xml
+Warning: 5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: com.sdalab.messenger.5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: android.view.5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: android.widget.5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: android.webkit.5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: FrameLayout is a phantom class!
+Warning: com.sdalab.messenger.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Found 1 layout controls in file res/layout/abc_action_bar_decor_include.xml
+Warning: LinearLayout is a phantom class!
+Warning: com.sdalab.messenger.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.sdalab.messenger.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 3 layout controls in file res/layout/abc_action_bar_decor_overlay.xml
+Warning: view is a phantom class!
+Warning: com.sdalab.messenger.view is a phantom class!
+Warning: android.view.view is a phantom class!
+Warning: android.widget.view is a phantom class!
+Warning: android.webkit.view is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_bar_home.xml
+Warning: 2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Warning: com.sdalab.messenger.2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Warning: android.view.2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Warning: android.widget.2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Warning: android.webkit.2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_bar_tabbar.xml
+Found 5 layout controls in file res/layout/abc_action_bar_title_item.xml
+Found 5 layout controls in file res/layout/abc_action_bar_view_list_nav_layout.xml
+Warning: 8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Warning: com.sdalab.messenger.8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Warning: android.view.8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Warning: android.widget.8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Warning: android.webkit.8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_menu_item_layout.xml
+Warning: 4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Warning: com.sdalab.messenger.4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Warning: android.view.4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Warning: android.widget.4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Warning: android.webkit.4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_menu_layout.xml
+Warning: 7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Warning: com.sdalab.messenger.7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Warning: android.view.7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Warning: android.widget.7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Warning: android.webkit.7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_mode_bar.xml
+Found 6 layout controls in file res/layout/abc_action_mode_close_item.xml
+Found 7 layout controls in file res/layout/abc_activity_chooser_view.xml
+Found 10 layout controls in file res/layout/abc_activity_chooser_view_include.xml
+Found 11 layout controls in file res/layout/abc_activity_chooser_view_list_item.xml
+Found 12 layout controls in file res/layout/abc_expanded_menu_layout.xml
+Found 13 layout controls in file res/layout/abc_list_menu_item_checkbox.xml
+Found 14 layout controls in file res/layout/abc_list_menu_item_icon.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.sdalab.messenger.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.sdalab.messenger.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 16 layout controls in file res/layout/abc_list_menu_item_layout.xml
+Found 17 layout controls in file res/layout/abc_list_menu_item_radio.xml
+Found 17 layout controls in file res/layout/abc_popup_menu_item_layout.xml
+Found 22 layout controls in file res/layout/abc_search_dropdown_item_icons_2line.xml
+Found 25 layout controls in file res/layout/abc_search_view.xml
+Found 26 layout controls in file res/layout/abc_simple_decor.xml
+Warning: EditText is a phantom class!
+Warning: com.sdalab.messenger.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found unrecognized XML attribute:  text
+Found unrecognized XML attribute:  text
+Found unrecognized XML attribute:  text
+Warning: requestFocus is a phantom class!
+Warning: com.sdalab.messenger.requestFocus is a phantom class!
+Warning: android.view.requestFocus is a phantom class!
+Warning: android.widget.requestFocus is a phantom class!
+Warning: android.webkit.requestFocus is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.sdalab.messenger.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found unrecognized XML attribute:  text
+Found unrecognized XML attribute:  text
+Found 35 layout controls in file res/layout/activity_main.xml
+Found 35 layout controls in file res/layout/support_simple_spinner_dropdown_item.xml
+Found 35 layout controls in file res/layout-v11/abc_action_bar_decor.xml
+Found 35 layout controls in file res/layout-v11/abc_simple_decor.xml
+Found 35 layout controls in file res/layout-v14/abc_activity_chooser_view.xml
+Found 35 layout controls
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-19/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 35 layout controls
+Found 6 callback methods for 3 components
+Entry point calculation done.
+Created a SourceSinkManager with 18074 sources, 8337 sinks, and 6 callback methods.
+Running data flow analysis...
+Running data flow analysis on ../../../app_repo/demo/Messenger.apk with 18074 sources and 8337 sinks...
+Starting infoflow computation...
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-19/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("message", $r9) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>), from the following sources:
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.ComponentName startService(android.content.Intent)>($r2) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>), from the following sources:
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r10.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.ComponentName startService(android.content.Intent)>($r2) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>), from the following sources:
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r10.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r0.<com.sdalab.messenger.MainActivity: void setContentView(int)>(2130903064) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- virtualinvoke $r0.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034173) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
+	- virtualinvoke $r0.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034175) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink specialinvoke $r9.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("message", $r1) (in <com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)>), from the following sources:
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("sender") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
+	- @parameter0: android.content.Intent (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("message") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Http Response:", $r2) (in <com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)>), from the following sources:
+	- staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r4, "UTF-8") (in <com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)>)
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("message", $r9) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>), from the following sources:
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r4.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r2, null, $r3, null, null) (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>), from the following sources:
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("message") (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("destinationAddress") (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
+	- staticinvoke <android.telephony.SmsManager: android.telephony.SmsManager getDefault()>() (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
+	- @parameter0: android.content.Intent (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("destinationAddress", $r7) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>), from the following sources:
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r10.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+Found a flow to sink specialinvoke $r9.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("name", $r2) (in <com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)>), from the following sources:
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("sender") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
+	- @parameter0: android.content.Intent (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("message") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
+Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 18 (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- virtualinvoke $r0.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034173) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
+	- @parameter0: android.os.Bundle (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
+	- virtualinvoke $r0.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034175) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("sender", $r7) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>), from the following sources:
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r10.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+Analysis has run for 10.78907549 seconds

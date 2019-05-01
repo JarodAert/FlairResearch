@@ -1,4 +1,4 @@
-Using '/Users/hok/Documents/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-18/android.jar' as android.jar
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-18/android.jar' as android.jar
 Warning: java.lang.ref.Finalizer is a phantom class!
 Warning: android.graphics.pdf.PdfDocument$Page is a phantom class!
 Warning: android.graphics.pdf.PdfDocument$PageInfo is a phantom class!
@@ -19,15 +19,15 @@ Warning: android.print.pdf.PrintedPdfDocument is a phantom class!
 [Spark] Pointer Assignment Graph in 0.1 seconds.
 [Spark] Type masks in 0.0 seconds.
 [Spark] Pointer Graph simplified in 0.0 seconds.
-[Spark] Propagation in 0.0 seconds.
-[Spark] Solution found in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
 Callback analysis done.
 Warning: TextView is a phantom class!
 Warning: lu.uni.serval.iac_sendbroadcast1_sink.TextView is a phantom class!
 Warning: android.view.TextView is a phantom class!
 Found 0 layout controls in file res/layout/activity_main.xml
 Found 0 layout controls
-Using '/Users/hok/Documents/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-18/android.jar' as android.jar
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-18/android.jar' as android.jar
 Warning: java.lang.ref.Finalizer is a phantom class!
 Warning: android.graphics.pdf.PdfDocument$Page is a phantom class!
 Warning: android.graphics.pdf.PdfDocument$PageInfo is a phantom class!
@@ -59,7 +59,7 @@ Created a SourceSinkManager with 18074 sources, 8337 sinks, and 3 callback metho
 Running data flow analysis...
 Running data flow analysis on ../../../app_repo/IAC_sendBroadcast1/InterAppCommunication_sendbroadcast1_sink.apk with 18074 sources and 8337 sinks...
 Starting infoflow computation...
-Using '/Users/hok/Documents/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-18/android.jar' as android.jar
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-18/android.jar' as android.jar
 Warning: java.lang.ref.Finalizer is a phantom class!
 Warning: android.graphics.pdf.PdfDocument$Page is a phantom class!
 Warning: android.graphics.pdf.PdfDocument$PageInfo is a phantom class!
@@ -82,12 +82,12 @@ Warning: android.print.pdf.PrintedPdfDocument is a phantom class!
 [Spark] Pointer Graph simplified in 0.0 seconds.
 [Spark] Propagation in 0.0 seconds.
 [Spark] Solution found in 0.0 seconds.
-Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DroidBench", $r3) (in <lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)>), from the following sources:
-	- @parameter1: android.content.Intent (in <lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)>)
-	- virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("DroidBench") (in <lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)>)
 Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 10 (in <lu.uni.serval.iac_sendbroadcast1_sink.LaunchingActivity: void onCreate(android.os.Bundle)>), from the following sources:
 	- @parameter0: android.os.Bundle (in <lu.uni.serval.iac_sendbroadcast1_sink.LaunchingActivity: void onCreate(android.os.Bundle)>)
 Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DroidBench", $r3) (in <lu.uni.serval.iac_sendbroadcast1_sink.IsolateReceiver: void onReceive(android.content.Context,android.content.Intent)>), from the following sources:
-	- @parameter1: android.content.Intent (in <lu.uni.serval.iac_sendbroadcast1_sink.IsolateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
 	- virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("DroidBench") (in <lu.uni.serval.iac_sendbroadcast1_sink.IsolateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
-Analysis has run for 6.126022126 seconds
+	- @parameter1: android.content.Intent (in <lu.uni.serval.iac_sendbroadcast1_sink.IsolateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DroidBench", $r3) (in <lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)>), from the following sources:
+	- virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("DroidBench") (in <lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- @parameter1: android.content.Intent (in <lu.uni.serval.iac_sendbroadcast1_sink.InFlowReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Analysis has run for 8.049371614 seconds

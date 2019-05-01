@@ -1,0 +1,170 @@
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-19/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Callback analysis done.
+Found 0 layout controls in file res/layout/abc_action_bar_decor.xml
+Warning: 5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: com.sdalab.weather.5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: android.view.5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: android.widget.5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: android.webkit.5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
+Warning: FrameLayout is a phantom class!
+Warning: com.sdalab.weather.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Found 1 layout controls in file res/layout/abc_action_bar_decor_include.xml
+Warning: LinearLayout is a phantom class!
+Warning: com.sdalab.weather.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.sdalab.weather.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 3 layout controls in file res/layout/abc_action_bar_decor_overlay.xml
+Warning: view is a phantom class!
+Warning: com.sdalab.weather.view is a phantom class!
+Warning: android.view.view is a phantom class!
+Warning: android.widget.view is a phantom class!
+Warning: android.webkit.view is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_bar_home.xml
+Warning: 2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Warning: com.sdalab.weather.2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Warning: android.view.2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Warning: android.widget.2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Warning: android.webkit.2android.support.v7.internal.widget.LinearLayoutICS is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_bar_tabbar.xml
+Found 5 layout controls in file res/layout/abc_action_bar_title_item.xml
+Found 5 layout controls in file res/layout/abc_action_bar_view_list_nav_layout.xml
+Warning: 8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Warning: com.sdalab.weather.8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Warning: android.view.8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Warning: android.widget.8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Warning: android.webkit.8android.support.v7.internal.view.menu.ActionMenuItemView is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_menu_item_layout.xml
+Warning: 4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Warning: com.sdalab.weather.4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Warning: android.view.4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Warning: android.widget.4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Warning: android.webkit.4android.support.v7.internal.view.menu.ActionMenuView is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_menu_layout.xml
+Warning: 7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Warning: com.sdalab.weather.7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Warning: android.view.7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Warning: android.widget.7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Warning: android.webkit.7android.support.v7.internal.widget.ActionBarContextView is a phantom class!
+Found 5 layout controls in file res/layout/abc_action_mode_bar.xml
+Found 6 layout controls in file res/layout/abc_action_mode_close_item.xml
+Found 7 layout controls in file res/layout/abc_activity_chooser_view.xml
+Found 10 layout controls in file res/layout/abc_activity_chooser_view_include.xml
+Found 11 layout controls in file res/layout/abc_activity_chooser_view_list_item.xml
+Found 12 layout controls in file res/layout/abc_expanded_menu_layout.xml
+Found 13 layout controls in file res/layout/abc_list_menu_item_checkbox.xml
+Found 14 layout controls in file res/layout/abc_list_menu_item_icon.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.sdalab.weather.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.sdalab.weather.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 16 layout controls in file res/layout/abc_list_menu_item_layout.xml
+Found 17 layout controls in file res/layout/abc_list_menu_item_radio.xml
+Found 17 layout controls in file res/layout/abc_popup_menu_item_layout.xml
+Found 22 layout controls in file res/layout/abc_search_dropdown_item_icons_2line.xml
+Found 25 layout controls in file res/layout/abc_search_view.xml
+Found 26 layout controls in file res/layout/abc_simple_decor.xml
+Warning: EditText is a phantom class!
+Warning: com.sdalab.weather.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.sdalab.weather.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found unrecognized XML attribute:  text
+Found unrecognized XML attribute:  text
+Found 29 layout controls in file res/layout/activity_main.xml
+Found unrecognized XML attribute:  text
+Found unrecognized XML attribute:  text
+Found unrecognized XML attribute:  text
+Found 32 layout controls in file res/layout/activity_show_weather.xml
+Found 32 layout controls in file res/layout/support_simple_spinner_dropdown_item.xml
+Found 32 layout controls in file res/layout-v11/abc_action_bar_decor.xml
+Found 32 layout controls in file res/layout-v11/abc_simple_decor.xml
+Found 32 layout controls in file res/layout-v14/abc_activity_chooser_view.xml
+Found 32 layout controls
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-19/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 32 layout controls
+Found 7 callback methods for 3 components
+Entry point calculation done.
+Created a SourceSinkManager with 18074 sources, 8337 sinks, and 7 callback methods.
+Running data flow analysis...
+Running data flow analysis on ../../../app_repo/demo/weather.apk with 18074 sources and 8337 sinks...
+Starting infoflow computation...
+Using '/home/jarod/Desktop/FlairResearch/New Test/Covert/resources/FlowDroid/../AndroidPlatforms/android-19/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Found a flow to sink $r13 = virtualinvoke $r7.<java.net.URL: java.net.URLConnection openConnection()>() on line 46 (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>), from the following sources:
+	- virtualinvoke $r6.<org.json.JSONObject: java.lang.String getString(java.lang.String)>("icon") (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>)
+	- virtualinvoke $r0.<org.json.JSONObject: java.lang.Object get(java.lang.String)>($r1) (in <org.json.JSONObject: java.lang.String getString(java.lang.String)>)
+Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 22 (in <com.sdalab.weather.ShowWeather: void onCreate(android.os.Bundle)>), from the following sources:
+	- @parameter0: android.os.Bundle (in <com.sdalab.weather.ShowWeather: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r4.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("city", $r1) (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
+	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<com.sdalab.weather.MainActivity: android.view.View findViewById(int)>(2131034172) (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+Found a flow to sink $r2 = virtualinvoke $r2.<java.lang.String: java.lang.String substring(int,int)>(0, $i2) (in <org.json.JSONObject: java.lang.String numberToString(java.lang.Number)>), from the following sources:
+	- virtualinvoke $r3.<java.util.ArrayList: java.lang.Object get(int)>($i0) (in <org.json.JSONArray: java.lang.String join(java.lang.String)>)
+Found a flow to sink virtualinvoke $r11.<android.widget.ImageView: void setImageBitmap(android.graphics.Bitmap)>($r2) on line 47 (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>), from the following sources:
+	- virtualinvoke $r0.<com.sdalab.weather.ShowWeather: android.view.View findViewById(int)>(2131034176) (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>)
+Found a flow to sink virtualinvoke $r0.<com.sdalab.weather.MainActivity: android.content.ComponentName startService(android.content.Intent)>($r4) on line 51 (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
+	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<com.sdalab.weather.MainActivity: android.view.View findViewById(int)>(2131034172) (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+Found a flow to sink $r2 = virtualinvoke $r2.<java.lang.String: java.lang.String substring(int,int)>(0, $i2) (in <org.json.JSONObject: java.lang.String numberToString(java.lang.Number)>), from the following sources:
+	- virtualinvoke $r3.<java.util.ArrayList: java.lang.Object get(int)>($i0) (in <org.json.JSONArray: java.lang.String join(java.lang.String)>)
+Found a flow to sink specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r9) (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>), from the following sources:
+	- virtualinvoke $r6.<org.json.JSONObject: java.lang.String getString(java.lang.String)>("icon") (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>)
+	- virtualinvoke $r0.<org.json.JSONObject: java.lang.Object get(java.lang.String)>($r1) (in <org.json.JSONObject: java.lang.String getString(java.lang.String)>)
+Found a flow to sink virtualinvoke $r4.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("lat", $r5) (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
+	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<com.sdalab.weather.MainActivity: android.view.View findViewById(int)>(2131034172) (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 21 (in <com.sdalab.weather.MainActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- @parameter0: android.location.Location (in <com.sdalab.weather.MainActivity: void onLocationChanged(android.location.Location)>)
+	- virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <com.sdalab.weather.MainActivity: void onLocationChanged(android.location.Location)>)
+	- virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity: void onLocationChanged(android.location.Location)>)
+	- @parameter0: android.os.Bundle (in <com.sdalab.weather.MainActivity: void onCreate(android.os.Bundle)>)
+	- virtualinvoke $r0.<com.sdalab.weather.MainActivity: java.lang.Object getSystemService(java.lang.String)>("location") (in <com.sdalab.weather.MainActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r0.<com.sdalab.weather.MainActivity: void setContentView(int)>(2130903064) (in <com.sdalab.weather.MainActivity: void onCreate(android.os.Bundle)>), from the following sources:
+	- @parameter0: android.location.Location (in <com.sdalab.weather.MainActivity: void onLocationChanged(android.location.Location)>)
+	- virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <com.sdalab.weather.MainActivity: void onLocationChanged(android.location.Location)>)
+	- virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity: void onLocationChanged(android.location.Location)>)
+	- virtualinvoke $r0.<com.sdalab.weather.MainActivity: java.lang.Object getSystemService(java.lang.String)>("location") (in <com.sdalab.weather.MainActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r4.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("lon", $r1) (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
+	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<com.sdalab.weather.MainActivity: android.view.View findViewById(int)>(2131034172) (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r5.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("weather", $r1) (in <com.sdalab.weather.RetrieveWeather: void sendRequest(java.lang.String)>), from the following sources:
+	- staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r3, "UTF-8") (in <com.sdalab.weather.RetrieveWeather: void sendRequest(java.lang.String)>)
+Found a flow to sink virtualinvoke $r0.<com.sdalab.weather.RetrieveWeather: void startActivity(android.content.Intent)>($r5) on line 55 (in <com.sdalab.weather.RetrieveWeather: void sendRequest(java.lang.String)>), from the following sources:
+	- staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r3, "UTF-8") (in <com.sdalab.weather.RetrieveWeather: void sendRequest(java.lang.String)>)
+Analysis has run for 13.112445988 seconds
