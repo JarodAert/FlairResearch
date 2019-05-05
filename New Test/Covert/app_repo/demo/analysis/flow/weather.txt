@@ -4,8 +4,8 @@ Warning: java.lang.ref.Finalizer is a phantom class!
 [Spark] Pointer Assignment Graph in 0.1 seconds.
 [Spark] Type masks in 0.0 seconds.
 [Spark] Pointer Graph simplified in 0.0 seconds.
-[Spark] Propagation in 1.1 seconds.
-[Spark] Solution found in 1.1 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
 Callback analysis done.
 Found 0 layout controls in file res/layout/abc_action_bar_decor.xml
 Warning: 5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
@@ -99,8 +99,8 @@ Warning: java.lang.ref.Finalizer is a phantom class!
 [Spark] Pointer Assignment Graph in 0.0 seconds.
 [Spark] Type masks in 0.0 seconds.
 [Spark] Pointer Graph simplified in 0.0 seconds.
-[Spark] Propagation in 0.8 seconds.
-[Spark] Solution found in 0.8 seconds.
+[Spark] Propagation in 0.9 seconds.
+[Spark] Solution found in 0.9 seconds.
 Running incremental callback analysis for 3 components...
 Incremental callback analysis done.
 Found 32 layout controls
@@ -116,25 +116,23 @@ Warning: java.lang.ref.Finalizer is a phantom class!
 [Spark] Pointer Assignment Graph in 0.0 seconds.
 [Spark] Type masks in 0.0 seconds.
 [Spark] Pointer Graph simplified in 0.0 seconds.
-[Spark] Propagation in 0.7 seconds.
-[Spark] Solution found in 0.7 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
 Found a flow to sink $r13 = virtualinvoke $r7.<java.net.URL: java.net.URLConnection openConnection()>() on line 46 (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>), from the following sources:
 	- virtualinvoke $r6.<org.json.JSONObject: java.lang.String getString(java.lang.String)>("icon") (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>)
 	- virtualinvoke $r0.<org.json.JSONObject: java.lang.Object get(java.lang.String)>($r1) (in <org.json.JSONObject: java.lang.String getString(java.lang.String)>)
 Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 22 (in <com.sdalab.weather.ShowWeather: void onCreate(android.os.Bundle)>), from the following sources:
 	- @parameter0: android.os.Bundle (in <com.sdalab.weather.ShowWeather: void onCreate(android.os.Bundle)>)
-Found a flow to sink virtualinvoke $r4.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("city", $r1) (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
-	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
-	- virtualinvoke $r2.<com.sdalab.weather.MainActivity: android.view.View findViewById(int)>(2131034172) (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
-Found a flow to sink $r2 = virtualinvoke $r2.<java.lang.String: java.lang.String substring(int,int)>(0, $i2) (in <org.json.JSONObject: java.lang.String numberToString(java.lang.Number)>), from the following sources:
-	- virtualinvoke $r3.<java.util.ArrayList: java.lang.Object get(int)>($i0) (in <org.json.JSONArray: java.lang.String join(java.lang.String)>)
 Found a flow to sink virtualinvoke $r11.<android.widget.ImageView: void setImageBitmap(android.graphics.Bitmap)>($r2) on line 47 (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>), from the following sources:
 	- virtualinvoke $r0.<com.sdalab.weather.ShowWeather: android.view.View findViewById(int)>(2131034176) (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>)
-Found a flow to sink virtualinvoke $r0.<com.sdalab.weather.MainActivity: android.content.ComponentName startService(android.content.Intent)>($r4) on line 51 (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
-	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
-	- virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
-	- virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r4.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("city", $r1) (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
 	- virtualinvoke $r2.<com.sdalab.weather.MainActivity: android.view.View findViewById(int)>(2131034172) (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r0.<com.sdalab.weather.MainActivity: android.content.ComponentName startService(android.content.Intent)>($r4) on line 51 (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
+	- virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<com.sdalab.weather.MainActivity: android.view.View findViewById(int)>(2131034172) (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
 Found a flow to sink $r2 = virtualinvoke $r2.<java.lang.String: java.lang.String substring(int,int)>(0, $i2) (in <org.json.JSONObject: java.lang.String numberToString(java.lang.Number)>), from the following sources:
 	- virtualinvoke $r3.<java.util.ArrayList: java.lang.Object get(int)>($i0) (in <org.json.JSONArray: java.lang.String join(java.lang.String)>)
@@ -142,9 +140,9 @@ Found a flow to sink specialinvoke $r7.<java.net.URL: void <init>(java.lang.Stri
 	- virtualinvoke $r6.<org.json.JSONObject: java.lang.String getString(java.lang.String)>("icon") (in <com.sdalab.weather.ShowWeather: void fillForm(java.lang.String)>)
 	- virtualinvoke $r0.<org.json.JSONObject: java.lang.Object get(java.lang.String)>($r1) (in <org.json.JSONObject: java.lang.String getString(java.lang.String)>)
 Found a flow to sink virtualinvoke $r4.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("lat", $r5) (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
-	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r2.<com.sdalab.weather.MainActivity: android.view.View findViewById(int)>(2131034172) (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
 Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 21 (in <com.sdalab.weather.MainActivity: void onCreate(android.os.Bundle)>), from the following sources:
 	- @parameter0: android.location.Location (in <com.sdalab.weather.MainActivity: void onLocationChanged(android.location.Location)>)
@@ -157,14 +155,16 @@ Found a flow to sink virtualinvoke $r0.<com.sdalab.weather.MainActivity: void se
 	- virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <com.sdalab.weather.MainActivity: void onLocationChanged(android.location.Location)>)
 	- virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity: void onLocationChanged(android.location.Location)>)
 	- virtualinvoke $r0.<com.sdalab.weather.MainActivity: java.lang.Object getSystemService(java.lang.String)>("location") (in <com.sdalab.weather.MainActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink $r2 = virtualinvoke $r2.<java.lang.String: java.lang.String substring(int,int)>(0, $i2) (in <org.json.JSONObject: java.lang.String numberToString(java.lang.Number)>), from the following sources:
+	- virtualinvoke $r3.<java.util.ArrayList: java.lang.Object get(int)>($i0) (in <org.json.JSONArray: java.lang.String join(java.lang.String)>)
 Found a flow to sink virtualinvoke $r4.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("lon", $r1) (in <com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)>), from the following sources:
-	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
-	- virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r2.<com.sdalab.weather.MainActivity: android.view.View findViewById(int)>(2131034172) (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r3.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.weather.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.sdalab.weather.MainActivity$2: void onClick(android.view.View)>)
 Found a flow to sink virtualinvoke $r5.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("weather", $r1) (in <com.sdalab.weather.RetrieveWeather: void sendRequest(java.lang.String)>), from the following sources:
 	- staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r3, "UTF-8") (in <com.sdalab.weather.RetrieveWeather: void sendRequest(java.lang.String)>)
 Found a flow to sink virtualinvoke $r0.<com.sdalab.weather.RetrieveWeather: void startActivity(android.content.Intent)>($r5) on line 55 (in <com.sdalab.weather.RetrieveWeather: void sendRequest(java.lang.String)>), from the following sources:
 	- staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r3, "UTF-8") (in <com.sdalab.weather.RetrieveWeather: void sendRequest(java.lang.String)>)
-Analysis has run for 13.112445988 seconds
+Analysis has run for 12.910865002 seconds

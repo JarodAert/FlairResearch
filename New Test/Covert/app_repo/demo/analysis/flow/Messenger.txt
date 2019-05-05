@@ -4,8 +4,8 @@ Warning: java.lang.ref.Finalizer is a phantom class!
 [Spark] Pointer Assignment Graph in 0.1 seconds.
 [Spark] Type masks in 0.0 seconds.
 [Spark] Pointer Graph simplified in 0.0 seconds.
-[Spark] Propagation in 0.3 seconds.
-[Spark] Solution found in 0.3 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
 Callback analysis done.
 Found 0 layout controls in file res/layout/abc_action_bar_decor.xml
 Warning: 5android.support.v7.internal.widget.ActionBarContainer is a phantom class!
@@ -103,8 +103,8 @@ Warning: java.lang.ref.Finalizer is a phantom class!
 [Spark] Pointer Assignment Graph in 0.0 seconds.
 [Spark] Type masks in 0.0 seconds.
 [Spark] Pointer Graph simplified in 0.0 seconds.
-[Spark] Propagation in 0.2 seconds.
-[Spark] Solution found in 0.2 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
 Running incremental callback analysis for 3 components...
 Incremental callback analysis done.
 Found 35 layout controls
@@ -123,25 +123,25 @@ Warning: java.lang.ref.Finalizer is a phantom class!
 [Spark] Propagation in 0.2 seconds.
 [Spark] Solution found in 0.2 seconds.
 Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("message", $r9) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>), from the following sources:
-	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 Found a flow to sink virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.ComponentName startService(android.content.Intent)>($r2) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>), from the following sources:
-	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r10.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 Found a flow to sink virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.ComponentName startService(android.content.Intent)>($r2) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>), from the following sources:
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
-	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r10.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
 Found a flow to sink virtualinvoke $r0.<com.sdalab.messenger.MainActivity: void setContentView(int)>(2130903064) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>), from the following sources:
 	- virtualinvoke $r0.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034173) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
 	- virtualinvoke $r0.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034175) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
 Found a flow to sink specialinvoke $r9.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("message", $r1) (in <com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)>), from the following sources:
-	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("sender") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
 	- @parameter0: android.content.Intent (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("sender") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
 	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("message") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
 Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Http Response:", $r2) (in <com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)>), from the following sources:
 	- staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r4, "UTF-8") (in <com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)>)
@@ -149,27 +149,27 @@ Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
-Found a flow to sink virtualinvoke $r4.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r2, null, $r3, null, null) (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>), from the following sources:
-	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("message") (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
-	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("destinationAddress") (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
-	- staticinvoke <android.telephony.SmsManager: android.telephony.SmsManager getDefault()>() (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
-	- @parameter0: android.content.Intent (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
 Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("destinationAddress", $r7) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>), from the following sources:
-	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r10.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$1: void onClick(android.view.View)>)
 Found a flow to sink specialinvoke $r9.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("name", $r2) (in <com.sdalab.messenger.PublishDataService: void sendRequest(java.lang.String,java.lang.String)>), from the following sources:
-	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("sender") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
 	- @parameter0: android.content.Intent (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("sender") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
 	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("message") (in <com.sdalab.messenger.PublishDataService: int onStartCommand(android.content.Intent,int,int)>)
 Found a flow to sink specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1) on line 18 (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>), from the following sources:
 	- virtualinvoke $r0.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034173) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
-	- @parameter0: android.os.Bundle (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
 	- virtualinvoke $r0.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034175) (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
+	- @parameter0: android.os.Bundle (in <com.sdalab.messenger.MainActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r4.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r2, null, $r3, null, null) (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>), from the following sources:
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("message") (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
+	- @parameter0: android.content.Intent (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
+	- virtualinvoke $r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("destinationAddress") (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
+	- staticinvoke <android.telephony.SmsManager: android.telephony.SmsManager getDefault()>() (in <com.sdalab.messenger.SendSmsService: void onHandleIntent(android.content.Intent)>)
 Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("sender", $r7) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>), from the following sources:
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.view.View findViewById(int)>(2131034178) (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r3.<com.sdalab.messenger.MainActivity: android.content.Context getBaseContext()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
-	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
 	- virtualinvoke $r10.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
-Analysis has run for 10.78907549 seconds
+	- virtualinvoke $r6.<android.widget.EditText: android.text.Editable getText()>() (in <com.sdalab.messenger.MainActivity$2: void onClick(android.view.View)>)
+Analysis has run for 11.64670289 seconds

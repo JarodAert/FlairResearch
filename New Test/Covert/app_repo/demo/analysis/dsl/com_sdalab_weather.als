@@ -67,7 +67,7 @@ one sig detailedPath_com_sdalab_weather_3 extends DetailedPath{}{
 /*detailedPath_com_sdalab_weather_3_calledAt
 	com.sdalab.weather.MainActivity$1: void onClick(android.view.View)@
 */
-	source = NO_CATEGORY 
+	source = UNDEFINED 
 /*detailedPath_com_sdalab_weather_3_calledAt
 	com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)@
 */
@@ -77,7 +77,7 @@ one sig detailedPath_com_sdalab_weather_4 extends DetailedPath{}{
 /*detailedPath_com_sdalab_weather_4_calledAt
 	com.sdalab.weather.MainActivity$1: void onClick(android.view.View)@
 */
-	source = UNDEFINED 
+	source = NO_CATEGORY 
 /*detailedPath_com_sdalab_weather_4_calledAt
 	com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)@
 */

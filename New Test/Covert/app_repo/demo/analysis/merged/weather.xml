@@ -87,21 +87,13 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>NO_CATEGORY</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
@@ -123,6 +115,14 @@
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
                 </Flow>
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
@@ -135,18 +135,26 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>NO_CATEGORY</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r2.&lt;android.location.Location: double getLatitude()&gt;() </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>LOCATION_INFORMATION</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
                 </Flow>
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
@@ -159,14 +167,6 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>UNDEFINED</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)&gt;("gps") </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
@@ -174,7 +174,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>startService</consumerMethod>
-            <id>q0klj037ie504agj2ho6tuui8v</id>
+            <id>cg50ngnhclin2egpccqlvqoqm0</id>
             <random/>
         </Intent>
         <Intent>
@@ -191,21 +191,13 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>NO_CATEGORY</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
@@ -227,6 +219,14 @@
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
                 </Flow>
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
@@ -239,18 +239,26 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>NO_CATEGORY</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r2.&lt;android.location.Location: double getLatitude()&gt;() </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>LOCATION_INFORMATION</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
                 </Flow>
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
@@ -263,14 +271,6 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>UNDEFINED</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)&gt;("gps") </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
@@ -278,7 +278,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>startService</consumerMethod>
-            <id>ccbi7rt97nm5acrcd6olm6mdh2</id>
+            <id>7mf4cjoo1n092am56lf0ofjvfe</id>
             <random/>
         </Intent>
         <Intent>
@@ -295,21 +295,13 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>NO_CATEGORY</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
@@ -331,6 +323,14 @@
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
                 </Flow>
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
@@ -343,18 +343,26 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>NO_CATEGORY</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r2.&lt;android.location.Location: double getLatitude()&gt;() </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>LOCATION_INFORMATION</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
                 </Flow>
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
@@ -367,14 +375,6 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>UNDEFINED</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)&gt;("gps") </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
@@ -382,7 +382,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>startService</consumerMethod>
-            <id>e2apcjabjtrrh4l3h5k3cb54go</id>
+            <id>lrqsbv5f3v039pipfmep0177go</id>
             <random/>
         </Intent>
         <Intent>
@@ -405,7 +405,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>startActivity</consumerMethod>
-            <id>mad4piq0gi45vvha9jhik0tm85</id>
+            <id>6qsq764j8qi20boqm6a4mb8bf9</id>
             <random/>
         </Intent>
         <Intent>
@@ -428,7 +428,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>startActivity</consumerMethod>
-            <id>dgmdnqaii5vs0p2r90t41qkmph</id>
+            <id>2qlv7vj88u4nmpii0hufmvdhvn</id>
             <random/>
         </Intent>
         <Intent>
@@ -451,7 +451,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>startActivity</consumerMethod>
-            <id>chll7951qs2qr1ihc04nohajv4</id>
+            <id>pu8k1l6385q3pds8d9b8bogkgk</id>
             <random/>
         </Intent>
         <Intent>
@@ -468,21 +468,13 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>NO_CATEGORY</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>UNDEFINED</sourceDomain>
                 </Flow>
                 <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("city", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
@@ -504,6 +496,14 @@
                     <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
                 </Flow>
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lat", $r5) </sink>
@@ -516,18 +516,26 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>NO_CATEGORY</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r2.&lt;android.location.Location: double getLatitude()&gt;() </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
                     <sourceDomain>LOCATION_INFORMATION</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
+                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.widget.EditText: android.text.Editable getText()&gt;() </source>
+                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
                 </Flow>
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
@@ -540,14 +548,6 @@
                 <Flow>
                     <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
                     <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
-                    <source> virtualinvoke $r2.&lt;com.sdalab.weather.MainActivity: android.view.View findViewById(int)&gt;(2131034172) </source>
-                    <sourceCalledAt>com.sdalab.weather.MainActivity$1: void onClick(android.view.View)</sourceCalledAt>
-                    <sinkDomain>IPC</sinkDomain>
-                    <sourceDomain>UNDEFINED</sourceDomain>
-                </Flow>
-                <Flow>
-                    <sink>&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;("lon", $r1) </sink>
-                    <sinkCalledAt>com.sdalab.weather.MainActivity: void showWeather(java.lang.String,java.lang.Double,java.lang.Double)</sinkCalledAt>
                     <source> virtualinvoke $r5.&lt;android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)&gt;("gps") </source>
                     <sourceCalledAt>com.sdalab.weather.MainActivity$2: void onClick(android.view.View)</sourceCalledAt>
                     <sinkDomain>IPC</sinkDomain>
@@ -555,7 +555,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>startService</consumerMethod>
-            <id>tut9gh8j4k6g2q1dk3k45fpo3b</id>
+            <id>rd92qeshd014kgihp008khrf7r</id>
             <random/>
         </Intent>
         <Intent>
@@ -578,7 +578,7 @@
                 </Flow>
             </sensitiveFlows>
             <consumerMethod>startActivity</consumerMethod>
-            <id>8d2slh2i5ljl5nfelv6biipot7</id>
+            <id>sjthfj4d9tis40tmtj65kcc62k</id>
             <random/>
         </Intent>
     </newIntents>

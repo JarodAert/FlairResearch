@@ -1,0 +1,276 @@
+Analyzing the original Specification:
+./app_repo/demo/analysis/dsl/ICC.als
+
+---STATS---
+p cnf 19651 12849
+primary variables: 1938
+
+
+Total Sol.s: 0
+Analysis Time: 935 ms.
+------------------------------------
+Analyzing the updated Specification:
+./app_repo/demo/analysis/dsl/ICC.als
+Adjusting bounds for the updated specification:
+
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 1[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 1[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 1[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Application.usesPermissions
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 8[[com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0]]
+Adjusted ub: 8[[com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0]]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Application.appPermissions
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 8[[com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0]]
+Adjusted ub: 8[[com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0]]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Application.APIPermissions
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 8[[com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0]]
+Adjusted ub: 8[[com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_weather/com_sdalab_weather$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_COARSE_LOCATION$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/INTERNET$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/SEND_SMS$0], [com_sdalab_messenger/com_sdalab_messenger$0, com_sdalab_messenger/appDeclaration/ACCESS_FINE_LOCATION$0]]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Component.app
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 12[[com_sdalab_weather/com_sdalab_weather_MainActivity$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_weather/com_sdalab_weather_MainActivity$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_weather/com_sdalab_weather_ShowWeather$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_weather/com_sdalab_weather_ShowWeather$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_messenger/com_sdalab_messenger_MainActivity$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_messenger/com_sdalab_messenger_MainActivity$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0, com_sdalab_messenger/com_sdalab_messenger$0]]
+Adjusted ub: 12[[com_sdalab_weather/com_sdalab_weather_MainActivity$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_weather/com_sdalab_weather_MainActivity$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_weather/com_sdalab_weather_ShowWeather$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_weather/com_sdalab_weather_ShowWeather$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_messenger/com_sdalab_messenger_MainActivity$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_messenger/com_sdalab_messenger_MainActivity$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0, com_sdalab_messenger/com_sdalab_messenger$0], [com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0, com_sdalab_weather/com_sdalab_weather$0], [com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0, com_sdalab_messenger/com_sdalab_messenger$0]]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Component.intentFilter
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 30
+Adjusted ub: 30
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Component.compPermissions
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 24
+Adjusted ub: 24
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Component.detailedPaths
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 72
+Adjusted ub: 72
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/DetailedPath.source
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 468
+Adjusted ub: 468
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/DetailedPath.sink
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 468
+Adjusted ub: 468
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/IntentFilter.actions
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 25
+Adjusted ub: 25
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/IntentFilter.dataType
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 10[[com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0]]
+Adjusted ub: 10[[com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/text_plain_D$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoMIMEType$0]]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/IntentFilter.dataScheme
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 10[[com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0]]
+Adjusted ub: 10[[com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/NoScheme$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/YesScheme$0]]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/IntentFilter.categories
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 10[[com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0]]
+Adjusted ub: 10[[com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_weather/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_weather/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_messenger/IntentFilter1$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_messenger/IntentFilter2$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_DEFAULT_C$0], [com_sdalab_messenger/IntentFilter3$0, com_sdalab_messenger/appDeclaration/androidDeclaration/android_intent_category_LAUNCHER_C$0]]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Intent.sender
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 96
+Adjusted ub: 96
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Intent.component
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 96
+Adjusted ub: 96
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Intent.action
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 80
+Adjusted ub: 80
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Intent.dataType
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 32
+Adjusted ub: 32
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Intent.dataScheme
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 32
+Adjusted ub: 32
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Intent.categories
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 32
+Adjusted ub: 32
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/Intent.detailedPaths
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 192
+Adjusted ub: 192
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp.c1
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 6[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/com_sdalab_weather_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/com_sdalab_weather_ShowWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/com_sdalab_messenger_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp.c2
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 6[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/com_sdalab_weather_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/com_sdalab_weather_ShowWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/com_sdalab_messenger_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp.b
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 6[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/com_sdalab_weather_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/com_sdalab_weather_ShowWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/com_sdalab_messenger_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp.i1
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 16[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent1__q0klj037ie504agj2ho6tuui8v$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent2__dgmdnqaii5vs0p2r90t41qkmph$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent3__tut9gh8j4k6g2q1dk3k45fpo3b$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent4__e2apcjabjtrrh4l3h5k3cb54go$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent5__8d2slh2i5ljl5nfelv6biipot7$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent6__mad4piq0gi45vvha9jhik0tm85$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent7__chll7951qs2qr1ihc04nohajv4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent8__ccbi7rt97nm5acrcd6olm6mdh2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent9__7hn08728ak3ln0lg5d5qng09sk$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent10__7jeq2dk0681u1510ah9shsvdq7$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent11__rjc96vd44tlcrqon6i81l5fge2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent12__89sesi5i5c50t1b7dbqur2lirv$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent13__qf6ssihl7030etvdacpk4ercg6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent14__b7dhp8vq3p9f49qb6lu031toq8$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent15__888j5ivqpne9318draps6j8vo6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent16__1fj0ges0rt2pf57llodl9simqc$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp.i2
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 16[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent1__q0klj037ie504agj2ho6tuui8v$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent2__dgmdnqaii5vs0p2r90t41qkmph$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent3__tut9gh8j4k6g2q1dk3k45fpo3b$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent4__e2apcjabjtrrh4l3h5k3cb54go$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent5__8d2slh2i5ljl5nfelv6biipot7$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent6__mad4piq0gi45vvha9jhik0tm85$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent7__chll7951qs2qr1ihc04nohajv4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent8__ccbi7rt97nm5acrcd6olm6mdh2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent9__7hn08728ak3ln0lg5d5qng09sk$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent10__7jeq2dk0681u1510ah9shsvdq7$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent11__rjc96vd44tlcrqon6i81l5fge2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent12__89sesi5i5c50t1b7dbqur2lirv$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent13__qf6ssihl7030etvdacpk4ercg6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent14__b7dhp8vq3p9f49qb6lu031toq8$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent15__888j5ivqpne9318draps6j8vo6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, intent16__1fj0ges0rt2pf57llodl9simqc$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp.d1
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 12[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_6$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp.d2
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 12[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_6$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp.dIntent
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 12[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_6$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp.dComponent
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 12[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_weather/detailedPath_com_sdalab_weather_6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExp$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_6$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch.c2
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 6[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/com_sdalab_weather_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/com_sdalab_weather_ShowWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/com_sdalab_messenger_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch.b
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 6[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/com_sdalab_weather_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/com_sdalab_weather_ShowWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/com_sdalab_messenger_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch.i2
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 16[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent1__q0klj037ie504agj2ho6tuui8v$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent2__dgmdnqaii5vs0p2r90t41qkmph$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent3__tut9gh8j4k6g2q1dk3k45fpo3b$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent4__e2apcjabjtrrh4l3h5k3cb54go$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent5__8d2slh2i5ljl5nfelv6biipot7$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent6__mad4piq0gi45vvha9jhik0tm85$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent7__chll7951qs2qr1ihc04nohajv4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent8__ccbi7rt97nm5acrcd6olm6mdh2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent9__7hn08728ak3ln0lg5d5qng09sk$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent10__7jeq2dk0681u1510ah9shsvdq7$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent11__rjc96vd44tlcrqon6i81l5fge2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent12__89sesi5i5c50t1b7dbqur2lirv$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent13__qf6ssihl7030etvdacpk4ercg6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent14__b7dhp8vq3p9f49qb6lu031toq8$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent15__888j5ivqpne9318draps6j8vo6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, intent16__1fj0ges0rt2pf57llodl9simqc$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch.dComponent
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 12[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/detailedPath_com_sdalab_weather_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/detailedPath_com_sdalab_weather_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/detailedPath_com_sdalab_weather_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/detailedPath_com_sdalab_weather_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/detailedPath_com_sdalab_weather_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_weather/detailedPath_com_sdalab_weather_6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpActivityLunch$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_6$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack.c1
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 6[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/com_sdalab_weather_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/com_sdalab_weather_ShowWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/com_sdalab_messenger_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack.b
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 6[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/com_sdalab_weather_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/com_sdalab_weather_ShowWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/com_sdalab_messenger_MainActivity$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/com_sdalab_weather_RetrieveWeather$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/com_sdalab_messenger_PublishDataService$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/com_sdalab_messenger_SendSmsService$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack.i1
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 16[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent1__q0klj037ie504agj2ho6tuui8v$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent2__dgmdnqaii5vs0p2r90t41qkmph$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent3__tut9gh8j4k6g2q1dk3k45fpo3b$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent4__e2apcjabjtrrh4l3h5k3cb54go$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent5__8d2slh2i5ljl5nfelv6biipot7$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent6__mad4piq0gi45vvha9jhik0tm85$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent7__chll7951qs2qr1ihc04nohajv4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent8__ccbi7rt97nm5acrcd6olm6mdh2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent9__7hn08728ak3ln0lg5d5qng09sk$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent10__7jeq2dk0681u1510ah9shsvdq7$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent11__rjc96vd44tlcrqon6i81l5fge2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent12__89sesi5i5c50t1b7dbqur2lirv$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent13__qf6ssihl7030etvdacpk4ercg6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent14__b7dhp8vq3p9f49qb6lu031toq8$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent15__888j5ivqpne9318draps6j8vo6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, intent16__1fj0ges0rt2pf57llodl9simqc$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack.d1
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 12[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_6$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjusted: com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack.dIntent
+original lb: 0[]
+Adjusted lb: 0[]
+original ub: 12[[com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_weather/detailedPath_com_sdalab_weather_6$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_1$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_2$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_3$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_4$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_5$0], [com_sdalab_messenger/appDeclaration/androidDeclaration/GeneratedExpIntentHijack$0, com_sdalab_messenger/detailedPath_com_sdalab_messenger_6$0]]
+Adjusted ub: 0[]
+--------------------------
+Adjustment Time: 51 ms. 
+
+
+---STATS---
+p cnf 6317 11522
+primary variables: 1745
+
+
+Total Kodkod Rels: 153
+Adjusted Kodkod Rels: 21 
+
+Total Sol.s: 0
+Analysis Time: 165 ms. 
+
+=====================================
